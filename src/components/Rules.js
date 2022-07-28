@@ -2,6 +2,7 @@ import logohorizon from '../img/logo/horizonwhite.svg';
 import oweek from '../img/logo/oweekwhite.svg';
 import uc from '../img/logo/ucwhite.png';
 import bg from '../img/bg/Rulesbg.svg';
+import topeng from '../img/topeng/topeng1.svg';
 
 import styledComponents from "styled-components";
 import {motion} from 'framer-motion';
@@ -43,6 +44,16 @@ z-index: 1;
 
 const Content = styledComponents.div`
 padding: 3vw;
+display: flex;
+justify-content: center;
+gap: 50px;
+`
+
+const Topeng = styledComponents(motion.img)`
+width: 15vw;
+position: absolute;
+right: -5vw;
+top: 50%;
 `
 
 const Rules = () => {
@@ -61,9 +72,15 @@ const Rules = () => {
                 </Rightlogo>
 
                 <Content>
-                    <h1>RULES</h1>
+                    <div>
+                        <h1>RULES</h1>
+                    </div>
+                    <div>
+                        <h1>POIN PCD</h1>
+                    </div>
                 </Content>
             </Container>
+            <Topeng src={topeng} />
         </MainContainer>
      );
 }

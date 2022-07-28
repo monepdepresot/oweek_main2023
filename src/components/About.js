@@ -65,8 +65,8 @@ font-weight: semi-bold;
 margin-top: 10px;
 `
 
-const Topeng = styledComponents.img`
-width: 250px;
+const Topeng = styledComponents(motion.img)`
+width: 15vw;
 position: absolute;
 right: -5vw;
 top: 50%;
@@ -88,18 +88,30 @@ const About = () => {
                 </Rightlogo>
 
                 <Content>
-                    <div>                    
+                    <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                    >                    
                         <h1>ABOUT OWEEK</h1>
                         <p>Orientation Week 2021 merupakan serangkaian acara dan kegiatan yang wajib diikuti oleh seluruh calon mahasiswa baru Universitas Ciputra 2021/2022. Orientation Week 2021 memiliki tujuan untuk memperkenalkan Universitas Ciputra kepada mahasiswa baru, sekaligus memberikan gambaran mengenai aktivitas apa saja yang akan dilakukan/dirasakan oleh mahasiswa selama berkuliah di Universitas Ciputra, serta membentuk mental dan ilmu dasar Entrepreneurship berdasarkan 7 Competences of Entrepreneurship yang diciptakan oleh Bapak Ir. Ciputra.</p>
                         <Button target="_blank" href="https://uc.ac.id/bma/">Website BMA</Button>
-                    </div>
-                    <div>
+                    </motion.div>
+                    <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                    >
                         <h1>ABOUT HORIZON</h1>
                         <p>Orientation Week 2021 mengangkat tema ELEVATE dimana kegiatan Oweek adalah sebagai ajang untuk meningkatkan kualitas diri trainee. Dalam Orientation Week 2021 Universitas Ciputra, mahasiswa baru diajak untuk menerapkan ELEVATE yang didasarkan pada nilai-nilai IPE (Integritas, Profesionalisme, dan Entrepreneurship) yang dijunjung tinggi oleh Universitas Ciputra. Visi dari Orientation Week 2021 adalah agar trainee dapat menyusun anak tangga mereka sendiri dan naik ke tempat yang lebih tinggi lagi, serta dapat menentukan tujuan hidup atau cita-cita mereka. Visi ini diimplikasikan kedalam slogan Orientation Week 2021 yaitu "levitate yourself higher".</p>
-                    </div>
+                    </motion.div>
                 </Content>
             </Container>
-            <Topeng src={topeng} />
+            <Topeng src={topeng} 
+            initial={{ x: 200 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            />
         </MainContainer>
      );
 }

@@ -2,6 +2,7 @@ import logohorizon from '../img/logo/horizonwhite.svg';
 import oweek from '../img/logo/oweekwhite.svg';
 import uc from '../img/logo/ucwhite.png';
 import bg from '../img/bg/Taskbg.svg';
+import topeng from '../img/topeng/topeng3.svg';
 
 import styledComponents from "styled-components";
 import {motion} from 'framer-motion';
@@ -50,6 +51,13 @@ const Content = styledComponents.div`
 padding: 3vw;
 `
 
+const Topeng = styledComponents.img`
+width: 10vw;
+position: absolute;
+right: 5px;
+bottom: 5px;
+`
+
 const Task = () => {
     return ( 
         <MainContainer>
@@ -69,6 +77,7 @@ const Task = () => {
                     <h1>TASK</h1>
                 </Content>
             </Container>
+            <Topeng src={topeng} />
         </MainContainer>
      );
 }
