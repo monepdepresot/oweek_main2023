@@ -43,10 +43,10 @@ z-index: 1;
 `
 
 const Content = styledComponents.div`
-padding: 3vw;
+padding: 3vw 15vw;
 display: flex;
 justify-content: center;
-gap: 50px;
+gap: 30px;
 `
 
 const Topeng = styledComponents(motion.img)`
@@ -54,6 +54,18 @@ width: 15vw;
 position: absolute;
 right: -5vw;
 top: 50%;
+`
+
+const Aturan = styledComponents.div`
+width: 100%;
+`
+
+const PoinPCD = styledComponents.div`
+width: 100%;
+`
+
+const Isi = styledComponents.div`
+border: 1px solid white;
 `
 
 const Rules = () => {
@@ -72,15 +84,25 @@ const Rules = () => {
                 </Rightlogo>
 
                 <Content>
-                    <div>
+                    <Aturan>
                         <h1>RULES</h1>
-                    </div>
-                    <div>
+                        <Isi>
+
+                        </Isi>
+                    </Aturan>
+                    <PoinPCD>
                         <h1>POIN PCD</h1>
-                    </div>
+                        <Isi>
+
+                        </Isi>
+                    </PoinPCD>
                 </Content>
             </Container>
-            <Topeng src={topeng} />
+            <Topeng src={topeng} 
+            initial={{ x: 200 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            />
         </MainContainer>
      );
 }

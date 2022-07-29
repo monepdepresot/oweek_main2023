@@ -162,11 +162,11 @@ const Home = () => {
                     <motion.h2
                     initial={{
                         y:-200,
-                        transition: { type:'spring', duration: 1.5, delay:1}
+                        transition: { type:'spring', duration: 1, delay:1}
                     }}
                     animate={{
                         y:0,
-                        transition: { type:'spring', duration: 1.5, delay:1}
+                        transition: { type:'spring', duration: 1, delay:1}
                     }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
@@ -176,11 +176,11 @@ const Home = () => {
                     <motion.h2
                     initial={{
                         y:-200,
-                        transition: { type:'spring', duration: 1.5, delay:1}
+                        transition: { type:'spring', duration: 1, delay:1}
                     }}
                     animate={{
                         y:0,
-                        transition: { type:'spring', duration: 1.5, delay:1}
+                        transition: { type:'spring', duration: 1, delay:1}
                     }}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
@@ -191,11 +191,11 @@ const Home = () => {
                         <motion.h2
                         initial={{
                             y:200,
-                            transition: { type:'spring', duration: 1.5, delay:1}
+                            transition: { type:'spring', duration: 1, delay:1}
                         }}
                         animate={{
                             y:0,
-                            transition: { type:'spring', duration: 1.5, delay:1}
+                            transition: { type:'spring', duration: 1, delay:1}
                         }}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
@@ -205,11 +205,11 @@ const Home = () => {
                         <motion.h2
                         initial={{
                             y:200,
-                            transition: { type:'spring', duration: 1.5, delay:1}
+                            transition: { type:'spring', duration: 1, delay:1}
                         }}
                         animate={{
                             y:0,
-                            transition: { type:'spring', duration: 1.5, delay:1}
+                            transition: { type:'spring', duration: 1, delay:1}
                         }}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}

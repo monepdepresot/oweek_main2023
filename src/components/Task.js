@@ -51,7 +51,7 @@ const Content = styledComponents.div`
 padding: 3vw;
 `
 
-const Topeng = styledComponents.img`
+const Topeng = styledComponents(motion.img)`
 width: 10vw;
 position: absolute;
 right: 5px;
@@ -77,7 +77,11 @@ const Task = () => {
                     <h1>TASK</h1>
                 </Content>
             </Container>
-            <Topeng src={topeng} />
+            <Topeng src={topeng} 
+            initial={{ y: 200 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            />
         </MainContainer>
      );
 }
