@@ -38,6 +38,17 @@ z-index: 1;
 cursor: pointer;
 `
 
+// const Task = styledComponents(NavLink)`
+// color: #FDFBF7;
+// position: absolute;
+// top: 50%;
+// right: calc(1rem + 2vw);
+// transform: rotate(90deg) translate(-50%, -50%);
+// text-decoration: none;
+// z-index: 1;
+// cursor: pointer;
+// `
+
 const Rules = styledComponents(NavLink)`
 color: #FDFBF7;
 position: absolute;
@@ -73,8 +84,8 @@ z-index: 1;
 
 const Center = styledComponents.button`
 position: absolute;
-top: ${props => props.click ? '85%' :'50%'  };
-left: ${props => props.click ? '92%' :'50%'  };
+top: ${props => props.click ? '87%' :'50%'  };
+left: ${props => props.click ? '95%' :'50%'  };
 transform: translate(-50%,-50%);
 border: none;
 outline: none;
@@ -191,7 +202,7 @@ const Home = () => {
                     whileTap={{ scale: 0.9 }}
                     >Task</motion.h2>
                 </Task> */}
-                <Rules to="/rules" click={click}>
+                <Rules to="/rules">
                     <motion.h2
                     initial={{
                         y:-200,
@@ -206,7 +217,7 @@ const Home = () => {
                     >Rules</motion.h2>
                 </Rules>
                 <BottomBar>
-                    <About to="/about" click={click}>
+                    <About to="/about">
                         <motion.h2
                         initial={{
                             y:200,

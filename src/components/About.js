@@ -56,13 +56,17 @@ gap: 5vh;
 
 const Button = styledComponents.a`
 background: #E22B2B;
-padding: 5px 15px;
-border: 1px solid white;
+padding: 6px 18px;
+border: 2px solid #FDFBF7;
 border-radius: 8px;
 text-decoration: none;
-color: white;
-font-weight: semi-bold;
+color: #FDFBF7;
+font-weight: 500;
 margin-top: 10px;
+
+&:hover{
+  background: #00B984;
+}
 `
 
 const Topeng = styledComponents(motion.img)`
@@ -94,7 +98,7 @@ const About = () => {
                     transition={{ duration: 0.5 }}
                     >                    
                         <h1>ABOUT OWEEK</h1>
-                        <p>Orientation Week 2022 merupakan serangkaian acara dan kegiatan yang wajib diikuti oleh seluruh calon mahasiswa baru Universitas Ciputra 2022/2023. Orientation Week 2022 memiliki tujuan untuk memperkenalkan Universitas Ciputra kepada mahasiswa baru, sekaligus memberikan gambaran mengenai aktivitas apa saja yang akan dilakukan/dirasakan oleh mahasiswa selama berkuliah di Universitas Ciputra, serta membentuk mental dan ilmu dasar Entrepreneurship berdasarkan 7 Competences of Entrepreneurship yang diciptakan oleh Bapak Ir. Ciputra.</p>
+                        <p>Orientation Week 2022 merupakan serangkaian acara dan kegiatan yang wajib diikuti oleh seluruh calon mahasiswa baru Universitas Ciputra 2022/2023. Orientation Week 2022 memiliki tujuan untuk memperkenalkan Universitas Ciputra kepada mahasiswa baru, sekaligus memberikan gambaran mengenai aktivitas apa saja yang akan dilakukan/dirasakan oleh mahasiswa selama berkuliah di Universitas Ciputra, serta membentuk mental dan ilmu dasar Entrepreneurship berdasarkan 7 Competencies of Entrepreneurship yang diciptakan oleh Bapak Ir. Ciputra.</p>
                         <Button target="_blank" href="https://uc.ac.id/bma/">Website BMA</Button>
                     </motion.div>
                     <motion.div

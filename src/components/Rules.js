@@ -4,6 +4,7 @@ import uc from '../img/logo/ucwhite.png';
 import bg from '../img/bg/Rulesbg.svg';
 import topeng from '../img/topeng/topeng1.svg';
 import dot from '../img/dot1.svg';
+import dot2 from '../img/dot3.svg';
 
 import styledComponents from "styled-components";
 import {motion} from 'framer-motion';
@@ -51,7 +52,7 @@ gap: 30px;
 
 const Topeng = styledComponents(motion.img)`
 width: 15vw;
-position: absolute;
+position: fixed;
 right: -5vw;
 top: 50%;
 `
@@ -64,7 +65,7 @@ const PoinPCD = styledComponents.div`
 width: 100%;
 `
 
-const Isi = styledComponents.div`
+const Isi = styledComponents(motion.div)`
 border: 1px solid white;
 `
 
@@ -73,11 +74,24 @@ text-align: left;
 padding: 0px 15px;
 `
 
+const RulesList = styledComponents.div`
+text-align: left;
+padding: 15px;
+`
+
 const Flex = styledComponents.div`
 display: flex;
 align-items: center;
 gap: 10px;
 margin-bottom: 5px;
+`
+
+const Flex2 = styledComponents.div`
+display: flex;
+align-items: center;
+gap: 10px;
+margin-top: 6px;
+margin-bottom: 6px;
 `
 
 const Dot = styledComponents.img`
@@ -102,13 +116,30 @@ const Rules = () => {
                 <Content>
                     <Aturan>
                         <h1>RULES</h1>
-                        <Isi>
-
+                        <Isi
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        >
+                            <RulesList>
+                                <Flex2>
+                                    <Dot src={dot2} />
+                                    <span>Kelompok pemenang Best Team</span>
+                                </Flex2>
+                                <Flex2>
+                                    <Dot src={dot2} />
+                                    <span>Kelompok pemenang Best Team</span>
+                                </Flex2>
+                            </RulesList>                           
                         </Isi>
                     </Aturan>
                     <PoinPCD>
                         <h1>POIN PCD</h1>
-                        <Isi>
+                        <Isi
+                        initial={{ opacity: 0, y: 30 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1 }}
+                        >
                             <Point>
                                 <h2>4 Poin:</h2>
                                 <Flex>
@@ -183,7 +214,7 @@ const Rules = () => {
             <Topeng src={topeng} 
             initial={{ x: 200 }}
             animate={{ x: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
+            transition={{ duration: 1, delay: 0.3 }}
             />
         </MainContainer>
      );

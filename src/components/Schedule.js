@@ -4,6 +4,8 @@ import uc from '../img/logo/ucwhite.png';
 import bg from '../img/bg/Schedulebg.svg';
 import topeng from '../img/topeng/topeng4.svg';
 import dot from '../img/dot2.svg';
+import location from '../img/location.svg';
+import calendar from '../img/calendar.svg';
 
 import styledComponents from "styled-components";
 import {motion} from 'framer-motion';
@@ -74,12 +76,12 @@ justify-content: center;
 gap: 30px;
 `
 
-const Day = styledComponents.div`
+const Day = styledComponents(motion.div)`
 width: 100%;
 border: 1px solid white;
 `
 
-const Rundown = styledComponents.div`
+const Rundown = styledComponents(motion.div)`
 width: 100%;
 border: 1px solid white;
 `
@@ -106,7 +108,19 @@ height: 15px;
 `
 
 const Tabs = styledComponents.h2`
+padding: 2px 3px;
 cursor: pointer;
+`
+
+const IconCenter = styledComponents.div`
+display: flex;
+justify-content: center;
+align-items: center;
+width: 25px;
+`
+
+const BoldSpan = styledComponents.span`
+font-weight: 700;
 `
 
 const Schedule = () => {
@@ -145,7 +159,11 @@ const Schedule = () => {
                     </Menu>
                     <div className={toggleState === 1 ? "maps active-maps" : "maps"}>
                         <Isi>
-                            <Day>
+                            <Day
+                            initial={{ opacity: 0, x: -100 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1.5 }}
+                            >
                                 <h2>Pra-Oweek</h2>
                                 <Pad>
                                     <h3>Tujuan Sidang Senat</h3>
@@ -210,7 +228,11 @@ const Schedule = () => {
                                 </Pad>  
                                                       
                             </Day>
-                            <Rundown>
+                            <Rundown
+                            initial={{ opacity: 0, x: 100 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1.5 }}
+                            >
                                 <h2>Rundown</h2>
                                 <Table>
                                     <tbody>
@@ -257,7 +279,14 @@ const Schedule = () => {
                                     </tbody>
                                 </Table>
                                 <Pad>
-                                    <h3>Lokasi: Palimanan Resto & Cafe</h3>                     
+                                    <Flex>
+                                        <IconCenter><img src={calendar} /></IconCenter>                                       
+                                        <BoldSpan>20 Agustus 2022</BoldSpan>
+                                    </Flex> 
+                                    <Flex>
+                                        <IconCenter><img src={location} /></IconCenter>                                       
+                                        <BoldSpan>Palimanan Resto & Cafe</BoldSpan>
+                                    </Flex>                 
                                 </Pad> 
                             </Rundown>
                         </Isi>
@@ -267,7 +296,7 @@ const Schedule = () => {
                         <Day>
                             <h2>"Opening & UC Day"</h2>   
                             <Pad>
-                                <h3>Tujuan</h3>
+                                <h3>Tujuan Day</h3>
                                 <Flex>
                                     <Dot src={dot} />
                                     <span>Peserta Orientation Week 2022 diperkenalkan rangkaian kegiatan Orientation Week 2022</span>
@@ -357,7 +386,14 @@ const Schedule = () => {
                                 </tbody>
                             </Table>
                             <Pad>
-                                <h3>Lokasi: Mural Universitas Ciputra</h3>                     
+                                <Flex>
+                                    <IconCenter><img src={calendar} /></IconCenter>                                       
+                                    <BoldSpan>29 Agustus 2022</BoldSpan>
+                                </Flex> 
+                                <Flex>
+                                    <IconCenter><img src={location} /></IconCenter>                                       
+                                    <BoldSpan>Mural Universitas Ciputra</BoldSpan>
+                                </Flex>                     
                             </Pad> 
                         </Rundown>
                     </Isi>
@@ -441,8 +477,15 @@ const Schedule = () => {
                                 </tbody>
                             </Table>
                             <Pad>
-                                <h3>Lokasi: Universitas Ciputra</h3>                     
-                            </Pad>
+                                <Flex>
+                                    <IconCenter><img src={calendar} /></IconCenter>                                       
+                                    <BoldSpan>30 Agustus 2022</BoldSpan>
+                                </Flex> 
+                                <Flex>
+                                    <IconCenter><img src={location} /></IconCenter>                                       
+                                    <BoldSpan>Universitas Ciputra</BoldSpan>
+                                </Flex>                     
+                            </Pad> 
                         </Rundown>
                     </Isi>
                     </div> 
@@ -525,7 +568,14 @@ const Schedule = () => {
                                 </tbody>
                             </Table>
                             <Pad>
-                                <h3>Lokasi: Universitas Ciputra</h3>                     
+                                <Flex>
+                                    <IconCenter><img src={calendar} /></IconCenter>                                       
+                                    <BoldSpan>31 Agustus 2022</BoldSpan>
+                                </Flex> 
+                                <Flex>
+                                    <IconCenter><img src={location} /></IconCenter>                                       
+                                    <BoldSpan>Universitas Ciputra</BoldSpan>
+                                </Flex>                     
                             </Pad> 
                         </Rundown>
                     </Isi>
@@ -535,7 +585,7 @@ const Schedule = () => {
                         <Day>
                             <h2>"Talkshow"</h2>   
                             <Pad>
-                                <h3>Tujuan Closing Ceremony</h3>
+                                <h3>Tujuan Day</h3>
                                 <Flex>
                                     <Dot src={dot} />
                                     <span>Peserta Orientation Week 2022 dapat menutup rangkaian acara Orientation Week 2022 secara simbolik melalui kegiatan inagurasi.</span>
@@ -554,7 +604,7 @@ const Schedule = () => {
                                 </Flex>
                             </Pad>    
                             <Pad>
-                                <h3>Tujuan Closing Ceremony</h3>
+                                <h3>7 Competencies</h3>
                                 <Flex>
                                     <Dot src={dot} />
                                     <span>Integrity</span>
@@ -629,7 +679,14 @@ const Schedule = () => {
                                 </tbody>
                             </Table>
                             <Pad>
-                                <h3>Lokasi: Palimanan Resto & Cafe</h3>                     
+                                <Flex>
+                                    <IconCenter><img src={calendar} /></IconCenter>                                       
+                                    <BoldSpan>1 September 2022</BoldSpan>
+                                </Flex> 
+                                <Flex>
+                                    <IconCenter><img src={location} /></IconCenter>                                       
+                                    <BoldSpan>Palimanan Resto & Cafe</BoldSpan>
+                                </Flex>                     
                             </Pad> 
                         </Rundown>
                     </Isi>
@@ -723,10 +780,17 @@ const Schedule = () => {
                                     <td>Cleaning</td>
                                 </tr>
                                 </tbody>
-                            </Table>
+                            </Table> 
                             <Pad>
-                                <h3>Lokasi: Atrium Ciputra World Mall Surabaya</h3>                     
-                            </Pad> 
+                                <Flex>
+                                    <IconCenter><img src={calendar} /></IconCenter>                                       
+                                    <BoldSpan>2 September 2022</BoldSpan>
+                                </Flex> 
+                                <Flex>
+                                    <IconCenter><img src={location} /></IconCenter>                                       
+                                    <BoldSpan>Atrium Ciputra World Mall Surabaya</BoldSpan>
+                                </Flex>                     
+                            </Pad>
                         </Rundown>
                     </Isi>
                     </div> 
@@ -750,7 +814,7 @@ const Schedule = () => {
                                 </Flex>
                             </Pad>    
                             <Pad>
-                                <h3>Tujuan Closing Ceremony</h3>
+                                <h3>Tujuan Day</h3>
                                 <Flex>
                                     <Dot src={dot} />
                                     <span>Peserta Orientation Week 2022 dapat menutup rangkaian acara Orientation Week 2022 secara simbolik melalui kegiatan inagurasi.</span>
@@ -844,7 +908,14 @@ const Schedule = () => {
                                 </tbody>
                             </Table>
                             <Pad>
-                                <h3>Lokasi: Palimanan Resto & Cafe</h3>                     
+                                <Flex>
+                                    <IconCenter><img src={calendar} /></IconCenter>                                       
+                                    <BoldSpan>3 September 2022</BoldSpan>
+                                </Flex> 
+                                <Flex>
+                                    <IconCenter><img src={location} /></IconCenter>                                       
+                                    <BoldSpan>Palimanan Resto & Cafe</BoldSpan>
+                                </Flex>                     
                             </Pad>
                         </Rundown>
                     </Isi>
@@ -855,7 +926,7 @@ const Schedule = () => {
             <Topeng src={topeng} 
             initial={{ x: 200 }}
             animate={{ x: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 1.5 }}
             />
         </MainContainer>
      );

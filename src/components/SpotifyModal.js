@@ -36,10 +36,18 @@ const Modal = styledComponents(motion.div)`
 max-width: 60vw;
 height: 50vh;
 margin: 0 auto;
-padding: 15px;
+padding: 25px;
 background: #ABD8F4;
 border-radius: 10px;
 text-align: center;
+position: relative;
+`
+
+const Exit = styledComponents.h3`
+position: absolute;
+right: 8px;
+top: -12px;
+cursor: pointer;
 `
 
 const SpotifyModal = ({ showSpotifyModal, setShowSpotifyModal }) => {
@@ -56,6 +64,7 @@ const SpotifyModal = ({ showSpotifyModal, setShowSpotifyModal }) => {
            <Modal
            variants={modal}
            >
+            <Exit>X</Exit>
               <iframe src="https://open.spotify.com/embed/playlist/5CE3Xs3WCUPSK1EZSN5UqO" width="100%" height="100%" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
            </Modal>
           </Backdrop>

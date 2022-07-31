@@ -44,6 +44,13 @@ align-items: center;
 justify-content: center;
 `
 
+const Exit = styledComponents.h2`
+position: absolute;
+right: 10px;
+top: -10px;
+cursor: pointer;
+`
+
 const TaskModal = ({ showTaskModal, setShowTaskModal }) => {
     return (
       <AnimatePresence exitBeforeEnter>
@@ -58,6 +65,7 @@ const TaskModal = ({ showTaskModal, setShowTaskModal }) => {
            <Modal
            variants={modal}
            >
+            <Exit onClick={() => setShowTaskModal(false)}>X</Exit>
             <h2>Task will be available soon</h2>
            </Modal>
           </Backdrop>

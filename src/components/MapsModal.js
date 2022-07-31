@@ -43,7 +43,7 @@ padding: 15px;
 background: #ABD8F4;
 border-radius: 10px;
 text-align: center;
-z-index: 4;
+position: relative;
 `
 
 const Menu = styledComponents.div`
@@ -54,6 +54,13 @@ gap: 20%;
 
 const Tabs = styledComponents.p`
 padding: 5px 15px;
+cursor: pointer;
+`
+
+const Exit = styledComponents.h2`
+position: absolute;
+right: 10px;
+top: -10px;
 cursor: pointer;
 `
 
@@ -73,19 +80,19 @@ const MapsModal = ({ showMapsModal, setShowMapsModal }) => {
           initial="hidden"
           animate="visible"
           exit="hidden"
-          // onClick={() => setShowMapsModal(false)}
         >
           <Modal
           variants={modal}
           >
+            <Exit onClick={() => setShowMapsModal(false)}>X</Exit>
           <Menu>
             <Tabs className={toggleState === 1 ? "active-tabs" : ""} onClick={() => toggleTab(1)}>Universitas Ciputra</Tabs>
             <Tabs className={toggleState === 2 ? "active-tabs" : ""} onClick={() => toggleTab(2)}>Ciputra World</Tabs>
             <Tabs className={toggleState === 3 ? "active-tabs" : ""} onClick={() => toggleTab(3)}>Palimanan Resto</Tabs>
           </Menu>           
-            <iframe className={toggleState === 1 ? "maps active-maps" : "maps"} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.6060211110484!2d112.62941291469197!3d-7.2855871947414945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fde455555555%3A0xd7e2611ae591f046!2sUniversitas%20Ciputra%20Surabaya!5e0!3m2!1sid!2sid!4v1658676454189!5m2!1sid!2sid" width="100%" height="83%" style={{ border:0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <iframe className={toggleState === 2 ? "maps active-maps" : "maps"} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.54033146722!2d112.7171467146919!3d-7.293022094736238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb8bedaba761%3A0x4a96323c89c2a25c!2sCiputra%20World%20Surabaya!5e0!3m2!1sid!2sid!4v1659104213423!5m2!1sid!2sid" width="100%" height="83%" style={{ border:0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
-            <iframe className={toggleState === 3 ? "maps active-maps" : "maps"} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.542723735873!2d112.63528133049923!3d-7.2927514647245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fdeccfd6c169%3A0x258974d4253838aa!2sPalimanan!5e0!3m2!1sid!2sid!4v1659104307745!5m2!1sid!2sid" width="100%" height="83%" style={{ border:0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe className={toggleState === 1 ? "maps active-maps" : "maps"} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.6060211110484!2d112.62941291469197!3d-7.2855871947414945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fde455555555%3A0xd7e2611ae591f046!2sUniversitas%20Ciputra%20Surabaya!5e0!3m2!1sid!2sid!4v1658676454189!5m2!1sid!2sid" width="100%" height="83%" style={{ border:0 }}></iframe>
+            <iframe className={toggleState === 2 ? "maps active-maps" : "maps"} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.54033146722!2d112.7171467146919!3d-7.293022094736238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb8bedaba761%3A0x4a96323c89c2a25c!2sCiputra%20World%20Surabaya!5e0!3m2!1sid!2sid!4v1659104213423!5m2!1sid!2sid" width="100%" height="83%" style={{ border:0 }}></iframe>  
+            <iframe className={toggleState === 3 ? "maps active-maps" : "maps"} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.542723735873!2d112.63528133049923!3d-7.2927514647245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fdeccfd6c169%3A0x258974d4253838aa!2sPalimanan!5e0!3m2!1sid!2sid!4v1659104307745!5m2!1sid!2sid" width="100%" height="83%" style={{ border:0 }}></iframe>
           </Modal>
         </Backdrop>
       )}
