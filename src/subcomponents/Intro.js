@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {motion} from 'framer-motion';
-import Me from '../img/profile-img.png';
+import Me from '../img/chara.svg';
 
 const Box = styled(motion.div)`
 position: absolute;
@@ -32,6 +32,7 @@ const SubBox = styled.div`
 width: 50%;
 position: relative;
 display: flex;
+justify-content: center;
 
 .pic{
     position: absolute;
@@ -41,6 +42,14 @@ display: flex;
     width: 100%;
     height: auto;
 }
+`
+
+const SubBoxx = styled.div`
+width: 50%;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: end;
 `
 
 const Text = styled.div`
@@ -56,6 +65,11 @@ flex-direction: column;
     color: white;
     font-size: calc(0.5rem + 1.5vw);
 }
+`
+
+const Chara = styled.img`
+height: 65vh;
+margin-bottom: -3px;
 `
 
 const Intro = () => {
@@ -79,15 +93,15 @@ const Intro = () => {
                     >skjfbgkngesrbglier</motion.p>
                 </Text>
             </SubBox>
-            <SubBox>
+            <SubBoxx>
                 <motion.div
                 initial={{opacity:0}}
                 animate={{opacity: 1}}
                 transition={{ duration:1, delay:2 }}
                 >
-                    <img className="pic" src={Me} alt="Profile Pic" />
+                    <Chara src={Me} />
                 </motion.div>
-            </SubBox>
+            </SubBoxx>
         </Box>
     )
 }

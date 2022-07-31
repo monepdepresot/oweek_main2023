@@ -3,6 +3,7 @@ import oweek from '../img/logo/oweekwhite.svg';
 import uc from '../img/logo/ucwhite.png';
 import bg from '../img/bg/Rulesbg.svg';
 import topeng from '../img/topeng/topeng1.svg';
+import dot from '../img/dot1.svg';
 
 import styledComponents from "styled-components";
 import {motion} from 'framer-motion';
@@ -14,8 +15,7 @@ background-image: url(${bg});
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
-height: 100vh;
-width: 100vw;
+min-height: 100vh;
 overflow:hidden;
 position: relative;
 
@@ -68,6 +68,22 @@ const Isi = styledComponents.div`
 border: 1px solid white;
 `
 
+const Point = styledComponents.div`
+text-align: left;
+padding: 0px 15px;
+`
+
+const Flex = styledComponents.div`
+display: flex;
+align-items: center;
+gap: 10px;
+margin-bottom: 5px;
+`
+
+const Dot = styledComponents.img`
+height: 15px;
+`
+
 const Rules = () => {
     return ( 
         <MainContainer>
@@ -93,7 +109,73 @@ const Rules = () => {
                     <PoinPCD>
                         <h1>POIN PCD</h1>
                         <Isi>
-
+                            <Point>
+                                <h2>4 Poin:</h2>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Kelompok pemenang Best Team</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Kelompok pemenang Best Tenant</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Kelompok pemenang Best Profit</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Kelompok pemenang 7 Competences of Entrepreneurship</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Pemenang Best Trainee</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Mahasiswa baru terpilih menjadi Best All Star</span>
+                                </Flex>
+                            </Point>
+                            <Point>
+                                <h2>3 Poin:</h2>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Mahasiswa baru terpilih menjadi All Star</span>
+                                </Flex>
+                            </Point>
+                            <Point>
+                                <h2>2 Poin:</h2>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Pemenang Tugas Twibbon (Prodi Day) </span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Mahasiswa baru terpilih menjadi Mr./Mrs. O-Week </span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Pemenang Best Networking +2 </span>
+                                </Flex>
+                            </Point>
+                            <Point>
+                                <h2>1 Poin:</h2>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Mahasiswa baru memimpin doa </span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Mahasiswa baru memimpin pembacaan 7 Competences of Entrepreneurship </span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Mahasiswa baru aktif bertanya/terlibat dalam acara</span>
+                                </Flex>
+                            </Point>
+                            <Point>
+                                <h2>Total Poin: 36 Poin</h2>
+                            </Point>
                         </Isi>
                     </PoinPCD>
                 </Content>

@@ -94,7 +94,7 @@ const About = () => {
                     transition={{ duration: 0.5 }}
                     >                    
                         <h1>ABOUT OWEEK</h1>
-                        <p>Orientation Week 2021 merupakan serangkaian acara dan kegiatan yang wajib diikuti oleh seluruh calon mahasiswa baru Universitas Ciputra 2021/2022. Orientation Week 2021 memiliki tujuan untuk memperkenalkan Universitas Ciputra kepada mahasiswa baru, sekaligus memberikan gambaran mengenai aktivitas apa saja yang akan dilakukan/dirasakan oleh mahasiswa selama berkuliah di Universitas Ciputra, serta membentuk mental dan ilmu dasar Entrepreneurship berdasarkan 7 Competences of Entrepreneurship yang diciptakan oleh Bapak Ir. Ciputra.</p>
+                        <p>Orientation Week 2022 merupakan serangkaian acara dan kegiatan yang wajib diikuti oleh seluruh calon mahasiswa baru Universitas Ciputra 2022/2023. Orientation Week 2022 memiliki tujuan untuk memperkenalkan Universitas Ciputra kepada mahasiswa baru, sekaligus memberikan gambaran mengenai aktivitas apa saja yang akan dilakukan/dirasakan oleh mahasiswa selama berkuliah di Universitas Ciputra, serta membentuk mental dan ilmu dasar Entrepreneurship berdasarkan 7 Competences of Entrepreneurship yang diciptakan oleh Bapak Ir. Ciputra.</p>
                         <Button target="_blank" href="https://uc.ac.id/bma/">Website BMA</Button>
                     </motion.div>
                     <motion.div

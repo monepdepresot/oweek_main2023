@@ -10,6 +10,7 @@ import { useState } from "react";
 import {motion} from 'framer-motion';
 import SocialIcons from "../subcomponents/SocialIcons";
 import Intro from "../subcomponents/Intro";
+import TaskModal from './TaskModal';
 
 const MainContainer = styledComponents.div`
 background-image: url(${bg});
@@ -26,7 +27,7 @@ const Container = styledComponents.div`
 padding: 2rem;
 `
 
-const Task = styledComponents(NavLink)`
+const Task = styledComponents.a`
 color: #FDFBF7;
 position: absolute;
 top: 50%;
@@ -34,6 +35,7 @@ right: calc(1rem + 2vw);
 transform: rotate(90deg) translate(-50%, -50%);
 text-decoration: none;
 z-index: 1;
+cursor: pointer;
 `
 
 const Rules = styledComponents(NavLink)`
@@ -134,12 +136,14 @@ transition: height 0.5s ease, width 1s ease 0.5s;
 const Home = () => {
 
     const [click, setClick] = useState(false);
-
     const handleClick = () => setClick(!click);
+
+    const [showTaskModal, setShowTaskModal] = useState(false);
 
     return ( 
         <MainContainer>
             <Container>    
+                <TaskModal showTaskModal={showTaskModal} setShowTaskModal={setShowTaskModal} />
 
                 <RedDiv click={click} /> 
                 <YellowDiv click={click} /> 
@@ -158,7 +162,7 @@ const Home = () => {
                     <img src={uc} alt="" width="55" />                    
                 </Rightlogo>
 
-                <Task to="/task">
+                <Task onClick={() => setShowTaskModal(true)}>
                     <motion.h2
                     initial={{
                         y:-200,
@@ -172,6 +176,21 @@ const Home = () => {
                     whileTap={{ scale: 0.9 }}
                     >Task</motion.h2>
                 </Task>
+
+                {/* <Task to="/task">
+                    <motion.h2
+                    initial={{
+                        y:-200,
+                        transition: { type:'spring', duration: 1, delay:1}
+                    }}
+                    animate={{
+                        y:0,
+                        transition: { type:'spring', duration: 1, delay:1}
+                    }}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.9 }}
+                    >Task</motion.h2>
+                </Task> */}
                 <Rules to="/rules" click={click}>
                     <motion.h2
                     initial={{

@@ -27,7 +27,7 @@ function App() {
         <SocialIcons setShowMapsModal={setShowMapsModal} setShowSpotifyModal={setShowSpotifyModal} />
         
         <AnimatePresence exitBeforeEnter onExitComplete={() => setShowMapsModal(false) && setShowSpotifyModal(false)}>
-          <Routes location={location} key={location.pathname}>
+          <Routes>
             <Route path='/' element={<Home />} />              
             <Route path='/rules' element={<Rules />} />              
             <Route path='/schedule' element={<Schedule />} />              

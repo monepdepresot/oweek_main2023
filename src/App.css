@@ -49,4 +49,21 @@ td {
   padding: 5px;
 }
 
+tr:first-child {
+  max-width:100%;
+  white-space:nowrap;
+}
 
+.active-tabs {
+  background-image: url(./img/bgtext.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.maps {
+  display: none;
+}
+
+.active-maps {
+  display: block;
+}
