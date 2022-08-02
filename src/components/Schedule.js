@@ -6,14 +6,16 @@ import topeng from '../img/topeng/topeng4.svg';
 import dot from '../img/dot2.svg';
 import location from '../img/location.svg';
 import calendar from '../img/calendar.svg';
+import title from '../img/title/Schedule.svg';
 
 import styledComponents from "styled-components";
 import {motion} from 'framer-motion';
 import SocialIcons from "../subcomponents/SocialIcons";
 import PowerButton from '../subcomponents/PowerButton';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
-const MainContainer = styledComponents.div`
+const MainContainer = styledComponents(motion.div)`
 background-image: url(${bg});
 background-size: cover;
 background-repeat: no-repeat;
@@ -123,6 +125,14 @@ const BoldSpan = styledComponents.span`
 font-weight: 700;
 `
 
+const Title = styledComponents.div`
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 30px 0px;
+padding-right: 15px
+`
+
 const Schedule = () => {
 
     const [toggleState, setToggleState] = useState(1);
@@ -132,12 +142,19 @@ const Schedule = () => {
     }
 
     return ( 
-        <MainContainer>
+        <MainContainer
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3 }}
+        >
             <Container>         
                 <PowerButton />
                 
                 <Leftlogo>
-                    <img src={logohorizon} alt="" width="120" />                  
+                    <Link to="/">
+                        <img src={logohorizon} alt="" width="120" /> 
+                    </Link>                                    
                 </Leftlogo>
 
                 <Rightlogo>
@@ -146,8 +163,10 @@ const Schedule = () => {
                 </Rightlogo>
 
                 <Content>
-                    
-                    <h1>SCHEDULE</h1>
+                    <Title>
+                        <img src={title} alt="" width="220" />
+                    </Title>
+
                     <Menu>
                         <Tabs className={toggleState === 1 ? "active-tabs" : ""} onClick={() => toggleTab(1)}>Pra-Oweek</Tabs>
                         <Tabs className={toggleState === 2 ? "active-tabs" : ""} onClick={() => toggleTab(2)}>Day 1</Tabs>
@@ -160,7 +179,7 @@ const Schedule = () => {
                     <div className={toggleState === 1 ? "maps active-maps" : "maps"}>
                         <Isi>
                             <Day
-                            initial={{ opacity: 0, x: -100 }}
+                            initial={{ opacity: 0, x: -25 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 1.5 }}
                             >
@@ -229,7 +248,7 @@ const Schedule = () => {
                                                       
                             </Day>
                             <Rundown
-                            initial={{ opacity: 0, x: 100 }}
+                            initial={{ opacity: 0, x: 25 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 1.5 }}
                             >

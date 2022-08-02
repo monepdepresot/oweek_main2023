@@ -5,13 +5,16 @@ import bg from '../img/bg/Rulesbg.svg';
 import topeng from '../img/topeng/topeng1.svg';
 import dot from '../img/dot1.svg';
 import dot2 from '../img/dot3.svg';
+import title from '../img/title/Rules.svg';
+import title2 from '../img/title/PoinPCD.svg';
 
 import styledComponents from "styled-components";
 import {motion} from 'framer-motion';
 import SocialIcons from "../subcomponents/SocialIcons";
-import PowerButton from '../subcomponents/PowerButton';
+import PowerButton from '../subcomponents/PowerButton2';
+import { Link } from 'react-router-dom';
 
-const MainContainer = styledComponents.div`
+const MainContainer = styledComponents(motion.div)`
 background-image: url(${bg});
 background-size: cover;
 background-repeat: no-repeat;
@@ -98,14 +101,28 @@ const Dot = styledComponents.img`
 height: 15px;
 `
 
+const Title = styledComponents.div`
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 30px 0px;
+`
+
 const Rules = () => {
     return ( 
-        <MainContainer>
+        <MainContainer
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3 }}
+        >
             <Container>         
                 <PowerButton />
 
                 <Leftlogo>
-                    <img src={logohorizon} alt="" width="120" />                  
+                    <Link to="/">
+                        <img src={logohorizon} alt="" width="120" /> 
+                    </Link>                                    
                 </Leftlogo>
 
                 <Rightlogo>
@@ -115,7 +132,10 @@ const Rules = () => {
 
                 <Content>
                     <Aturan>
-                        <h1>RULES</h1>
+                    <Title>
+                        <img src={title} alt="" height="100" />
+                    </Title>
+
                         <Isi
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -134,7 +154,9 @@ const Rules = () => {
                         </Isi>
                     </Aturan>
                     <PoinPCD>
-                        <h1>POIN PCD</h1>
+                    <Title>
+                        <img src={title2} alt="" height="100" />
+                    </Title>
                         <Isi
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}

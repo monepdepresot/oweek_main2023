@@ -85,12 +85,12 @@ const Intro = () => {
                     initial={{opacity:0}}
                     animate={{opacity: 1}}
                     transition={{ duration:1, delay:1 }}
-                    >WELCOME TRAINEE!!!</motion.h1>
-                    <motion.p
+                    >WELCOME TRAINEE!</motion.h1>
+                    <motion.h3
                     initial={{opacity:0}}
                     animate={{opacity: 1}}
                     transition={{ duration:1, delay:1 }}
-                    >skjfbgkngesrbglier</motion.p>
+                    >Don't forget to check your email daily</motion.h3>
                 </Text>
             </SubBox>
             <SubBoxx>

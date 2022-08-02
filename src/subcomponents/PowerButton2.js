@@ -23,7 +23,7 @@ z-index:1;
 cursor: pointer;
 
 &:hover{
-    background-color: #00B984;
+    background-color: #E22B2B;
 }
 
 &>*:first-child{
@@ -32,7 +32,7 @@ cursor: pointer;
 }
 `
 
-const PowerButton = () => {
+const PowerButton2 = () => {
     return (
         <Power>
         <NavLink to="/">
@@ -42,4 +42,4 @@ const PowerButton = () => {
     )
 }
 
-export default PowerButton
+export default PowerButton2

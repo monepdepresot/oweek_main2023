@@ -8,8 +8,9 @@ import styledComponents from "styled-components";
 import {motion} from 'framer-motion';
 import SocialIcons from "../subcomponents/SocialIcons";
 import PowerButton from '../subcomponents/PowerButton';
+import { Link } from 'react-router-dom';
 
-const MainContainer = styledComponents.div`
+const MainContainer = styledComponents(motion.div)`
 background-image: url(${bg});
 background-size: cover;
 background-repeat: no-repeat;
@@ -60,12 +61,19 @@ bottom: 5px;
 
 const Task = () => {
     return ( 
-        <MainContainer>
+        <MainContainer
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3 }}
+        >
             <Container>         
                 <PowerButton />
 
                 <Leftlogo>
-                    <img src={logohorizon} alt="" width="120" />                  
+                    <Link to="/">
+                        <img src={logohorizon} alt="" width="120" /> 
+                    </Link>                                    
                 </Leftlogo>
 
                 <Rightlogo>

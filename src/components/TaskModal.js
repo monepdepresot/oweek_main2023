@@ -36,7 +36,7 @@ max-width: 60vw;
 height: 50vh;
 margin: 0 auto;
 padding: 15px;
-background: #ABD8F4;
+background: #00B984;
 border-radius: 10px;
 text-align: center;
 display: flex;
