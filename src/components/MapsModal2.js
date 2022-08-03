@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styledComponents from 'styled-components';
-import bg from '../img/bg/Rulesbg.svg';
+import bg from '../img/bg/Schedulebg.svg';
 
 const backdrop = {
     visible: { opacity: 1 },

@@ -14,6 +14,8 @@ import SocialIcons from "../subcomponents/SocialIcons";
 import PowerButton from '../subcomponents/PowerButton';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import MapsModal from './MapsModal';
+import SpotifyModal from './SpotifyModal';
 
 const MainContainer = styledComponents(motion.div)`
 background-image: url(${bg});
@@ -135,6 +137,9 @@ padding-right: 15px
 
 const Schedule = () => {
 
+    const [showMapsModal, setShowMapsModal] = useState(false);
+    const [showSpotifyModal, setShowSpotifyModal] = useState(false);
+
     const [toggleState, setToggleState] = useState(1);
 
     const toggleTab = (index) => {
@@ -148,6 +153,10 @@ const Schedule = () => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.3 }}
         >
+            <MapsModal showMapsModal={showMapsModal} setShowMapsModal={setShowMapsModal} />
+            <SpotifyModal showSpotifyModal={showSpotifyModal} setShowSpotifyModal={setShowSpotifyModal} />
+            <SocialIcons setShowMapsModal={setShowMapsModal} setShowSpotifyModal={setShowSpotifyModal} />
+
             <Container>         
                 <PowerButton />
                 
@@ -183,24 +192,9 @@ const Schedule = () => {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 1.5 }}
                             >
-                                <h2>Pra-Oweek</h2>
+                                <h2>Pra-Oweek</h2>  
                                 <Pad>
-                                    <h3>Tujuan Sidang Senat</h3>
-                                    <Flex>
-                                        <Dot src={dot} />
-                                        <span>Untuk menjadikan sebuah acara formal peresmian mahasiswa baru untuk menjadi mahasiswa dan bagian dari keluarga Universitas Ciputra secara simbolik.</span>
-                                    </Flex>
-                                    <Flex>
-                                        <Dot src={dot} />
-                                        <span>Pengukuhan menjadi mahasiswa UC</span>
-                                    </Flex>
-                                    <Flex>
-                                        <Dot src={dot} />
-                                        <span>Memiliki rasa bangga menjadi mahasiswa UC</span>
-                                    </Flex>
-                                </Pad>    
-                                <Pad>
-                                    <h3>Tujuan Closing Ceremony</h3>
+                                    <h3>Tujuan Pra-Oweek</h3>
                                     <Flex>
                                         <Dot src={dot} />
                                         <span>Peserta Orientation Week 2022 dapat menutup rangkaian acara Orientation Week 2022 secara simbolik melalui kegiatan inagurasi.</span>
@@ -219,7 +213,7 @@ const Schedule = () => {
                                     </Flex>
                                 </Pad>    
                                 <Pad>
-                                    <h3>Tujuan Closing Ceremony</h3>
+                                    <h3>7 Competencies</h3>
                                     <Flex>
                                         <Dot src={dot} />
                                         <span>Integrity</span>

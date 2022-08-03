@@ -13,6 +13,9 @@ import {motion} from 'framer-motion';
 import SocialIcons from "../subcomponents/SocialIcons";
 import PowerButton from '../subcomponents/PowerButton2';
 import { Link } from 'react-router-dom';
+import MapsModal from './MapsModal2';
+import SpotifyModal from './SpotifyModal2';
+import { useState } from 'react';
 
 const MainContainer = styledComponents(motion.div)`
 background-image: url(${bg});
@@ -109,6 +112,10 @@ margin: 30px 0px;
 `
 
 const Rules = () => {
+
+    const [showMapsModal, setShowMapsModal] = useState(false);
+    const [showSpotifyModal, setShowSpotifyModal] = useState(false);
+
     return ( 
         <MainContainer
         initial={{ opacity: 0 }}
@@ -116,6 +123,11 @@ const Rules = () => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.3 }}
         >
+
+            <MapsModal showMapsModal={showMapsModal} setShowMapsModal={setShowMapsModal} />
+            <SpotifyModal showSpotifyModal={showSpotifyModal} setShowSpotifyModal={setShowSpotifyModal} />
+            <SocialIcons setShowMapsModal={setShowMapsModal} setShowSpotifyModal={setShowSpotifyModal} />
+
             <Container>         
                 <PowerButton />
 
@@ -144,11 +156,11 @@ const Rules = () => {
                             <RulesList>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Kelompok pemenang Best Team</span>
+                                    <span>Peraturan</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Kelompok pemenang Best Team</span>
+                                    <span>Peraturan</span>
                                 </Flex2>
                             </RulesList>                           
                         </Isi>

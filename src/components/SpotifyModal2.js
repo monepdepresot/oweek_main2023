@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import styledComponents from 'styled-components';
-import bg from '../img/bg/Rulesbg.svg';
+import bg from '../img/bg/Schedulebg.svg';
 
 const backdrop = {
     visible: { opacity: 1 },

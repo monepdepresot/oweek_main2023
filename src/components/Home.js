@@ -11,6 +11,8 @@ import {motion} from 'framer-motion';
 import SocialIcons from "../subcomponents/SocialIcons";
 import Intro from "../subcomponents/Intro";
 import TaskModal from './TaskModal';
+import MapsModal from './MapsModal';
+import SpotifyModal from './SpotifyModal';
 
 const MainContainer = styledComponents(motion.div)`
 background-image: url(${bg});
@@ -150,6 +152,8 @@ const Home = () => {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
 
+    const [showMapsModal, setShowMapsModal] = useState(false);
+    const [showSpotifyModal, setShowSpotifyModal] = useState(false);
     const [showTaskModal, setShowTaskModal] = useState(false);
 
     return ( 
@@ -159,6 +163,10 @@ const Home = () => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.3 }}
         >
+            <MapsModal showMapsModal={showMapsModal} setShowMapsModal={setShowMapsModal} />
+            <SpotifyModal showSpotifyModal={showSpotifyModal} setShowSpotifyModal={setShowSpotifyModal} />
+            <SocialIcons setShowMapsModal={setShowMapsModal} setShowSpotifyModal={setShowSpotifyModal} />
+            
             <Container>    
                 <TaskModal showTaskModal={showTaskModal} setShowTaskModal={setShowTaskModal} />
 

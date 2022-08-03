@@ -9,6 +9,9 @@ import {motion} from 'framer-motion';
 import SocialIcons from "../subcomponents/SocialIcons";
 import PowerButton from '../subcomponents/PowerButton';
 import { Link } from 'react-router-dom';
+import MapsModal from './MapsModal';
+import SpotifyModal from './SpotifyModal';
+import { useState } from 'react';
 
 const MainContainer = styledComponents(motion.div)`
 background-image: url(${bg});
@@ -78,6 +81,10 @@ top: 50%;
 `
 
 const About = () => {
+
+    const [showMapsModal, setShowMapsModal] = useState(false);
+    const [showSpotifyModal, setShowSpotifyModal] = useState(false);
+
     return ( 
         <MainContainer
         initial={{ opacity: 0 }}
@@ -85,6 +92,11 @@ const About = () => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.3 }}
         >
+
+            <MapsModal showMapsModal={showMapsModal} setShowMapsModal={setShowMapsModal} />
+            <SpotifyModal showSpotifyModal={showSpotifyModal} setShowSpotifyModal={setShowSpotifyModal} />
+            <SocialIcons setShowMapsModal={setShowMapsModal} setShowSpotifyModal={setShowSpotifyModal} />
+
             <Container>         
                 <PowerButton />
 
@@ -115,7 +127,7 @@ const About = () => {
                     transition={{ duration: 0.5, delay: 0.3 }}
                     >
                         <h1>ABOUT HORIZON</h1>
-                        <p>Orientation Week 2021 mengangkat tema ELEVATE dimana kegiatan Oweek adalah sebagai ajang untuk meningkatkan kualitas diri trainee. Dalam Orientation Week 2021 Universitas Ciputra, mahasiswa baru diajak untuk menerapkan ELEVATE yang didasarkan pada nilai-nilai IPE (Integritas, Profesionalisme, dan Entrepreneurship) yang dijunjung tinggi oleh Universitas Ciputra. Visi dari Orientation Week 2021 adalah agar trainee dapat menyusun anak tangga mereka sendiri dan naik ke tempat yang lebih tinggi lagi, serta dapat menentukan tujuan hidup atau cita-cita mereka. Visi ini diimplikasikan kedalam slogan Orientation Week 2021 yaitu "levitate yourself higher".</p>
+                        <p>Orientation Week 2021 mengangkat tema HORIZON dimana kegiatan Oweek adalah sebagai ajang untuk meningkatkan kualitas diri trainee. Dalam Orientation Week 2021 Universitas Ciputra, mahasiswa baru diajak untuk menerapkan ELEVATE yang didasarkan pada nilai-nilai IPE (Integritas, Profesionalisme, dan Entrepreneurship) yang dijunjung tinggi oleh Universitas Ciputra. Visi dari Orientation Week 2022 adalah agar trainee dapat menyusun anak tangga mereka sendiri dan naik ke tempat yang lebih tinggi lagi, serta dapat menentukan tujuan hidup atau cita-cita mereka. Visi ini diimplikasikan kedalam slogan Orientation Week 2021 yaitu "levitate yourself higher".</p>
                     </motion.div>
                 </Content>
             </Container>
