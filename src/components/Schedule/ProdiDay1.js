@@ -1,25 +1,24 @@
-import logohorizon from '../img/logo/horizonblack.svg';
-import oweek from '../img/logo/oweekblack.svg';
-import uc from '../img/logo/ucblack.png';
-import bg from '../img/bg/Taskbg.svg';
-import topeng from '../img/topeng/topeng3.svg';
+import logohorizon from '../../img/logo/horizonwhite.svg';
+import oweek from '../../img/logo/oweekwhite.svg';
+import uc from '../../img/logo/ucwhite.png';
+import bg from '../../img/bg/Schedulebg.svg';
+import topeng from '../../img/topeng/topeng4.svg';
 
 import styledComponents from "styled-components";
 import {motion} from 'framer-motion';
-import PowerButton4 from '../subcomponents/PowerButton4';
-import { Link } from 'react-router-dom';
-import SocialIcons2 from '../subcomponents/SocialIcons2';
-import MapsModal from './MapsModal';
-import SpotifyModal from './SpotifyModal';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import MapsModal from '../MapsModal';
+import SpotifyModal from '../SpotifyModal';
+import SocialIcons from '../../subcomponents/SocialIcons';
+import PowerButton3 from '../../subcomponents/PowerButton3';
 
 const MainContainer = styledComponents(motion.div)`
 background-image: url(${bg});
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
-height: 100vh;
-width: 100vw;
+min-height: 100vh;
 overflow:hidden;
 position: relative;
 
@@ -27,9 +26,8 @@ h1 {
     font-size: 3em;
 }
 
-
-h1, h2, p {
-    color: black;
+h2 {
+    font-size: 1.3em;
 }
 `
 
@@ -38,7 +36,7 @@ padding: 2rem;
 `
 
 const Rightlogo = styledComponents.div`
-position: absolute;
+position: fixed;
 right: calc(2rem);
 z-index: 1;
 display: flex;
@@ -46,23 +44,26 @@ gap: 10px;
 `
 
 const Leftlogo = styledComponents.div`
-position: absolute;
+position: fixed;
 left: calc(2rem);
 z-index: 1;
 `
 
 const Content = styledComponents.div`
-padding: 3vw;
+padding: 3vw 15vw;
+display: flex;
+flex-direction: column;
+justify-content: center;
 `
 
 const Topeng = styledComponents(motion.img)`
-width: 10vw;
-position: absolute;
-right: 5px;
-bottom: 5px;
+width: 15vw;
+position: fixed;
+right: -5vw;
+top: 50%;
 `
 
-const Task = () => {
+const ProdiDay1 = () => {
 
     const [showMapsModal, setShowMapsModal] = useState(false);
     const [showSpotifyModal, setShowSpotifyModal] = useState(false);
@@ -74,14 +75,13 @@ const Task = () => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.3 }}
         >
-
             <MapsModal showMapsModal={showMapsModal} setShowMapsModal={setShowMapsModal} />
             <SpotifyModal showSpotifyModal={showSpotifyModal} setShowSpotifyModal={setShowSpotifyModal} />
-            <SocialIcons2 setShowMapsModal={setShowMapsModal} setShowSpotifyModal={setShowSpotifyModal} />
+            <SocialIcons setShowMapsModal={setShowMapsModal} setShowSpotifyModal={setShowSpotifyModal} />
 
             <Container>         
-                <PowerButton4 />
-
+                <PowerButton3 />
+                
                 <Leftlogo>
                     <Link to="/">
                         <img src={logohorizon} alt="" width="120" /> 
@@ -94,16 +94,17 @@ const Task = () => {
                 </Rightlogo>
 
                 <Content>
-                    <h1>TASK</h1>
+                    <h1>KETENTUAN PRODI DAY 1</h1>
                 </Content>
+
             </Container>
             <Topeng src={topeng} 
-            initial={{ y: 200 }}
-            animate={{ y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
+            initial={{ x: 200 }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5, delay: 1.5 }}
             />
         </MainContainer>
      );
 }
  
-export default Task;
+export default ProdiDay1;

@@ -5,6 +5,7 @@ import bg from '../img/bg/Schedulebg.svg';
 import topeng from '../img/topeng/topeng4.svg';
 import dot from '../img/dot2.svg';
 import location from '../img/location.svg';
+import dresscode from '../img/dresscode.svg';
 import calendar from '../img/calendar.svg';
 import title from '../img/title/Schedule.svg';
 
@@ -120,7 +121,7 @@ const IconCenter = styledComponents.div`
 display: flex;
 justify-content: center;
 align-items: center;
-width: 25px;
+min-width: 25px;
 `
 
 const BoldSpan = styledComponents.span`
@@ -133,6 +134,14 @@ align-items: center;
 justify-content: center;
 margin: 30px 0px;
 padding-right: 15px
+`
+
+const ClosingDetail = styledComponents.h3`
+&:hover {
+    color: #00B984;
+    text-decoration: underline;
+    text-decoration-color: #00B984;
+}
 `
 
 const Schedule = () => {
@@ -177,7 +186,7 @@ const Schedule = () => {
                     </Title>
 
                     <Menu>
-                        <Tabs className={toggleState === 1 ? "active-tabs" : ""} onClick={() => toggleTab(1)}>Pra-Oweek</Tabs>
+                        <Tabs className={toggleState === 1 ? "active-tabs" : ""} onClick={() => toggleTab(1)}>Pra UC Day</Tabs>
                         <Tabs className={toggleState === 2 ? "active-tabs" : ""} onClick={() => toggleTab(2)}>Day 1</Tabs>
                         <Tabs className={toggleState === 3 ? "active-tabs" : ""} onClick={() => toggleTab(3)}>Day 2</Tabs>
                         <Tabs className={toggleState === 4 ? "active-tabs" : ""} onClick={() => toggleTab(4)}>Day 3</Tabs>
@@ -192,54 +201,10 @@ const Schedule = () => {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 1.5 }}
                             >
-                                <h2>Pra-Oweek</h2>  
+                                <h2>Pra UC Day</h2>  
                                 <Pad>
-                                    <h3>Tujuan Pra-Oweek</h3>
-                                    <Flex>
-                                        <Dot src={dot} />
-                                        <span>Peserta Orientation Week 2022 dapat menutup rangkaian acara Orientation Week 2022 secara simbolik melalui kegiatan inagurasi.</span>
-                                    </Flex>
-                                    <Flex>
-                                        <Dot src={dot} />
-                                        <span>Peserta Orientation Week 2022 dapat merefleksikan pelajaran yang didapat selama masa Orientation Week dan sebagai bentuk apresiasi terhadap para peserta Orientation Week 2022.</span>
-                                    </Flex>
-                                    <Flex>
-                                        <Dot src={dot} />
-                                        <span>Peserta Orientation Week 2022 mampu mengembangkan softskill khususnya kepemimpinan, komunikasi, dan kerja sama.</span>
-                                    </Flex>
-                                    <Flex>
-                                        <Dot src={dot} />
-                                        <span>Peserta Orientation Week 2022 mampu mengenal tujuan masing-masing dan memiliki semangat untuk mengejarnya selama berkuliah di Universitas Ciputra Surabaya.</span>
-                                    </Flex>
-                                </Pad>    
-                                <Pad>
-                                    <h3>7 Competencies</h3>
-                                    <Flex>
-                                        <Dot src={dot} />
-                                        <span>Integrity</span>
-                                    </Flex>
-                                    <Flex>
-                                        <Dot src={dot} />
-                                        <span>High Sense of Achievement</span>
-                                    </Flex>
-                                    <Flex>
-                                        <Dot src={dot} />
-                                        <span>Long Life Learning</span>
-                                    </Flex>
-                                    <Flex>
-                                        <Dot src={dot} />
-                                        <span>Opportunity Creation</span>
-                                    </Flex>
-                                    <Flex>
-                                        <Dot src={dot} />
-                                        <span>Creativity & Innovation</span>
-                                    </Flex>
-                                    <Flex>
-                                        <Dot src={dot} />
-                                        <span>Calculated Risk Taking</span>
-                                    </Flex>
-                                </Pad>  
-                                                      
+                                    <h3>Platform: Live streaming youtube</h3>
+                                </Pad>                                                      
                             </Day>
                             <Rundown
                             initial={{ opacity: 0, x: 25 }}
@@ -250,64 +215,50 @@ const Schedule = () => {
                                 <Table>
                                     <tbody>
                                     <tr>
-                                        <td>15.00 - 16.00 </td>
-                                        <td>Registrasi Trainee</td>
+                                        <td>08.00 - 08.15</td>
+                                        <td>Opening</td>
                                     </tr>
                                     <tr>
-                                        <td>16.00 - 16.30 </td>
-                                        <td>Persiapan Sidang Senat</td>
+                                        <td>08.15 - 08.45</td>
+                                        <td>Visi misi uc</td>
                                     </tr>
                                     <tr>
-                                        <td>16.30 - 18.00 </td>
-                                        <td>Sidang Senat</td>
+                                        <td>08.45 - 09.15</td>
+                                        <td>Kurikulum mahasiswa dan akademik</td>
                                     </tr>
                                     <tr>
-                                        <td>18.00 - 19.30 </td>
-                                        <td>ISHOMA</td>
+                                        <td>09.15 - 09.45</td>
+                                        <td>Pengenalan departemen</td>
                                     </tr>
                                     <tr>
-                                        <td>19.30 - 19.44 </td>
-                                        <td>Opening Closing O'Week</td>
+                                        <td>09.45 - 10.15</td>
+                                        <td>Break</td>
                                     </tr>
                                     <tr>
-                                        <td>19.44 - 20.36 </td>
-                                        <td>Awarding, All Star, Mr and Mrs O'Week</td>
+                                        <td>10.15 - 10.45</td>
+                                        <td>Virtual Campus Tour</td>
                                     </tr>
                                     <tr>
-                                        <td>20.36 - 20.41 </td>
-                                        <td>Performance by UKM</td>
+                                        <td>10.45 - 12.15</td>
+                                        <td>Pengenalan organisasi & ukm</td>
                                     </tr>
                                     <tr>
-                                        <td>20.41 - 20.58 </td>
-                                        <td>Flashmob, Lagu Panitia & Aftermovie</td>
+                                        <td>12.15 - 12.30</td>
+                                        <td>Video persiapan hari h</td>
                                     </tr>
                                     <tr>
-                                        <td>20.58 - 21.58 </td>
-                                        <td>External Performance</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21.58 - 22.08 </td>
+                                        <td>12.30 - 12.40</td>
                                         <td>Closing</td>
                                     </tr>
                                     </tbody>
-                                </Table>
-                                <Pad>
-                                    <Flex>
-                                        <IconCenter><img src={calendar} /></IconCenter>                                       
-                                        <BoldSpan>20 Agustus 2022</BoldSpan>
-                                    </Flex> 
-                                    <Flex>
-                                        <IconCenter><img src={location} /></IconCenter>                                       
-                                        <BoldSpan>Palimanan Resto & Cafe</BoldSpan>
-                                    </Flex>                 
-                                </Pad> 
+                                </Table> 
                             </Rundown>
                         </Isi>
                     </div>
                     <div className={toggleState === 2 ? "maps active-maps" : "maps"}>
                         <Isi>
                         <Day>
-                            <h2>"Opening & UC Day"</h2>   
+                            <h2>Opening & UC Day</h2>   
                             <Pad>
                                 <h3>Tujuan Day</h3>
                                 <Flex>
@@ -316,7 +267,7 @@ const Schedule = () => {
                                 </Flex>
                                 <Flex>
                                     <Dot src={dot} />
-                                    <span>Peserta Orientation Week 2022 mengenal wHjltvx</span>
+                                    <span>Peserta Orientation Week 2022 mengenal lingkungan Universitas Ciputra Surabaya.</span>
                                 </Flex>
                                 <Flex>
                                     <Dot src={dot} />
@@ -356,45 +307,73 @@ const Schedule = () => {
                             <h2>Rundown</h2>
                             <Table>
                                 <tbody>
+                                <h3>Opening</h3>
                                 <tr>
-                                    <td>15.00 - 16.00 </td>
+                                    <td>06.00 - 07.00</td>
                                     <td>Registrasi Trainee</td>
                                 </tr>
                                 <tr>
-                                    <td>16.00 - 16.30 </td>
-                                    <td>Persiapan Sidang Senat</td>
+                                    <td>07.00 - 07.50</td>
+                                    <td>Opening</td>
                                 </tr>
                                 <tr>
-                                    <td>16.30 - 18.00 </td>
-                                    <td>Sidang Senat</td>
+                                    <td>07.50 - 07.55</td>
+                                    <td>Flag Ceremony</td>
                                 </tr>
                                 <tr>
-                                    <td>18.00 - 19.30 </td>
+                                    <td>07.55 - 08.25</td>
+                                    <td>Sambutan Ketua O-Week, Rektor, dan BMA</td>
+                                </tr>
+                                <tr>
+                                    <td>08:25 - 08:35</td>
+                                    <td>Prosesi Peresmian O-Week</td>
+                                </tr>
+                                <tr>
+                                    <td>08:35 - 08:45</td>
+                                    <td>Parade Pengenalan Divisi</td>
+                                </tr>
+                                <tr>
+                                    <td>08:45 - 09:00</td>
+                                    <td>Briefing BAA</td>
+                                </tr>
+                                <tr>
+                                    <td>09:00 - 09:20</td>
+                                    <td>Istirahat (Snack Time)</td>
+                                </tr>
+
+                                <h3>UC Day</h3>
+
+                                <tr>
+                                    <td>09.20 - 10.05</td>
+                                    <td>Mobilisasi Trainee</td>
+                                </tr>
+                                <tr>
+                                    <td>10.05 - 10.50</td>
+                                    <td>Materi Elearn + Cis</td>
+                                </tr>
+                                <tr>
+                                    <td>10.50 - 11.20</td>
+                                    <td>Sesi QNA Kur + Dep</td>
+                                </tr>
+                                <tr>
+                                    <td>11.20 - 12.20</td>
                                     <td>ISHOMA</td>
                                 </tr>
                                 <tr>
-                                    <td>19.30 - 19.44 </td>
-                                    <td>Opening Closing O'Week</td>
+                                    <td>12.20 - 12.35</td>
+                                    <td>Briefing game Campus Tour</td>
                                 </tr>
                                 <tr>
-                                    <td>19.44 - 20.36 </td>
-                                    <td>Awarding, All Star, Mr and Mrs O'Week</td>
+                                    <td>12.35 - 15.20</td>
+                                    <td>Game Campus Tour</td>
                                 </tr>
                                 <tr>
-                                    <td>20.36 - 20.41 </td>
-                                    <td>Performance by UKM</td>
+                                    <td>15.20 - 16.05</td>
+                                    <td>Mobilisasi Trainee</td>
                                 </tr>
                                 <tr>
-                                    <td>20.41 - 20.58 </td>
-                                    <td>Flashmob, Lagu Panitia & Aftermovie</td>
-                                </tr>
-                                <tr>
-                                    <td>20.58 - 21.58 </td>
-                                    <td>External Performance</td>
-                                </tr>
-                                <tr>
-                                    <td>21.58 - 22.08 </td>
-                                    <td>Closing</td>
+                                    <td>16.05 - 16.20</td>
+                                    <td>Briefing Next Day</td>
                                 </tr>
                                 </tbody>
                             </Table>
@@ -407,6 +386,10 @@ const Schedule = () => {
                                     <IconCenter><img src={location} /></IconCenter>                                       
                                     <BoldSpan>Mural Universitas Ciputra</BoldSpan>
                                 </Flex>                     
+                                <Flex>
+                                    <IconCenter><img src={dresscode} /></IconCenter>                                       
+                                    <BoldSpan>Kemeja Putih, celana jeans berwarna gelap (tidak sobek), sepatu sneakers</BoldSpan>
+                                </Flex>                     
                             </Pad> 
                         </Rundown>
                     </Isi>
@@ -414,7 +397,7 @@ const Schedule = () => {
                     <div className={toggleState === 3 ? "maps active-maps" : "maps"}>
                         <Isi>
                         <Day>
-                            <h2>"Prodi Day 1"</h2>   
+                            <h2>Prodi Day 1</h2>   
                             <Pad>
                                 <h3>Tujuan Day</h3>
                                 <Flex>
@@ -441,7 +424,11 @@ const Schedule = () => {
                                     <span>Networking</span>
                                 </Flex>
                             </Pad>  
-                                                   
+                            <Pad>                                
+                                <Link to="/prodiday1">
+                                    <ClosingDetail>Ketentuan Prodi Day 1</ClosingDetail>
+                                </Link>                                
+                            </Pad>                     
                         </Day>
                         <Rundown>
                             <h2>Rundown</h2>
@@ -497,15 +484,19 @@ const Schedule = () => {
                                 <Flex>
                                     <IconCenter><img src={location} /></IconCenter>                                       
                                     <BoldSpan>Universitas Ciputra</BoldSpan>
-                                </Flex>                     
-                            </Pad> 
+                                </Flex>           
+                                <Flex>
+                                    <IconCenter><img src={dresscode} /></IconCenter>                                       
+                                    <BoldSpan>Sesuai ketentuan prodi</BoldSpan>
+                                </Flex>           
+                            </Pad>                            
                         </Rundown>
                     </Isi>
                     </div> 
                     <div className={toggleState === 4 ? "maps active-maps" : "maps"}>
                         <Isi>
                         <Day>
-                            <h2>"Prodi Day 2"</h2>
+                            <h2>Prodi Day 2</h2>
                             <Pad>
                                 <h3>Tujuan Day</h3>
                                 <Flex>
@@ -536,7 +527,11 @@ const Schedule = () => {
                                     <span>Networking</span>
                                 </Flex>
                             </Pad>  
-                                                  
+                            <Pad>                                
+                                <Link to="/prodiday2">
+                                    <ClosingDetail>Ketentuan Prodi Day 2</ClosingDetail>
+                                </Link>                                
+                            </Pad>                   
                         </Day>
                         <Rundown>
                             <h2>Rundown</h2>
@@ -588,7 +583,11 @@ const Schedule = () => {
                                 <Flex>
                                     <IconCenter><img src={location} /></IconCenter>                                       
                                     <BoldSpan>Universitas Ciputra</BoldSpan>
-                                </Flex>                     
+                                </Flex>     
+                                <Flex>
+                                    <IconCenter><img src={dresscode} /></IconCenter>                                       
+                                    <BoldSpan>Sesuai ketentuan prodi</BoldSpan>
+                                </Flex>                  
                             </Pad> 
                         </Rundown>
                     </Isi>
@@ -596,51 +595,31 @@ const Schedule = () => {
                     <div className={toggleState === 5 ? "maps active-maps" : "maps"}>
                         <Isi>
                         <Day>
-                            <h2>"Talkshow"</h2>   
+                            <h2>Talkshow</h2>   
                             <Pad>
                                 <h3>Tujuan Day</h3>
                                 <Flex>
                                     <Dot src={dot} />
-                                    <span>Peserta Orientation Week 2022 dapat menutup rangkaian acara Orientation Week 2022 secara simbolik melalui kegiatan inagurasi.</span>
+                                    <span>Mahasiswa dapat menambah pengetahuan untuk mengembangkan creativity and innovation dalam memanfaatkan peluang yang ada dan dapat meningkatkan brand awareness untuk bisnisnya dengan berlandaskan integritas.</span>
                                 </Flex>
                                 <Flex>
                                     <Dot src={dot} />
-                                    <span>Peserta Orientation Week 2022 dapat merefleksikan pelajaran yang didapat selama masa Orientation Week dan sebagai bentuk apresiasi terhadap para peserta Orientation Week 2022.</span>
+                                    <span>Mempersiapkan mahasiswa menjadi lebih bersinergi dengan mempertimbangkan nilai - nilai Pancasila dalam menyatukan setiap perbedaan sebagai kesatuan bangsa.</span>
                                 </Flex>
                                 <Flex>
                                     <Dot src={dot} />
-                                    <span>Peserta Orientation Week 2022 mampu mengembangkan softskill khususnya kepemimpinan, komunikasi, dan kerja sama.</span>
+                                    <span>Mahasiswa mengetahui bagaimana cara melihat masalah yang terjadi di sekitar serta mengetahui cara merubah masalah menjadi peluang.</span>
                                 </Flex>
                                 <Flex>
                                     <Dot src={dot} />
-                                    <span>Peserta Orientation Week 2022 mampu mengenal tujuan masing-masing dan memiliki semangat untuk mengejarnya selama berkuliah di Universitas Ciputra Surabaya.</span>
+                                    <span>Memperkaya pengetahuan mahasiswa mengenai korupsi dan radikalisme.</span>
                                 </Flex>
                             </Pad>    
                             <Pad>
                                 <h3>7 Competencies</h3>
                                 <Flex>
                                     <Dot src={dot} />
-                                    <span>Integrity</span>
-                                </Flex>
-                                <Flex>
-                                    <Dot src={dot} />
-                                    <span>High Sense of Achievement</span>
-                                </Flex>
-                                <Flex>
-                                    <Dot src={dot} />
                                     <span>Long Life Learning</span>
-                                </Flex>
-                                <Flex>
-                                    <Dot src={dot} />
-                                    <span>Opportunity Creation</span>
-                                </Flex>
-                                <Flex>
-                                    <Dot src={dot} />
-                                    <span>Creativity & Innovation</span>
-                                </Flex>
-                                <Flex>
-                                    <Dot src={dot} />
-                                    <span>Calculated Risk Taking</span>
                                 </Flex>
                             </Pad>  
                                                   
@@ -650,43 +629,43 @@ const Schedule = () => {
                             <Table>
                                 <tbody>
                                 <tr>
-                                    <td>15.00 - 16.00 </td>
+                                    <td>06.00 - 07.00</td>
                                     <td>Registrasi Trainee</td>
                                 </tr>
                                 <tr>
-                                    <td>16.00 - 16.30 </td>
-                                    <td>Persiapan Sidang Senat</td>
+                                    <td>07.00 - 07.30</td>
+                                    <td>Briefing Pagi</td>
                                 </tr>
                                 <tr>
-                                    <td>16.30 - 18.00 </td>
-                                    <td>Sidang Senat</td>
+                                    <td>07.30 - 07.45</td>
+                                    <td>Ice Breaking</td>
                                 </tr>
                                 <tr>
-                                    <td>18.00 - 19.30 </td>
-                                    <td>ISHOMA</td>
+                                    <td>07.45 - 08.00</td>
+                                    <td>Sambutan</td>
                                 </tr>
                                 <tr>
-                                    <td>19.30 - 19.44 </td>
-                                    <td>Opening Closing O'Week</td>
+                                    <td>08.00 - 09.15 </td>
+                                    <td>Seminar Sesi 1 : Becoming a True Indonesian</td>
                                 </tr>
                                 <tr>
-                                    <td>19.44 - 20.36 </td>
-                                    <td>Awarding, All Star, Mr and Mrs O'Week</td>
+                                    <td>09.15 - 09.35</td>
+                                    <td>BREAK</td>
                                 </tr>
                                 <tr>
-                                    <td>20.36 - 20.41 </td>
-                                    <td>Performance by UKM</td>
+                                    <td>09.35 - 09.50</td>
+                                    <td>Performance</td>
                                 </tr>
                                 <tr>
-                                    <td>20.41 - 20.58 </td>
-                                    <td>Flashmob, Lagu Panitia & Aftermovie</td>
+                                    <td>09.50 - 10.00</td>
+                                    <td>Ice Breaking</td>
                                 </tr>
                                 <tr>
-                                    <td>20.58 - 21.58 </td>
-                                    <td>External Performance</td>
+                                    <td>10.00 - 11.15</td>
+                                    <td>Seminar Sesi 2 : Creating Youthpreneur in Digital Era</td>
                                 </tr>
                                 <tr>
-                                    <td>21.58 - 22.08 </td>
+                                    <td>11.15 - 11.30</td>
                                     <td>Closing</td>
                                 </tr>
                                 </tbody>
@@ -698,8 +677,12 @@ const Schedule = () => {
                                 </Flex> 
                                 <Flex>
                                     <IconCenter><img src={location} /></IconCenter>                                       
-                                    <BoldSpan>Palimanan Resto & Cafe</BoldSpan>
-                                </Flex>                     
+                                    <BoldSpan>Ciputra World Exhibition Hall</BoldSpan>
+                                </Flex>      
+                                <Flex>
+                                    <IconCenter><img src={dresscode} /></IconCenter>                                       
+                                    <BoldSpan>Baju batik, celana panjang kain hitam, sepatu sneakers</BoldSpan>
+                                </Flex>                 
                             </Pad> 
                         </Rundown>
                     </Isi>
@@ -707,7 +690,7 @@ const Schedule = () => {
                     <div className={toggleState === 6 ? "maps active-maps" : "maps"}>
                         <Isi>
                         <Day>
-                            <h2>"Another Step to Luminosity"</h2>
+                            <h2>Selling Day</h2>
                             <Pad>
                                 <h3>Tujuan Day</h3>
                                 <Flex>
@@ -802,7 +785,11 @@ const Schedule = () => {
                                 <Flex>
                                     <IconCenter><img src={location} /></IconCenter>                                       
                                     <BoldSpan>Atrium Ciputra World Mall Surabaya</BoldSpan>
-                                </Flex>                     
+                                </Flex>  
+                                <Flex>
+                                    <IconCenter><img src={dresscode} /></IconCenter>                                       
+                                    <BoldSpan>Baju O-Week, celana panjang (gelap tidak sobek), dan bersepatu hitam</BoldSpan>
+                                </Flex>                 
                             </Pad>
                         </Rundown>
                     </Isi>
@@ -810,7 +797,7 @@ const Schedule = () => {
                     <div className={toggleState === 7 ? "maps active-maps" : "maps"}>
                         <Isi>
                         <Day>
-                            <h2>"Unaccomplished Journey"</h2>
+                            <h2>Closing</h2>
                             <Pad>
                                 <h3>Tujuan Sidang Senat</h3>
                                 <Flex>
@@ -929,11 +916,22 @@ const Schedule = () => {
                                     <IconCenter><img src={location} /></IconCenter>                                       
                                     <BoldSpan>Palimanan Resto & Cafe</BoldSpan>
                                 </Flex>                     
+                                <Flex>
+                                    <IconCenter><img src={dresscode} /></IconCenter>                                       
+                                    <BoldSpan>Kemeja putih, jas hitam, rok hitam,flat shoes (cewek), celana panjang hitam kain,sepatu hitam formal (cowok)</BoldSpan>
+                                </Flex>                     
+                            </Pad>
+                            <Pad>                                
+                                <Link to="/mobilisasi">
+                                    <ClosingDetail>Mobilisasi Trainee</ClosingDetail>
+                                </Link>
+                                <Link to="/ketentuanclosing">
+                                    <ClosingDetail>Ketentuan Closing</ClosingDetail>
+                                </Link>                                
                             </Pad>
                         </Rundown>
                     </Isi>
-                    </div> 
-                                       
+                    </div>                                        
                 </Content>
             </Container>
             <Topeng src={topeng} 

@@ -73,3 +73,7 @@ tr:first-child {
 .active-maps {
   display: block;
 }
+
+.active-arrow {
+  transform: rotate(180deg);
+}

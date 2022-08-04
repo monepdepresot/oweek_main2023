@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-import maps from '../img/maps.svg';
-import instagram from '../img/instagram.svg';
-import spotify from '../img/spotify.svg';
-import web from '../img/web.svg';
+import maps from '../img/mapsblack.svg';
+import instagram from '../img/instagramblack.svg';
+import spotify from '../img/spotifyblack.svg';
+import web from '../img/webblack.svg';
 
 const Icons = styled.div`
 display: flex;
@@ -25,7 +25,7 @@ z-index:2;
 const Line = styled(motion.span)`
 width: 2px;
 height: 7rem;
-background-color: white;
+background-color: black;
 `
 
 const Button = styled.button`
@@ -35,7 +35,7 @@ background: none;
 cursor: pointer;
 `
 
-const SocialIcons = ({setShowMapsModal, setShowSpotifyModal} ) => {
+const SocialIcons2 = ({setShowMapsModal, setShowSpotifyModal} ) => {
     return (
         <Icons>
             <motion.div
@@ -92,4 +92,4 @@ const SocialIcons = ({setShowMapsModal, setShowSpotifyModal} ) => {
     )
 }
 
-export default SocialIcons
+export default SocialIcons2

@@ -53,17 +53,19 @@ align-items: end;
 `
 
 const Text = styled.div`
-font-size: calc(1rem + 1.5vw);
 color: white;
 padding: 2rem;
 
 display: flex;
 flex-direction: column;
-// justify-content: space-evenly;
 
-&>*:last-child{
-    color: white;
-    font-size: calc(0.5rem + 1.5vw);
+h1 {
+    font-size: 100px;
+}
+
+span {
+    font-size: 20px;
+    font-weight: 600;
 }
 `
 
@@ -86,11 +88,11 @@ const Intro = () => {
                     animate={{opacity: 1}}
                     transition={{ duration:1, delay:1 }}
                     >WELCOME TRAINEE!</motion.h1>
-                    <motion.h3
+                    <motion.span
                     initial={{opacity:0}}
                     animate={{opacity: 1}}
                     transition={{ duration:1, delay:1 }}
-                    >Don't forget to check your email daily</motion.h3>
+                    >Don't forget to check your email daily</motion.span>
                 </Text>
             </SubBox>
             <SubBoxx>

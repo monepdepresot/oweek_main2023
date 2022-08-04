@@ -166,7 +166,7 @@ const Home = () => {
             <MapsModal showMapsModal={showMapsModal} setShowMapsModal={setShowMapsModal} />
             <SpotifyModal showSpotifyModal={showSpotifyModal} setShowSpotifyModal={setShowSpotifyModal} />
             <SocialIcons setShowMapsModal={setShowMapsModal} setShowSpotifyModal={setShowSpotifyModal} />
-            
+
             <Container>    
                 <TaskModal showTaskModal={showTaskModal} setShowTaskModal={setShowTaskModal} />
 
