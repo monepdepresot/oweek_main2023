@@ -2,7 +2,6 @@ import logohorizon from '../../img/logo/horizonwhite.svg';
 import oweek from '../../img/logo/oweekwhite.svg';
 import uc from '../../img/logo/ucwhite.png';
 import bg from '../../img/bg/Schedulebg.svg';
-import topeng from '../../img/topeng/topeng4.svg';
 import dot from '../../img/dot2.svg';
 
 import styledComponents from "styled-components";
@@ -55,13 +54,6 @@ padding: 3vw 15vw;
 display: flex;
 flex-direction: column;
 justify-content: center;
-`
-
-const Topeng = styledComponents(motion.img)`
-width: 15vw;
-position: fixed;
-right: -5vw;
-top: 50%;
 `
 
 const Faq = styledComponents.div`
@@ -212,11 +204,6 @@ const AllStar = () => {
                 </Content>
 
             </Container>
-            <Topeng src={topeng} 
-            initial={{ x: 200 }}
-            animate={{ x: 0 }}
-            transition={{ duration: 0.5, delay: 1.5 }}
-            />
         </MainContainer>
      );
 }

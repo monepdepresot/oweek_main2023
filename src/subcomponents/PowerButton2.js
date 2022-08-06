@@ -30,13 +30,18 @@ cursor: pointer;
     text-decoration: none;
     color: inherit;
 }
+
+@media only screen and (max-width: 768px) {
+    width: 2rem;
+    height: 2rem;
+}
 `
 
 const PowerButton2 = () => {
     return (
         <Power>
         <NavLink to="/">
-        <PowerBtn width={32} height={32} />
+        <PowerBtn className='PowerButton' />
         </NavLink>
         </Power>
     )

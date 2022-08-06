@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import styledComponents from 'styled-components';
 import bg from '../img/bg/Rulesbg.svg';
@@ -70,7 +69,6 @@ const SpotifyModal = ({ showSpotifyModal, setShowSpotifyModal }) => {
            variants={modal}
            >
             <Exit>X</Exit>
-              {/* <iframe src="https://open.spotify.com/embed/playlist/5CE3Xs3WCUPSK1EZSN5UqO" width="100%" height="100%" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe> */}
               <iframe src="https://open.spotify.com/embed/playlist/6u4dxGNWAAS4NgsBm2KLrZ?utm_source=generator" width="100%" height="100%" frameBorder="0"></iframe>
            </Modal>
           </Backdrop>

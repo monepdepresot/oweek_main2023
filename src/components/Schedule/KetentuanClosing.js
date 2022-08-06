@@ -2,7 +2,6 @@ import logohorizon from '../../img/logo/horizonwhite.svg';
 import oweek from '../../img/logo/oweekwhite.svg';
 import uc from '../../img/logo/ucwhite.png';
 import bg from '../../img/bg/Schedulebg.svg';
-import topeng from '../../img/topeng/topeng4.svg';
 import dot from '../../img/dot2.svg';
 
 import styledComponents from "styled-components";
@@ -37,17 +36,30 @@ padding: 2rem;
 `
 
 const Rightlogo = styledComponents.div`
-position: fixed;
+position: absolute;
 right: calc(2rem);
 z-index: 1;
 display: flex;
 gap: 10px;
+
+@media only screen and (max-width: 768px) {
+    gap: 5px;
+    right: 1rem;
+    top: 1rem;
+}
 `
 
 const Leftlogo = styledComponents.div`
-position: fixed;
+position: absolute;
 left: calc(2rem);
 z-index: 1;
+cursor: pointer;
+
+@media only screen and (max-width: 768px) {
+    gap: 5px;
+    left: 1rem;
+    top: 1rem;
+}
 `
 
 const Content = styledComponents.div`
@@ -55,13 +67,10 @@ padding: 3vw 15vw;
 display: flex;
 flex-direction: column;
 justify-content: center;
-`
 
-const Topeng = styledComponents(motion.img)`
-width: 15vw;
-position: fixed;
-right: -5vw;
-top: 50%;
+@media only screen and (max-width: 768px) {
+    padding: 5vh 8vw;
+}
 `
 
 const Faq = styledComponents.div`
@@ -99,14 +108,14 @@ const KetentuanClosing = () => {
                 <PowerButton3 />
                 
                 <Leftlogo>
-                    <Link to="/">
-                        <img src={logohorizon} alt="" width="120" /> 
+                    <Link to="/schedule">
+                        <img src={logohorizon} alt="" className='horizonlogo' /> 
                     </Link>                                    
                 </Leftlogo>
 
                 <Rightlogo>
-                    <img src={oweek} alt="" width="55" /> 
-                    <img src={uc} alt="" width="55" />                    
+                    <img src={oweek} alt="" className='rightlogo' /> 
+                    <img src={uc} alt="" className='rightlogo' />                    
                 </Rightlogo>
 
                 <Content>
@@ -157,11 +166,6 @@ const KetentuanClosing = () => {
                 </Content>
 
             </Container>
-            <Topeng src={topeng} 
-            initial={{ x: 200 }}
-            animate={{ x: 0 }}
-            transition={{ duration: 0.5, delay: 1.5 }}
-            />
         </MainContainer>
      );
 }

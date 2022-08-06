@@ -20,6 +20,10 @@ z-index:2;
 &>*:not(:last-child){
     margin: 0.5rem 0;
 }
+
+@media only screen and (max-width: 768px) {
+    left: 1rem;
+}
 `
 
 const Line = styled(motion.span)`

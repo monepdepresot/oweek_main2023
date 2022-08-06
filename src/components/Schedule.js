@@ -41,17 +41,30 @@ padding: 2rem;
 `
 
 const Rightlogo = styledComponents.div`
-position: fixed;
+position: absolute;
 right: calc(2rem);
 z-index: 1;
 display: flex;
 gap: 10px;
+
+@media only screen and (max-width: 768px) {
+    gap: 5px;
+    right: 1rem;
+    top: 1rem;
+}
 `
 
 const Leftlogo = styledComponents.div`
-position: fixed;
+position: absolute;
 left: calc(2rem);
 z-index: 1;
+cursor: pointer;
+
+@media only screen and (max-width: 768px) {
+    gap: 5px;
+    left: 1rem;
+    top: 1rem;
+}
 `
 
 const Content = styledComponents.div`
@@ -59,13 +72,22 @@ padding: 3vw 15vw;
 display: flex;
 flex-direction: column;
 justify-content: center;
+
+@media only screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 5vh 7vw;
+}
+
+@media only screen and (max-width: 1280px) {
+    padding: 5vh 7vw;
+}
 `
 
 const Topeng = styledComponents(motion.img)`
 width: 15vw;
 position: fixed;
 right: -5vw;
-top: 50%;
+top: 55%;
 `
 
 const Menu = styledComponents.div`
@@ -79,6 +101,10 @@ const Isi = styledComponents.div`
 display: flex;
 justify-content: center;
 gap: 30px;
+
+@media only screen and (max-width: 768px) {
+    flex-direction: column;
+}
 `
 
 const Day = styledComponents(motion.div)`
@@ -144,6 +170,11 @@ const ClosingDetail = styledComponents.h3`
 }
 `
 
+const Subtitle = styledComponents.h3`
+text-align: left;
+padding: 0px 20px;
+`
+
 const Schedule = () => {
 
     const [showMapsModal, setShowMapsModal] = useState(false);
@@ -171,13 +202,13 @@ const Schedule = () => {
                 
                 <Leftlogo>
                     <Link to="/">
-                        <img src={logohorizon} alt="" width="120" /> 
+                        <img src={logohorizon} alt="" className='horizonlogo' /> 
                     </Link>                                    
                 </Leftlogo>
 
                 <Rightlogo>
-                    <img src={oweek} alt="" width="55" /> 
-                    <img src={uc} alt="" width="55" />                    
+                    <img src={oweek} alt="" className='rightlogo' /> 
+                    <img src={uc} alt="" className='rightlogo' />                    
                 </Rightlogo>
 
                 <Content>
@@ -204,6 +235,10 @@ const Schedule = () => {
                                 <h2>Pra UC Day</h2>  
                                 <Pad>
                                     <h3>Platform: Live streaming youtube</h3>
+                                    <Flex>
+                                        <IconCenter><img src={calendar} /></IconCenter>                                       
+                                        <BoldSpan>25 Agustus 2022</BoldSpan>
+                                    </Flex> 
                                 </Pad>                                                      
                             </Day>
                             <Rundown
@@ -275,7 +310,7 @@ const Schedule = () => {
                                 </Flex>
                             </Pad>    
                             <Pad>
-                                <h3>7 Competences</h3>
+                                <h3>7 Competencies</h3>
                                 <Flex>
                                     <Dot src={dot} />
                                     <span>Integrity</span>
@@ -305,9 +340,11 @@ const Schedule = () => {
                         </Day>
                         <Rundown>
                             <h2>Rundown</h2>
+
+                            <Subtitle>Opening</Subtitle>
                             <Table>
                                 <tbody>
-                                <h3>Opening</h3>
+                                
                                 <tr>
                                     <td>06.00 - 07.00</td>
                                     <td>Registrasi Trainee</td>
@@ -340,9 +377,14 @@ const Schedule = () => {
                                     <td>09:00 - 09:20</td>
                                     <td>Istirahat (Snack Time)</td>
                                 </tr>
+                                </tbody>
+                            </Table>
 
-                                <h3>UC Day</h3>
+                            <Subtitle>UC Day</Subtitle>
 
+                            <Table>
+                                <tbody>
+                            
                                 <tr>
                                     <td>09.20 - 10.05</td>
                                     <td>Mobilisasi Trainee</td>
@@ -426,7 +468,7 @@ const Schedule = () => {
                             </Pad>  
                             <Pad>                                
                                 <Link to="/prodiday1">
-                                    <ClosingDetail>Ketentuan Prodi Day 1</ClosingDetail>
+                                    <ClosingDetail>Perlengkapan Prodi Day 1</ClosingDetail>
                                 </Link>                                
                             </Pad>                     
                         </Day>
@@ -529,7 +571,7 @@ const Schedule = () => {
                             </Pad>  
                             <Pad>                                
                                 <Link to="/prodiday2">
-                                    <ClosingDetail>Ketentuan Prodi Day 2</ClosingDetail>
+                                    <ClosingDetail>Perlengkapan Prodi Day 2</ClosingDetail>
                                 </Link>                                
                             </Pad>                   
                         </Day>

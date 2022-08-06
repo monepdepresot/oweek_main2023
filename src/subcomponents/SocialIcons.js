@@ -20,11 +20,15 @@ z-index:2;
 &>*:not(:last-child){
     margin: 0.5rem 0;
 }
+
+@media only screen and (max-width: 768px) {
+    left: 1rem;
+}
 `
 
 const Line = styled(motion.span)`
 width: 2px;
-height: 7rem;
+height: 12vh;
 background-color: white;
 `
 
@@ -82,7 +86,7 @@ const SocialIcons = ({setShowMapsModal, setShowSpotifyModal} ) => {
                 }
             }
             animate={{
-                height: '7rem'
+                height: '12vh'
             }}
             transition={{
                 type:'spring', duration:1, delay:0.8

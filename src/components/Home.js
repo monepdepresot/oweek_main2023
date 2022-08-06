@@ -38,6 +38,14 @@ transform: rotate(90deg) translate(-50%, -50%);
 text-decoration: none;
 z-index: 1;
 cursor: pointer;
+
+@media only screen and (max-width: 768px) {
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 1440px) {
+    
+}
 `
 
 // const Task = styledComponents(NavLink)`
@@ -55,10 +63,36 @@ const Rules = styledComponents(NavLink)`
 color: #FDFBF7;
 position: absolute;
 top: 50%;
-left: calc(1rem + 2vw);;
+left: calc(1rem + 2vw);
 transform: translate(-50%, -50%) rotate(-90deg);
 text-decoration: none;
 z-index: 1;
+
+
+@media only screen and (max-width: 768px) {
+    font-size: 12px;
+}
+`
+
+const About = styledComponents(NavLink)`
+color: #FDFBF7;
+text-decoration: none;
+z-index: 1;
+
+
+@media only screen and (max-width: 768px) {
+    font-size: 12px;
+}
+`
+
+const Schedule = styledComponents(NavLink)`
+color: #FDFBF7;
+text-decoration: none;
+z-index: 1;
+
+@media only screen and (max-width: 768px) {
+    font-size: 12px;
+}
 `
 
 const BottomBar = styledComponents.div`
@@ -72,22 +106,10 @@ display: flex;
 justify-content: space-evenly;
 `
 
-const About = styledComponents(NavLink)`
-color: #FDFBF7;
-text-decoration: none;
-z-index: 1;
-`
-
-const Schedule = styledComponents(NavLink)`
-color: #FDFBF7;
-text-decoration: none;
-z-index: 1;
-`
-
 const Center = styledComponents.button`
 position: absolute;
-top: ${props => props.click ? '87%' :'50%'  };
-left: ${props => props.click ? '95%' :'50%'  };
+top: ${props => props.click ? '85%' :'50%'  };
+left: ${props => props.click ? '92%' :'50%'  };
 transform: translate(-50%,-50%);
 border: none;
 outline: none;
@@ -114,6 +136,12 @@ right: calc(2rem);
 z-index: 1;
 display: flex;
 gap: 10px;
+
+@media only screen and (max-width: 768px) {
+    gap: 5px;
+    right: 1rem;
+    top: 1rem;
+}
 `
 
 const Leftlogo = styledComponents.div`
@@ -121,6 +149,12 @@ position: absolute;
 left: calc(2rem);
 z-index: 1;
 cursor: pointer;
+
+@media only screen and (max-width: 768px) {
+    gap: 5px;
+    left: 1rem;
+    top: 1rem;
+}
 `
 
 const RedDiv = styledComponents.div`
@@ -174,17 +208,17 @@ const Home = () => {
                 <YellowDiv click={click} /> 
 
                 <Center click={click}>
-                    <img src={H} alt="" onClick={()=> handleClick()} width={click ? 120 : 220} height={click ? 120 : 220} />                    
+                    <img src={H} alt="" onClick={()=> handleClick()} className={click ? 'HwidthClick' : 'Hwidth'} height={click ? 'HwidthClick' : 'Hwidth'} />
                     <span>click here</span>
                 </Center>
 
                 <Leftlogo onClick={()=> handleClick()}>
-                    <img src={logohorizon} alt="" width="120" />                                    
+                    <img src={logohorizon} alt="" className='horizonlogo' />                                    
                 </Leftlogo>
 
                 <Rightlogo>
-                    <img src={oweek} alt="" width="55" /> 
-                    <img src={uc} alt="" width="55" />                    
+                    <img src={oweek} alt="" className='rightlogo' /> 
+                    <img src={uc} alt="" className='rightlogo' />                    
                 </Rightlogo>
 
                 <Task onClick={() => setShowTaskModal(true)}>

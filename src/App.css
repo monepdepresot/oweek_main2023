@@ -44,6 +44,7 @@ p, span, a, td, ul, li {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   color: #FDFBF7;
+  line-height: 125%;
 }
 
 table, ul, li {
@@ -60,6 +61,13 @@ tr:first-child {
 }
 
 .active-tabs {
+  background-image: url(./img/bgtext2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.active-tabs2 {
   background-image: url(./img/bgtext.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,4 +84,62 @@ tr:first-child {
 
 .active-arrow {
   transform: rotate(180deg);
+}
+
+.Hwidth {
+  width: 220px;
+  height: 220px;
+}
+
+.HwidthClick {
+  width: 120px;
+  height: 120px;
+}
+
+.PowerButton {
+  width: 32px;
+  height: 32px;
+  margin-top: 2px;
+}
+
+.horizonlogo {
+  width: 120px;
+}
+
+.rightlogo {
+  width: 55px;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    text-align: center;
+  }
+
+  p, span, a, td, ul, li {
+    font-size: 14px;
+  } 
+
+  .Hwidth {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .HwidthClick {
+    width: 75px;
+    height: 75px;
+  }
+
+  .PowerButton {
+    width: 28px;
+    height: 28px;
+    margin-top: 4px;
+  }
+
+  .horizonlogo {
+    width: 80px;
+  }
+
+  .rightlogo {
+    width: 40px;
+  }
 }

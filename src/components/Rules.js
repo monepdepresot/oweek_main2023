@@ -2,6 +2,7 @@ import logohorizon from '../img/logo/horizonwhite.svg';
 import oweek from '../img/logo/oweekwhite.svg';
 import uc from '../img/logo/ucwhite.png';
 import bg from '../img/bg/Rulesbgmobile.svg';
+import bgmobile from '../img/bg/Rulesbgmobile.svg';
 import topeng from '../img/topeng/topeng1.svg';
 import dot from '../img/dot1.svg';
 import dot2 from '../img/dot3.svg';
@@ -26,8 +27,10 @@ min-height: 100vh;
 overflow:hidden;
 position: relative;
 
-h1 {
-    font-size: 3em;
+@media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 18px;
+    }
 }
 `
 
@@ -41,12 +44,23 @@ right: calc(2rem);
 z-index: 1;
 display: flex;
 gap: 10px;
+
+@media only screen and (max-width: 768px) {
+    gap: 5px;
+    right: 1rem;
+    top: 1rem;
+}
 `
 
 const Leftlogo = styledComponents.div`
 position: absolute;
 left: calc(2rem);
 z-index: 1;
+
+@media only screen and (max-width: 768px) {
+    left: 1rem;
+    top: 1rem;
+}
 `
 
 const Content = styledComponents.div`
@@ -54,6 +68,15 @@ padding: 3vw 15vw;
 display: flex;
 justify-content: center;
 gap: 30px;
+
+@media only screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 5vh 7vw;
+}
+
+@media only screen and (max-width: 1280px) {
+    padding: 5vh 7vw;
+}
 `
 
 const Topeng = styledComponents(motion.img)`
@@ -133,13 +156,13 @@ const Rules = () => {
 
                 <Leftlogo>
                     <Link to="/">
-                        <img src={logohorizon} alt="" width="120" /> 
+                        <img src={logohorizon} alt="" className='horizonlogo' /> 
                     </Link>                                    
                 </Leftlogo>
 
                 <Rightlogo>
-                    <img src={oweek} alt="" width="55" /> 
-                    <img src={uc} alt="" width="55" />                    
+                    <img src={oweek} alt="" className='rightlogo' /> 
+                    <img src={uc} alt="" className='rightlogo' />                    
                 </Rightlogo>
 
                 <Content>

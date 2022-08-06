@@ -27,6 +27,11 @@ background: linear-gradient(
     border-right: 2px solid white;
 
     z-index:1;
+
+
+@media only screen and (max-width: 768px) {
+    flex-direction: column;
+}
 `
 const SubBox = styled.div`
 width: 50%;
@@ -54,10 +59,11 @@ align-items: end;
 
 const Text = styled.div`
 color: white;
-padding: 2rem;
+padding: 1rem;
 
 display: flex;
 flex-direction: column;
+align-items: center;
 
 h1 {
     font-size: 100px;
@@ -66,6 +72,28 @@ h1 {
 span {
     font-size: 20px;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+    }
+    
+    span {
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    h1 {
+        font-size: 75px;
+    }
+    
+    span {
+        font-size: 18px;
+        font-weight: 600;
+    }
 }
 `
 
@@ -83,6 +111,7 @@ const Intro = () => {
         >
             <SubBox>
                 <Text>
+                    <div>
                     <motion.h1
                     initial={{opacity:0}}
                     animate={{opacity: 1}}
@@ -93,6 +122,7 @@ const Intro = () => {
                     animate={{opacity: 1}}
                     transition={{ duration:1, delay:1 }}
                     >Don't forget to check your email daily</motion.span>
+                    </div>
                 </Text>
             </SubBox>
             <SubBoxx>

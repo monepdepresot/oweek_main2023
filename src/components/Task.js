@@ -3,6 +3,7 @@ import oweek from '../img/logo/oweekblack.svg';
 import uc from '../img/logo/ucblack.png';
 import bg from '../img/bg/Taskbg.svg';
 import topeng from '../img/topeng/topeng3.svg';
+import title from '../img/title/Task.svg';
 
 import styledComponents from "styled-components";
 import {motion} from 'framer-motion';
@@ -62,6 +63,14 @@ right: 5px;
 bottom: 5px;
 `
 
+const Title = styledComponents.div`
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 30px 0px;
+padding-right: 10px;
+`
+
 const Task = () => {
 
     const [showMapsModal, setShowMapsModal] = useState(false);
@@ -94,7 +103,9 @@ const Task = () => {
                 </Rightlogo>
 
                 <Content>
-                    <h1>TASK</h1>
+                    <Title>
+                        <img src={title} alt="" width="175" />
+                    </Title>
                 </Content>
             </Container>
             <Topeng src={topeng} 
