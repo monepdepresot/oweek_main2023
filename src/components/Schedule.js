@@ -31,7 +31,7 @@ h1 {
     font-size: 3em;
 }
 
-h2 {
+h2, select {
     font-size: 1.3em;
 }
 `
@@ -95,6 +95,20 @@ display: flex;
 justify-content: center;
 gap: 30px;
 margin-bottom: 10px;
+
+@media only screen and (max-width: 1024px) {
+    gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    display: none;
+}
+`
+
+const Menu2 = styledComponents.div`
+@media only screen and (min-width: 769px) {
+  display: none;
+}
 `
 
 const Isi = styledComponents.div`
@@ -119,6 +133,10 @@ border: 1px solid white;
 
 const Table = styledComponents.table`
 padding: 5px 15px;
+
+@media only screen and (max-width: 768px) {
+    padding: 5px 5px;
+}
 `
 
 const Pad = styledComponents.div`
@@ -186,6 +204,10 @@ const Schedule = () => {
         setToggleState(index);
     }
 
+    const handleChange = event => {
+        setToggleState(parseInt(event.target.value));
+    }
+
     return ( 
         <MainContainer
         initial={{ opacity: 0 }}
@@ -225,6 +247,20 @@ const Schedule = () => {
                         <Tabs className={toggleState === 6 ? "active-tabs" : ""} onClick={() => toggleTab(6)}>Day 5</Tabs>
                         <Tabs className={toggleState === 7 ? "active-tabs" : ""} onClick={() => toggleTab(7)}>Day 6</Tabs>
                     </Menu>
+                    <Menu2>
+                        <select
+                            onChange={handleChange}
+                        >
+                            <option value="1">Pra UC Day</option>
+                            <option value="2">Day 1</option>
+                            <option value="3">Day 2</option>
+                            <option value="4">Day 3</option>
+                            <option value="5">Day 4</option>
+                            <option value="6">Day 5</option>
+                            <option value="7">Day 6</option>
+                        </select>
+                    </Menu2>
+
                     <div className={toggleState === 1 ? "maps active-maps" : "maps"}>
                         <Isi>
                             <Day

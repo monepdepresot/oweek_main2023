@@ -9,7 +9,7 @@ left: 50%;
 top: 50%;
 transform: translate(-50%, -50%);
 
-width: 65vw;
+width:65vw;
 height:55vh;
 display: flex;
 
@@ -31,8 +31,11 @@ background: linear-gradient(
 
 @media only screen and (max-width: 768px) {
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;   
 }
 `
+
 const SubBox = styled.div`
 width: 50%;
 position: relative;
@@ -47,6 +50,10 @@ justify-content: center;
     width: 100%;
     height: auto;
 }
+
+@media only screen and (max-width: 768px) {
+    width: 100%;
+}
 `
 
 const SubBoxx = styled.div`
@@ -55,6 +62,10 @@ position: relative;
 display: flex;
 justify-content: center;
 align-items: end;
+
+@media only screen and (max-width: 768px) {
+    width: 100%;
+}
 `
 
 const Text = styled.div`
@@ -80,9 +91,11 @@ span {
     }
     
     span {
-        font-size: 14px;
+        font-size: 10px;
         font-weight: 600;
     }
+
+    padding: 0rem;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -100,13 +113,25 @@ span {
 const Chara = styled.img`
 height: 65vh;
 margin-bottom: -3px;
+
+@media only screen and (max-width: 768px) {
+    height: 25vh;
+    margin-bottom: -2px;
+}
+`
+
+const EmailSpan = styled(motion.span)`
+@media only screen and (max-width: 768px) {
+    padding: 0px 5px;
+}
 `
 
 const Intro = () => {
+
     return (
         <Box
         initial={{height:0}}
-        animate={{height: '55vh'}}
+        animate={window.matchMedia("(min-width: 768px)").matches ? {height: '55vh'} : {height: '75vh'}}
         transition={{ type: 'spring', duration:2, delay:1 }}
         >
             <SubBox>
@@ -117,11 +142,11 @@ const Intro = () => {
                     animate={{opacity: 1}}
                     transition={{ duration:1, delay:1 }}
                     >WELCOME TRAINEE!</motion.h1>
-                    <motion.span
+                    <EmailSpan
                     initial={{opacity:0}}
                     animate={{opacity: 1}}
                     transition={{ duration:1, delay:1 }}
-                    >Don't forget to check your email daily</motion.span>
+                    >Don't forget to check your email daily</EmailSpan>
                     </div>
                 </Text>
             </SubBox>
