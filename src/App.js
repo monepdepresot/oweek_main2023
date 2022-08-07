@@ -26,12 +26,12 @@ function App() {
             <Route path='/' element={<Home />} />              
             <Route path='/rules' element={<Rules />} />              
             <Route path='/schedule' element={<Schedule />} />              
-            <Route path='/task' element={<Task />} />     
+            {/* <Route path='/task' element={<Task />} />      */}
             <Route path='/about' element={<About />} />    
 
             <Route path='*' element={<NotFound />} /> 
 
-            <Route path='/allstar' element={<AllStar />} /> 
+            {/* <Route path='/allstar' element={<AllStar />} />  */}
             <Route path='/mobilisasi' element={<Mobilisasi />} /> 
             <Route path='/prodiday1' element={<ProdiDay1 />} /> 
             <Route path='/prodiday2' element={<ProdiDay2 />} /> 

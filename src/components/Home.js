@@ -42,10 +42,6 @@ cursor: pointer;
 @media only screen and (max-width: 768px) {
     font-size: 12px;
 }
-
-@media only screen and (max-width: 1440px) {
-    
-}
 `
 
 // const Task = styledComponents(NavLink)`
@@ -67,7 +63,6 @@ left: calc(1rem + 2vw);
 transform: translate(-50%, -50%) rotate(-90deg);
 text-decoration: none;
 z-index: 1;
-
 
 @media only screen and (max-width: 768px) {
     font-size: 12px;

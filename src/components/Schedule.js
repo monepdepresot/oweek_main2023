@@ -2,6 +2,7 @@ import logohorizon from '../img/logo/horizonwhite.svg';
 import oweek from '../img/logo/oweekwhite.svg';
 import uc from '../img/logo/ucwhite.png';
 import bg from '../img/bg/Schedulebg.svg';
+import bgmobile from '../img/bg/Schedulebgmobile.svg';
 import topeng from '../img/topeng/topeng4.svg';
 import dot from '../img/dot2.svg';
 import location from '../img/location.svg';
@@ -33,6 +34,10 @@ h1 {
 
 h2, select {
     font-size: 1.3em;
+}
+
+@media only screen and (max-width: 768px) {
+    background-image: url(${bgmobile});
 }
 `
 

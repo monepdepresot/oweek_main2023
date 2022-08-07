@@ -28,11 +28,19 @@ background: linear-gradient(
 
     z-index:1;
 
+@media only screen and (max-width: 1024px) {
+    width: 75vw;  
+}
 
 @media only screen and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;   
+    justify-content: space-between; 
+    width: 65vw;   
+}
+
+span {
+    font-size: 5px;
 }
 `
 
@@ -41,15 +49,7 @@ width: 50%;
 position: relative;
 display: flex;
 justify-content: center;
-
-.pic{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%,0%);
-    width: 100%;
-    height: auto;
-}
+align-items: center;
 
 @media only screen and (max-width: 768px) {
     width: 100%;
@@ -85,19 +85,6 @@ span {
     font-weight: 600;
 }
 
-@media only screen and (max-width: 768px) {
-    h1 {
-        font-size: 50px;
-    }
-    
-    span {
-        font-size: 10px;
-        font-weight: 600;
-    }
-
-    padding: 0rem;
-}
-
 @media only screen and (max-width: 1280px) {
     h1 {
         font-size: 75px;
@@ -107,6 +94,19 @@ span {
         font-size: 18px;
         font-weight: 600;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 70px;
+    }
+    
+    span {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    padding: 0 15px;
 }
 `
 
@@ -121,8 +121,10 @@ margin-bottom: -3px;
 `
 
 const EmailSpan = styled(motion.span)`
+padding-bottom: 50.25px;
+
 @media only screen and (max-width: 768px) {
-    padding: 0px 5px;
+    padding-bottom: 0px;
 }
 `
 
@@ -136,7 +138,7 @@ const Intro = () => {
         >
             <SubBox>
                 <Text>
-                    <div>
+                    
                     <motion.h1
                     initial={{opacity:0}}
                     animate={{opacity: 1}}
@@ -147,7 +149,7 @@ const Intro = () => {
                     animate={{opacity: 1}}
                     transition={{ duration:1, delay:1 }}
                     >Don't forget to check your email daily</EmailSpan>
-                    </div>
+                    
                 </Text>
             </SubBox>
             <SubBoxx>

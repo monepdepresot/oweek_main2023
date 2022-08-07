@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styledComponents from 'styled-components';
+import bg from '../img/bg/Rulesbg.svg';
 
 const backdrop = {
     visible: { opacity: 1 },
@@ -36,12 +37,16 @@ max-width: 60vw;
 height: 50vh;
 margin: 0 auto;
 padding: 15px;
-background: #00B984;
 border-radius: 10px;
 text-align: center;
 display: flex;
 align-items: center;
 justify-content: center;
+
+background-image: url(${bg});
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
 `
 
 const Exit = styledComponents.h2`
