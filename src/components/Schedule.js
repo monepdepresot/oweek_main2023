@@ -150,9 +150,23 @@ text-align: left;
 margin-bottom: 10px;
 `
 
+const Padd = styledComponents.div`
+padding: 5px 15px;
+text-align: left;
+margin-top: 20px;
+margin-bottom: 10px;
+`
+
 const Flex = styledComponents.div`
 display: flex;
 align-items: center;
+gap: 10px;
+margin-bottom: 7px;
+`
+
+const Flexx = styledComponents.div`
+display: flex;
+align-items: flex-start;
 gap: 10px;
 margin-bottom: 7px;
 `
@@ -377,7 +391,45 @@ const Schedule = () => {
                                     <span>Calculated Risk Taking</span>
                                 </Flex>
                             </Pad>  
-                                                  
+                            <Pad>
+                                <h3>Keperluan</h3>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Wajib menggunakan masker minimal 3 ply dan disarankan menggunakan masker KF94 atau KN95,</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa buku tulis untuk mencatat.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa pulpen.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa name tag.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa trainee O-Week card.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa tumblr minum minimal 500ml.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa masker cadangan dua lembar.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa hand sanitizer (dibebaskan).</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Disarankan membawa tissue kering dan tissue basah.</span>
+                                </Flex>
+                            </Pad>                    
                         </Day>
                         <Rundown>
                             <h2>Rundown</h2>
@@ -460,7 +512,7 @@ const Schedule = () => {
                                 </tr>
                                 </tbody>
                             </Table>
-                            <Pad>
+                            <Padd>
                                 <Flex>
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
                                     <BoldSpan>29 Agustus 2022</BoldSpan>
@@ -469,11 +521,11 @@ const Schedule = () => {
                                     <IconCenter><img src={location} /></IconCenter>                                       
                                     <BoldSpan>Mural Universitas Ciputra</BoldSpan>
                                 </Flex>                     
-                                <Flex>
+                                <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
                                     <BoldSpan>Kemeja Putih, celana jeans berwarna gelap (tidak sobek), sepatu sneakers</BoldSpan>
-                                </Flex>                     
-                            </Pad> 
+                                </Flexx>                     
+                            </Padd> 
                         </Rundown>
                     </Isi>
                     </div> 
@@ -506,7 +558,42 @@ const Schedule = () => {
                                     <Dot src={dot} />
                                     <span>Networking</span>
                                 </Flex>
-                            </Pad>  
+                            </Pad> 
+                            <Pad>
+                                <h3>Keperluan</h3>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Wajib menggunakan masker minimal 3 ply dan disarankan menggunakan masker KF94 atau KN95,</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa buku tulis untuk mencatat.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa pulpen.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa name tag.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa trainee O-Week card.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa masker cadangan dua lembar.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa hand sanitizer (dibebaskan).</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Disarankan membawa tissue kering dan tissue basah.</span>
+                                </Flex>
+                            </Pad>
                             <Pad>                                
                                 <Link to="/prodiday1">
                                     <ClosingDetail>Perlengkapan Prodi Day 1</ClosingDetail>
@@ -559,7 +646,7 @@ const Schedule = () => {
                                 </tr>
                                 </tbody>
                             </Table>
-                            <Pad>
+                            <Padd>
                                 <Flex>
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
                                     <BoldSpan>30 Agustus 2022</BoldSpan>
@@ -572,7 +659,7 @@ const Schedule = () => {
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
                                     <BoldSpan>Sesuai ketentuan prodi</BoldSpan>
                                 </Flex>           
-                            </Pad>                            
+                            </Padd>                            
                         </Rundown>
                     </Isi>
                     </div> 
@@ -610,6 +697,41 @@ const Schedule = () => {
                                     <span>Networking</span>
                                 </Flex>
                             </Pad>  
+                            <Pad>
+                                <h3>Keperluan</h3>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Wajib menggunakan masker minimal 3 ply dan disarankan menggunakan masker KF94 atau KN95,</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa buku tulis untuk mencatat.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa pulpen.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa name tag.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa trainee O-Week card.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa masker cadangan dua lembar.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa hand sanitizer (dibebaskan).</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Disarankan membawa tissue kering dan tissue basah.</span>
+                                </Flex>
+                            </Pad>
                             <Pad>                                
                                 <Link to="/prodiday2">
                                     <ClosingDetail>Perlengkapan Prodi Day 2</ClosingDetail>
@@ -658,7 +780,7 @@ const Schedule = () => {
                                 </tr>
                                 </tbody>
                             </Table>
-                            <Pad>
+                            <Padd>
                                 <Flex>
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
                                     <BoldSpan>31 Agustus 2022</BoldSpan>
@@ -671,7 +793,7 @@ const Schedule = () => {
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
                                     <BoldSpan>Sesuai ketentuan prodi</BoldSpan>
                                 </Flex>                  
-                            </Pad> 
+                            </Padd> 
                         </Rundown>
                     </Isi>
                     </div> 
@@ -705,7 +827,41 @@ const Schedule = () => {
                                     <span>Long Life Learning</span>
                                 </Flex>
                             </Pad>  
-                                                  
+                            <Pad>
+                                <h3>Keperluan</h3>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Wajib menggunakan masker minimal 3 ply dan disarankan menggunakan masker KF94 atau KN95,</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa buku tulis untuk mencatat.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa pulpen.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa name tag.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa trainee O-Week card.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa masker cadangan dua lembar.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa hand sanitizer (dibebaskan).</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Disarankan membawa tissue kering dan tissue basah.</span>
+                                </Flex>
+                            </Pad>                   
                         </Day>
                         <Rundown>
                             <h2>Rundown</h2>
@@ -753,7 +909,7 @@ const Schedule = () => {
                                 </tr>
                                 </tbody>
                             </Table>
-                            <Pad>
+                            <Padd>
                                 <Flex>
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
                                     <BoldSpan>1 September 2022</BoldSpan>
@@ -762,11 +918,11 @@ const Schedule = () => {
                                     <IconCenter><img src={location} /></IconCenter>                                       
                                     <BoldSpan>Ciputra World Exhibition Hall</BoldSpan>
                                 </Flex>      
-                                <Flex>
+                                <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
                                     <BoldSpan>Baju batik, celana panjang kain hitam, sepatu sneakers</BoldSpan>
-                                </Flex>                 
-                            </Pad> 
+                                </Flexx>                 
+                            </Padd> 
                         </Rundown>
                     </Isi>
                     </div> 
@@ -776,10 +932,6 @@ const Schedule = () => {
                             <h2>Selling Day</h2>
                             <Pad>
                                 <h3>Tujuan Day</h3>
-                                <Flex>
-                                    <Dot src={dot} />
-                                    <span>Menjadi sarana bagi mahasiswa baru Universitas Ciputra Surabaya untuk menerapkan nilai entrepreneurship secara riil melalui perencanaan ide bisnis dan implementasinya dalam kegiatan Selling Day.</span>
-                                </Flex>
                                 <Flex>
                                     <Dot src={dot} />
                                     <span>Mengasah kemampuan mahasiswa baru Universitas Ciputra Surabaya dalam menemukan dan meresponi peluang yang ditemukan serta mengelola risiko yang sudah diperhitungkan.</span>
@@ -828,7 +980,41 @@ const Schedule = () => {
                                     <span>Networking</span>
                                 </Flex>
                             </Pad> 
-                                                  
+                            <Pad>
+                                <h3>Keperluan</h3>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Wajib menggunakan masker minimal 3 ply dan disarankan menggunakan masker KF94 atau KN95,</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa buku tulis untuk mencatat.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa pulpen.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa name tag.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa trainee O-Week card.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa masker cadangan dua lembar.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa hand sanitizer (dibebaskan).</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Disarankan membawa tissue kering dan tissue basah.</span>
+                                </Flex>
+                            </Pad>                    
                         </Day>
                         <Rundown>
                             <h2>Rundown</h2>
@@ -860,7 +1046,7 @@ const Schedule = () => {
                                 </tr>
                                 </tbody>
                             </Table> 
-                            <Pad>
+                            <Padd>
                                 <Flex>
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
                                     <BoldSpan>2 September 2022</BoldSpan>
@@ -869,11 +1055,11 @@ const Schedule = () => {
                                     <IconCenter><img src={location} /></IconCenter>                                       
                                     <BoldSpan>Atrium Ciputra World Mall Surabaya</BoldSpan>
                                 </Flex>  
-                                <Flex>
+                                <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
                                     <BoldSpan>Baju O-Week, celana panjang (gelap tidak sobek), dan bersepatu hitam</BoldSpan>
-                                </Flex>                 
-                            </Pad>
+                                </Flexx>                 
+                            </Padd>
                         </Rundown>
                     </Isi>
                     </div> 
@@ -942,7 +1128,41 @@ const Schedule = () => {
                                     <span>Calculated Risk Taking</span>
                                 </Flex>
                             </Pad>  
-                                                   
+                            <Pad>
+                                <h3>Keperluan</h3>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Wajib menggunakan masker minimal 3 ply dan disarankan menggunakan masker KF94 atau KN95,</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa buku tulis untuk mencatat.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa pulpen.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa name tag.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa trainee O-Week card.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa masker cadangan dua lembar.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Membawa hand sanitizer (dibebaskan).</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Disarankan membawa tissue kering dan tissue basah.</span>
+                                </Flex>
+                            </Pad>                  
                         </Day>
                         <Rundown>
                             <h2>Rundown</h2>
@@ -990,7 +1210,7 @@ const Schedule = () => {
                                 </tr>
                                 </tbody>
                             </Table>
-                            <Pad>
+                            <Padd>
                                 <Flex>
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
                                     <BoldSpan>3 September 2022</BoldSpan>
@@ -999,11 +1219,11 @@ const Schedule = () => {
                                     <IconCenter><img src={location} /></IconCenter>                                       
                                     <BoldSpan>Palimanan Resto & Cafe</BoldSpan>
                                 </Flex>                     
-                                <Flex>
+                                <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
                                     <BoldSpan>Kemeja putih, jas hitam, rok hitam,flat shoes (cewek), celana panjang hitam kain,sepatu hitam formal (cowok)</BoldSpan>
-                                </Flex>                     
-                            </Pad>
+                                </Flexx>                     
+                            </Padd>
                             <Pad>                                
                                 <Link to="/mobilisasi">
                                     <ClosingDetail>Mobilisasi Trainee</ClosingDetail>

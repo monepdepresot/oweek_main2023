@@ -179,15 +179,15 @@ const Rules = () => {
                             <RulesList>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Dilarang merokok dan membawa rokok (termasuk rokok elektrik) serta minuman keras yang beralkohol selama O-WEEK berlangsung atau saat masih menggunakan atribut O-WEEK.</span>
+                                    <span>Dilarang merokok dan membawa rokok (termasuk rokok elektrik) serta minuman keras yang beralkohol selama O-Week berlangsung atau saat masih menggunakan atribut O-Week.</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Dilarang membawa atau memakai NAPZA serta zat adiktif lainnya selama O-WEEK berlangsung dan atau masih berada di area Universitas Ciputra Surabaya.</span>
+                                    <span>Dilarang membawa atau memakai NAPZA serta zat adiktif lainnya selama O-Week berlangsung dan atau masih berada di area Universitas Ciputra Surabaya.</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Dilarang berkelahi dan atau menjadi provokator selama kegiatan O-WEEK berlangsung.</span>
+                                    <span>Dilarang berkelahi dan atau menjadi provokator selama kegiatan O-Week berlangsung.</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
@@ -195,7 +195,7 @@ const Rules = () => {
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Diwajibkan untuk datang tepat waktu selama kegiatan O-WEEK (sesuai dengan Waktu Indonesia Bagian Barat).</span>
+                                    <span>Diwajibkan untuk datang tepat waktu selama kegiatan O-Week (sesuai dengan Waktu Indonesia Bagian Barat).</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
@@ -219,15 +219,15 @@ const Rules = () => {
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Menggunakan atribut dan atau perlengkapan O-WEEK selama masih berada dalam lingkungan O-WEEK.</span>
+                                    <span>Menggunakan atribut dan atau perlengkapan O-Week selama masih berada dalam lingkungan O-Week.</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Berpenampilan rapi dan sopan serta harus menaati dresscode yang telah ditentukan oleh panitia selama kegiatan O-WEEK berlangsung.</span>
+                                    <span>Berpenampilan rapi dan sopan serta harus menaati dresscode yang telah ditentukan oleh panitia selama kegiatan O-Week berlangsung.</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Menjaga ketenangan dan ketertiban selama acara O-WEEK berlangsung.</span>
+                                    <span>Menjaga ketenangan dan ketertiban selama acara O-Week berlangsung.</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
@@ -239,23 +239,23 @@ const Rules = () => {
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Menjaga kebersihan lingkungan selama O-WEEK berlangsung serta menjaga segala bentuk properti yang dimiliki Universitas Ciputra.</span>
+                                    <span>Menjaga kebersihan lingkungan selama O-Week berlangsung serta menjaga segala bentuk properti yang dimiliki Universitas Ciputra.</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Dilarang berbuat curang dalam bentuk apapun selama kegiatan O-WEEK berlangsung, baik sengaja maupun tidak disengaja.</span>
+                                    <span>Dilarang berbuat curang dalam bentuk apapun selama kegiatan O-Week berlangsung, baik sengaja maupun tidak disengaja.</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Selama acara O-WEEK berlangsung, HANYA trainee, panitia dan seluruh staf Universitas Ciputra yang berkepentingan diperbolehkan memasuki area O-WEEK.</span>
+                                    <span>Selama acara O-Week berlangsung, HANYA trainee, panitia dan seluruh staf Universitas Ciputra yang berkepentingan diperbolehkan memasuki area O-Week.</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Selama acara O-WEEK berlangsung, HANYA trainee, panitia dan seluruh staf Universitas Ciputra yang berkepentingan diperbolehkan memasuki area O-WEEK.</span>
+                                    <span>Selama acara O-Week berlangsung, HANYA trainee, panitia dan seluruh staf Universitas Ciputra yang berkepentingan diperbolehkan memasuki area O-Week.</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Trainee tidak diperbolehkan menitipkan barang dalam bentuk apapun kepada panitia O-WEEK selama acara O-WEEK berlangsung.</span>
+                                    <span>Trainee tidak diperbolehkan menitipkan barang dalam bentuk apapun kepada panitia O-Week selama acara O-Week berlangsung.</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
@@ -279,7 +279,7 @@ const Rules = () => {
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Dihimbau bagi seluruh trainee untuk tidak menggunakan softlens. Apabila ada trainee yang menggunakan softlens dengan alasan tertentu wajib melapor AMD dan jika terjadi hal yang tidak diinginkan bukan menjadi tanggung jawab seluruh panitia O-WEEK dan Universitas Ciputra.</span>
+                                    <span>Dihimbau bagi seluruh trainee untuk tidak menggunakan softlens. Apabila ada trainee yang menggunakan softlens dengan alasan tertentu wajib melapor AMD dan jika terjadi hal yang tidak diinginkan bukan menjadi tanggung jawab seluruh panitia O-Week dan Universitas Ciputra.</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
@@ -291,19 +291,19 @@ const Rules = () => {
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Selama acara O-WEEK berlangsung, dilarang meninggalkan acara dan area, kecuali mendapat izin tertentu dari pihak HOD dan AMD (Trainee wajib melapor SID).</span>
+                                    <span>Selama acara O-Week berlangsung, dilarang meninggalkan acara dan area, kecuali mendapat izin tertentu dari pihak HOD dan AMD (Trainee wajib melapor SID).</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Bagi trainee yang sakit wajib memberitahu AMD masing-masing jika mengalami halangan dalam mengikuti acara O-WEEK secara penuh dengan menunjukan bukti surat keterangan sakit dari Dokter atau bukti riwayat sakit, serta Diperbolehkan untuk membawa obat-obat pribadi (bagi yang sakit).</span>
+                                    <span>Bagi trainee yang sakit wajib memberitahu AMD masing-masing jika mengalami halangan dalam mengikuti acara O-Week secara penuh dengan menunjukan bukti surat keterangan sakit dari Dokter atau bukti riwayat sakit, serta Diperbolehkan untuk membawa obat-obat pribadi (bagi yang sakit).</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Memberitahu AMD masing-masing jika mengalami halangan dalam mengikuti acara O-WEEK secara penuh dengan menunjukan bukti. Yang ditoleransi hanya sakit (di rumah sakit), kedukaan keluarga inti, keluarga inti menikah beserta surat undangannya dan lomba.</span>
+                                    <span>Memberitahu AMD masing-masing jika mengalami halangan dalam mengikuti acara O-Week secara penuh dengan menunjukan bukti. Yang ditoleransi hanya sakit (di rumah sakit), kedukaan keluarga inti, keluarga inti menikah beserta surat undangannya dan lomba.</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Dilarang mengajak atau memaksa sesama peserta O-WEEK  dalam kerjasama organisasi pribadi (organisasi bisnis, rumah ibadah, dan sebagainya).</span>
+                                    <span>Dilarang mengajak atau memaksa sesama peserta O-Week  dalam kerjasama organisasi pribadi (organisasi bisnis, rumah ibadah, dan sebagainya).</span>
                                 </Flex2>
                             </RulesList>                           
                         </Isi>
