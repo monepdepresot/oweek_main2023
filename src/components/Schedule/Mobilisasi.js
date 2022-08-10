@@ -134,7 +134,7 @@ const Mobilisasi = () => {
                     <Faq>
                         <Flex>
                             <Dot src={dot} />
-                            <span>Pukul 14.00 - 16.00 (sesuai pembagian kloter) trainee di drop oleh orang tua atau pengantar  trainee di depan lobby golf /dekat ruko-ruko dan diarahkan oleh SID/panitia  ke arah selanjutnya yaitu ke driving range.</span>
+                            <span>Pukul 14.00 - 16.00 (sesuai pembagian kloter) trainee di drop oleh orang tua atau pengantar trainee di depan lobby golf /dekat ruko-ruko dan diarahkan oleh SID/panitia  ke arah selanjutnya yaitu ke driving range.</span>
                         </Flex>
                         <Flex>
                             <Dot src={dot} />
@@ -154,7 +154,7 @@ const Mobilisasi = () => {
                         </Flex>
                         <Flex>
                             <Dot src={dot} />
-                            <span>Trainee yang kelompok Oweek-nya sudah lengkap diperbolehkan untuk foto di photobooth selama rentang waktu pukul 15.00 - 16.00.</span>
+                            <span>Trainee yang kelompok Oweek-nya sudah lengkap diperbolehkan untuk foto di photobooth selama rentang waktu pukul 14.00 - 16.00.</span>
                         </Flex>
                     </Faq>
                 </Content>

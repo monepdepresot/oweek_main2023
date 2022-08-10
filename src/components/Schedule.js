@@ -159,20 +159,19 @@ margin-bottom: 10px;
 
 const Flex = styledComponents.div`
 display: flex;
-align-items: center;
 gap: 10px;
 margin-bottom: 7px;
 `
 
 const Flexx = styledComponents.div`
 display: flex;
-align-items: flex-start;
 gap: 10px;
-margin-bottom: 7px;
+margin-bottom: 11px;
 `
 
 const Dot = styledComponents.img`
 height: 15px;
+margin-top: 1px;
 `
 
 const Tabs = styledComponents.h2`
@@ -183,8 +182,9 @@ cursor: pointer;
 const IconCenter = styledComponents.div`
 display: flex;
 justify-content: center;
-align-items: center;
+align-items: flex-start;
 min-width: 25px;
+margin-top: -2px;
 `
 
 const BoldSpan = styledComponents.span`
@@ -210,6 +210,23 @@ const ClosingDetail = styledComponents.h3`
 const Subtitle = styledComponents.h3`
 text-align: left;
 padding: 0px 20px;
+`
+
+const Select = styledComponents.select`
+-webkit-appearance: menulist;
+-moz-appearance:none;
+-ms-appearance:none;
+outline:0;
+box-shadow:none;
+background:#FFC600;
+flex: 1;
+padding: 5px 15px;
+color:#fff;
+cursor:pointer;
+font-size: 1em;
+margin-bottom: 1.5rem;
+border: 2px solid white;
+border-radius: 5px;
 `
 
 const Schedule = () => {
@@ -267,7 +284,7 @@ const Schedule = () => {
                         <Tabs className={toggleState === 7 ? "active-tabs" : ""} onClick={() => toggleTab(7)}>Day 6</Tabs>
                     </Menu>
                     <Menu2>
-                        <select
+                        <Select
                             onChange={handleChange}
                         >
                             <option value="1">Pra UC Day</option>
@@ -277,7 +294,7 @@ const Schedule = () => {
                             <option value="5">Day 4</option>
                             <option value="6">Day 5</option>
                             <option value="7">Day 6</option>
-                        </select>
+                        </Select>
                     </Menu2>
 
                     <div className={toggleState === 1 ? "maps active-maps" : "maps"}>
@@ -289,10 +306,10 @@ const Schedule = () => {
                             >
                                 <h2>Pra UC Day</h2>  
                                 <Pad>
-                                    <h3>Platform: Live streaming youtube</h3>
+                                    <h3>Platform: Live streaming Youtube</h3>
                                     <Flex>
                                         <IconCenter><img src={calendar} /></IconCenter>                                       
-                                        <BoldSpan>25 Agustus 2022</BoldSpan>
+                                        <BoldSpan>Kamis, 25 Agustus 2022</BoldSpan>
                                     </Flex> 
                                 </Pad>                                                      
                             </Day>
@@ -330,7 +347,7 @@ const Schedule = () => {
                                     </tr>
                                     <tr>
                                         <td>10.45 - 12.15</td>
-                                        <td>Pengenalan organisasi & ukm</td>
+                                        <td>Pengenalan Organisasi & UKM</td>
                                     </tr>
                                     <tr>
                                         <td>12.15 - 12.30</td>
@@ -415,7 +432,7 @@ const Schedule = () => {
                                 </Flex>
                                 <Flex>
                                     <Dot src={dot} />
-                                    <span>Membawa tumblr minum minimal 500ml.</span>
+                                    <span>Membawa tumbler minum minimal 500ml.</span>
                                 </Flex>
                                 <Flex>
                                     <Dot src={dot} />
@@ -488,7 +505,7 @@ const Schedule = () => {
                                 </tr>
                                 <tr>
                                     <td>10.50 - 11.20</td>
-                                    <td>Sesi QNA Kur + Dep</td>
+                                    <td>Sesi QNA Kurikulum & Department</td>
                                 </tr>
                                 <tr>
                                     <td>11.20 - 12.20</td>
@@ -513,17 +530,17 @@ const Schedule = () => {
                                 </tbody>
                             </Table>
                             <Padd>
-                                <Flex>
+                                <Flexx>
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
-                                    <BoldSpan>29 Agustus 2022</BoldSpan>
-                                </Flex> 
-                                <Flex>
+                                    <BoldSpan>Senin, 29 Agustus 2022</BoldSpan>
+                                </Flexx> 
+                                <Flexx>
                                     <IconCenter><img src={location} /></IconCenter>                                       
                                     <BoldSpan>Mural Universitas Ciputra</BoldSpan>
-                                </Flex>                     
+                                </Flexx>                     
                                 <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                    <BoldSpan>Kemeja Putih, celana jeans berwarna gelap (tidak sobek), sepatu sneakers</BoldSpan>
+                                    <BoldSpan>Kemeja Putih, Celana Jeans Berwarna Gelap (Tidak Sobek), Sepatu Sneakers</BoldSpan>
                                 </Flexx>                     
                             </Padd> 
                         </Rundown>
@@ -647,18 +664,18 @@ const Schedule = () => {
                                 </tbody>
                             </Table>
                             <Padd>
-                                <Flex>
+                                <Flexx>
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
-                                    <BoldSpan>30 Agustus 2022</BoldSpan>
-                                </Flex> 
-                                <Flex>
+                                    <BoldSpan>Selasa, 30 Agustus 2022</BoldSpan>
+                                </Flexx> 
+                                <Flexx>
                                     <IconCenter><img src={location} /></IconCenter>                                       
                                     <BoldSpan>Universitas Ciputra</BoldSpan>
-                                </Flex>           
-                                <Flex>
+                                </Flexx>           
+                                <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                    <BoldSpan>Sesuai ketentuan prodi</BoldSpan>
-                                </Flex>           
+                                    <BoldSpan>Sesuai Ketentuan Prodi</BoldSpan>
+                                </Flexx>           
                             </Padd>                            
                         </Rundown>
                     </Isi>
@@ -781,18 +798,18 @@ const Schedule = () => {
                                 </tbody>
                             </Table>
                             <Padd>
-                                <Flex>
+                                <Flexx>
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
-                                    <BoldSpan>31 Agustus 2022</BoldSpan>
-                                </Flex> 
-                                <Flex>
+                                    <BoldSpan>Rabu, 31 Agustus 2022</BoldSpan>
+                                </Flexx> 
+                                <Flexx>
                                     <IconCenter><img src={location} /></IconCenter>                                       
                                     <BoldSpan>Universitas Ciputra</BoldSpan>
-                                </Flex>     
-                                <Flex>
+                                </Flexx>     
+                                <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                    <BoldSpan>Sesuai ketentuan prodi</BoldSpan>
-                                </Flex>                  
+                                    <BoldSpan>Sesuai Ketentuan Prodi</BoldSpan>
+                                </Flexx>                  
                             </Padd> 
                         </Rundown>
                     </Isi>
@@ -825,6 +842,10 @@ const Schedule = () => {
                                 <Flex>
                                     <Dot src={dot} />
                                     <span>Long Life Learning</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Moral Integrity</span>
                                 </Flex>
                             </Pad>  
                             <Pad>
@@ -872,19 +893,15 @@ const Schedule = () => {
                                     <td>Registrasi Trainee</td>
                                 </tr>
                                 <tr>
-                                    <td>07.00 - 07.30</td>
+                                    <td>07.00 - 07.45</td>
                                     <td>Briefing Pagi</td>
-                                </tr>
-                                <tr>
-                                    <td>07.30 - 07.45</td>
-                                    <td>Ice Breaking</td>
                                 </tr>
                                 <tr>
                                     <td>07.45 - 08.00</td>
                                     <td>Sambutan</td>
                                 </tr>
                                 <tr>
-                                    <td>08.00 - 09.15 </td>
+                                    <td>08.00 - 09.15</td>
                                     <td>Seminar Sesi 1 : Becoming a True Indonesian</td>
                                 </tr>
                                 <tr>
@@ -910,17 +927,17 @@ const Schedule = () => {
                                 </tbody>
                             </Table>
                             <Padd>
-                                <Flex>
+                                <Flexx>
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
-                                    <BoldSpan>1 September 2022</BoldSpan>
-                                </Flex> 
-                                <Flex>
+                                    <BoldSpan>Kamis, 1 September 2022</BoldSpan>
+                                </Flexx> 
+                                <Flexx>
                                     <IconCenter><img src={location} /></IconCenter>                                       
-                                    <BoldSpan>Ciputra World Exhibition Hall</BoldSpan>
-                                </Flex>      
+                                    <BoldSpan>Multi Purpose Hall Ciputra World Surabaya</BoldSpan>
+                                </Flexx>      
                                 <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                    <BoldSpan>Baju batik, celana panjang kain hitam, sepatu sneakers</BoldSpan>
+                                    <BoldSpan>Baju Batik Bebas Berlengan, Celana Panjang Kain Hitam, Sepatu Sneakers (Warna Dibebaskan)</BoldSpan>
                                 </Flexx>                 
                             </Padd> 
                         </Rundown>
@@ -1047,17 +1064,17 @@ const Schedule = () => {
                                 </tbody>
                             </Table> 
                             <Padd>
-                                <Flex>
+                                <Flexx>
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
-                                    <BoldSpan>2 September 2022</BoldSpan>
-                                </Flex> 
-                                <Flex>
+                                    <BoldSpan>Jumat, 2 September 2022</BoldSpan>
+                                </Flexx> 
+                                <Flexx>
                                     <IconCenter><img src={location} /></IconCenter>                                       
                                     <BoldSpan>Atrium Ciputra World Mall Surabaya</BoldSpan>
-                                </Flex>  
+                                </Flexx>  
                                 <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                    <BoldSpan>Baju O-Week, celana panjang (gelap tidak sobek), dan bersepatu hitam</BoldSpan>
+                                    <BoldSpan>Baju O-Week, Celana Panjang (Gelap Tidak Sobek), dan Sneakers (Berwarna Bebas)</BoldSpan>
                                 </Flexx>                 
                             </Padd>
                         </Rundown>
@@ -1105,7 +1122,7 @@ const Schedule = () => {
                                 <h3>7 Competencies</h3>
                                 <Flex>
                                     <Dot src={dot} />
-                                    <span>Integrity</span>
+                                    <span>Moral Integrity</span>
                                 </Flex>
                                 <Flex>
                                     <Dot src={dot} />
@@ -1169,59 +1186,47 @@ const Schedule = () => {
                             <Table>
                                 <tbody>
                                 <tr>
-                                    <td>15.00 - 16.00 </td>
+                                    <td>14.00 - 16.00 </td>
                                     <td>Registrasi Trainee</td>
                                 </tr>
                                 <tr>
-                                    <td>16.00 - 16.30 </td>
-                                    <td>Persiapan Sidang Senat</td>
-                                </tr>
-                                <tr>
-                                    <td>16.30 - 18.00 </td>
+                                    <td>16.00 - 17.30 </td>
                                     <td>Sidang Senat</td>
                                 </tr>
                                 <tr>
-                                    <td>18.00 - 19.30 </td>
+                                    <td>17.30 - 18.30 </td>
                                     <td>ISHOMA</td>
                                 </tr>
                                 <tr>
-                                    <td>19.30 - 19.44 </td>
+                                    <td>18.30 - 18.43 </td>
                                     <td>Opening Closing O'Week</td>
                                 </tr>
                                 <tr>
-                                    <td>19.44 - 20.36 </td>
-                                    <td>Awarding, All Star, Mr and Mrs O'Week</td>
+                                    <td>18.43 - 19.42 </td>
+                                    <td>Awarding Night, Perform All Star & Mrs Mr O-week 2022</td>
                                 </tr>
                                 <tr>
-                                    <td>20.36 - 20.41 </td>
-                                    <td>Performance by UKM</td>
+                                    <td>19.42 - 20.57</td>
+                                    <td>Performance & Closing Party</td>
                                 </tr>
                                 <tr>
-                                    <td>20.41 - 20.58 </td>
-                                    <td>Flashmob, Lagu Panitia & Aftermovie</td>
-                                </tr>
-                                <tr>
-                                    <td>20.58 - 21.58 </td>
-                                    <td>External Performance</td>
-                                </tr>
-                                <tr>
-                                    <td>21.58 - 22.08 </td>
-                                    <td>Closing</td>
+                                    <td>20.57 - 21.57</td>
+                                    <td>Special Performance</td>
                                 </tr>
                                 </tbody>
                             </Table>
                             <Padd>
-                                <Flex>
+                                <Flexx>
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
-                                    <BoldSpan>3 September 2022</BoldSpan>
-                                </Flex> 
-                                <Flex>
+                                    <BoldSpan>Sabtu, 3 September 2022</BoldSpan>
+                                </Flexx> 
+                                <Flexx>
                                     <IconCenter><img src={location} /></IconCenter>                                       
-                                    <BoldSpan>Palimanan Resto & Cafe</BoldSpan>
-                                </Flex>                     
+                                    <BoldSpan>Palimanan - Ciputra Golf, Club, Resto</BoldSpan>
+                                </Flexx>                     
                                 <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                    <BoldSpan>Kemeja putih, jas hitam, rok hitam,flat shoes (cewek), celana panjang hitam kain,sepatu hitam formal (cowok)</BoldSpan>
+                                    <BoldSpan>Kemeja Putih Berlengan Panjang/Pendek, Almamater UC, Rok Hitam, Flat Shoes Warna Dibebaskan (cewek), Celana Panjang Hitam Kain, Sepatu Pantofel Warna Dibebaskan (cowok)</BoldSpan>
                                 </Flexx>                     
                             </Padd>
                             <Pad>                                

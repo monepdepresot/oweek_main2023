@@ -110,14 +110,12 @@ padding: 15px;
 
 const Flex = styledComponents.div`
 display: flex;
-align-items: center;
 gap: 10px;
 margin-bottom: 5px;
 `
 
 const Flex2 = styledComponents.div`
 display: flex;
-align-items: center;
 gap: 10px;
 margin-top: 6px;
 margin-bottom: 6px;
@@ -125,6 +123,7 @@ margin-bottom: 6px;
 
 const Dot = styledComponents.img`
 height: 15px;
+margin-top: 3px;
 `
 
 const Title = styledComponents.div`
@@ -132,6 +131,10 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin: 30px 0px;
+`
+
+const Italic = styledComponents.span`
+font-style: italic;
 `
 
 const Rules = () => {
@@ -191,7 +194,7 @@ const Rules = () => {
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Dilarang melakukan tindakan asusila (contoh: KNPI (kissing, necking, petting, intercourse) dan pelecehan seksual).</span>
+                                    <span>Dilarang melakukan tindakan asusila (contoh: KNPI (<Italic>kissing, necking, petting, intercourse</Italic>) dan pelecehan seksual).</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
@@ -223,7 +226,7 @@ const Rules = () => {
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Berpenampilan rapi dan sopan serta harus menaati dresscode yang telah ditentukan oleh panitia selama kegiatan O-Week berlangsung.</span>
+                                    <span>Berpenampilan rapi dan sopan serta harus menaati <Italic>dresscode</Italic> yang telah ditentukan oleh panitia selama kegiatan O-Week berlangsung.</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
@@ -251,10 +254,6 @@ const Rules = () => {
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Selama acara O-Week berlangsung, HANYA trainee, panitia dan seluruh staf Universitas Ciputra yang berkepentingan diperbolehkan memasuki area O-Week.</span>
-                                </Flex2>
-                                <Flex2>
-                                    <Dot src={dot2} />
                                     <span>Trainee tidak diperbolehkan menitipkan barang dalam bentuk apapun kepada panitia O-Week selama acara O-Week berlangsung.</span>
                                 </Flex2>
                                 <Flex2>
@@ -264,8 +263,8 @@ const Rules = () => {
                                 <Flex2>
                                     <ul>
                                         <li>Pada saat Opening, UC Day, dan Prodi Day apabila membawa kendaraan WAJIB berisikan: 1 motor 2 orang yang menggunakan helm serta 1 mobil berisikan minimal 4 orang.</li>
-                                        <li>Pada saat talkshow trainee diperbolehkan membawa mobil yang berisikan minimal 4 orang dalam 1 mobil dan dilarang membawa sepeda motor.</li>
-                                        <li>Pada saat selling day masing-masing kelompok diperbolehkan membawa kendaraan maksimal 2 mobil per kelompok dan dilarang membawa sepeda motor.</li>
+                                        <li>Pada saat <Italic>talkshow</Italic> trainee diperbolehkan membawa mobil yang berisikan minimal 4 orang dalam 1 mobil dan dilarang membawa sepeda motor.</li>
+                                        <li>Pada saat <Italic>selling day</Italic> masing-masing kelompok diperbolehkan membawa kendaraan maksimal 2 mobil per kelompok dan dilarang membawa sepeda motor.</li>
                                         <li>Pada saat closing trainee DILARANG membawa kendaraan.</li>
                                     </ul>
                                 </Flex2>
@@ -275,15 +274,15 @@ const Rules = () => {
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Diperbolehkan menggunakan make-up natural sesuai dengan referensi yang diberikan panitia dan dilarang menggunakan bulu mata palsu/extension.</span>
+                                    <span>Diperbolehkan menggunakan make-up natural sesuai dengan referensi yang diberikan panitia dan dilarang menggunakan bulu mata palsu/<Italic>extension</Italic>.</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Dihimbau bagi seluruh trainee untuk tidak menggunakan softlens. Apabila ada trainee yang menggunakan softlens dengan alasan tertentu wajib melapor AMD dan jika terjadi hal yang tidak diinginkan bukan menjadi tanggung jawab seluruh panitia O-Week dan Universitas Ciputra.</span>
+                                    <span>Dihimbau bagi seluruh trainee untuk tidak menggunakan <Italic>softlens</Italic>. Apabila ada trainee yang menggunakan <Italic>softlens</Italic> dengan alasan tertentu wajib melapor AMD dan jika terjadi hal yang tidak diinginkan bukan menjadi tanggung jawab seluruh panitia O-Week dan Universitas Ciputra.</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Kuku wajib pendek (dilarang extension, nail art).</span>
+                                    <span>Kuku wajib pendek (dilarang <Italic>extension, nail art</Italic>).</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />

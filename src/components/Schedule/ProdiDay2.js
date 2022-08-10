@@ -160,7 +160,7 @@ const ProdiDay2 = () => {
                                 </Flex>        
                                 <HiddenBox>
                                     <Isi className={toggleState === 1 ? "maps active-maps" : "maps"}>
-                                        <p>Dresscode: kemeja putih</p>
+                                        <p>Dresscode: Kemeja Putih</p>
                                         <p>Alat tulis secukupnya</p>
                                     </Isi>
                                 </HiddenBox>               
@@ -172,7 +172,7 @@ const ProdiDay2 = () => {
                                 </Flex>        
                                 <HiddenBox>
                                     <Isi className={toggleState === 3 ? "maps active-maps" : "maps"}>
-                                        <p>Dresscode: Kemeja putih/polo(dominan putih), celana panjang jeans(kecuali ripped jeans) / kain warna bebas</p>
+                                        <p>Dresscode: Kemeja Putih/Polo(Dominan Putih), Celana Panjang Jeans(Kecuali Ripped Jeans)/Kain Warna Bebas</p>
                                         <p>Buku & Alat Tulis</p>
                                     </Isi>
                                 </HiddenBox>               
@@ -184,7 +184,7 @@ const ProdiDay2 = () => {
                                 </Flex>        
                                 <HiddenBox>
                                     <Isi className={toggleState === 5 ? "maps active-maps" : "maps"}>
-                                        <p>Dresscode: Kemeja warna gelap SELAIN HITAM, celana panjang bebas namun rapi dan sopan (tidak boleh ripped jeans atau semacamnya)</p>
+                                        <p>Dresscode: Kemeja Warna Gelap SELAIN HITAM, Celana Panjang Bebas Namun Rapi dan Sopan (Tidak Boleh Ripped Jeans atau Semacamnya)</p>
                                         <p>Alat tulis (Bolpoin)</p>
                                     </Isi>
                                 </HiddenBox>               
@@ -196,7 +196,7 @@ const ProdiDay2 = () => {
                                 </Flex>        
                                 <HiddenBox>
                                     <Isi className={toggleState === 7 ? "maps active-maps" : "maps"}>
-                                        <p>Dresscode: Baju berkerah putih atau Kemeja berkerah putih, jas hitam atau blazer hitam, celana panjang hitam</p>
+                                        <p>Dresscode: Baju Berkerah Putih atau Kemeja Berkerah Putih, Jas Hitam atau Blazer Hitam, Celana Panjang Hitam</p>
                                         <p>Buku Tulis</p>
                                         <p>Alat Tulis</p>
                                     </Isi>
@@ -209,7 +209,7 @@ const ProdiDay2 = () => {
                                 </Flex>        
                                 <HiddenBox>
                                     <Isi className={toggleState === 9 ? "maps active-maps" : "maps"}>
-                                        <p>Dresscode: Kemeja warna putih & celana panjang hitam, sepatu bebas rapi / tertutup</p>
+                                        <p>Dresscode: Kemeja Warna Putih & Celana Panjang Hitam, Sepatu Bebas Rapi/Tertutup</p>
                                     </Isi>
                                 </HiddenBox>               
                             </Jurusan>
@@ -220,8 +220,8 @@ const ProdiDay2 = () => {
                                 </Flex>        
                                 <HiddenBox>
                                     <Isi className={toggleState === 11 ? "maps active-maps" : "maps"}>
-                                        <p>Dresscode: Colorful semi formal ( cewek kue )</p>
-                                        <p>Alat Gambar/Mewarnai ( Pensil, Pensil warna, Drawing Pen, Crayon, dsb.)</p>
+                                        <p>Dresscode: Colorful Semi Formal (Cewek Kue)</p>
+                                        <p>Alat Gambar/Mewarnai (Pensil, Pensil warna, Drawing Pen, Crayon, dsb.)</p>
                                     </Isi>
                                 </HiddenBox>               
                             </Jurusan>
@@ -232,7 +232,7 @@ const ProdiDay2 = () => {
                                 </Flex>        
                                 <HiddenBox>
                                     <Isi className={toggleState === 13 ? "maps active-maps" : "maps"}>
-                                        <p>Dresscode: Kemeja hitam, celana panjang hitam kain/jeans warna gelap</p>
+                                        <p>Dresscode: Kemeja Hitam, Celana Panjang Hitam Kain/Jeans Warna Gelap</p>
                                         <p>Kertas HVS F4 5 Lembar</p>
                                         <p>Bolpoin 2</p>
                                     </Isi>
@@ -247,7 +247,7 @@ const ProdiDay2 = () => {
                                 </Flex>        
                                 <HiddenBox>
                                     <Isi className={toggleState === 2 ? "maps active-maps" : "maps"}>
-                                        <p>Dresscode: Kemeja/berkerah hitam, celana panjang hitam</p>
+                                        <p>Dresscode: Kemeja/Berkerah Hitam, Celana Panjang Hitam</p>
                                         <p>Buku Tulis</p>
                                         <p>Alat Tulis</p>
                                     </Isi>
@@ -260,7 +260,7 @@ const ProdiDay2 = () => {
                                 </Flex>        
                                 <HiddenBox>
                                     <Isi className={toggleState === 4 ? "maps active-maps" : "maps"}>
-                                        <p>Dresscode: Kaos warna cream, kuning, mustard, yg senada, Celana panjang bebas sopan kecuali warna hitam (tidak boleh sobek-sobek), Sepatu warna bebas. </p>
+                                        <p>Dresscode: Kaos Warna Cream, Kuning, Mustard, yang Senada, Celana Panjang Bebas Sopan Kecuali Warna Hitam (Tidak Boleh Sobek-sobek), Sepatu Warna Bebas. </p>
                                         <p>Kertas gambar A3 (2 lembar / Trainee)</p>
                                         <p>Alat gambar (penggaris, pulpen, pensil, penghapus, alat warna) min 1 / trainee</p>
                                         <p>Laptop</p>
@@ -279,7 +279,7 @@ const ProdiDay2 = () => {
                                 </Flex>        
                                 <HiddenBox>
                                     <Isi className={toggleState === 6 ? "maps active-maps" : "maps"}>
-                                        <p>Dresscode: Kemeja Putih, Celana panjang hitam kain/jeans</p>
+                                        <p>Dresscode: Kemeja Putih, Celana panjang Hitam Kain/Jeans</p>
                                         <p>Kertas 1 - 2 lembar</p>
                                         <p>Bolpen</p>
                                         <p>PIN</p>
@@ -294,7 +294,7 @@ const ProdiDay2 = () => {
                                 </Flex>        
                                 <HiddenBox>
                                     <Isi className={toggleState === 8 ? "maps active-maps" : "maps"}>
-                                        <p>Dresscode: Kaos berkerah/polo (dilarang kemeja) warna merah tua/maroon, celana hitam bebas, sneakers.</p>
+                                        <p>Dresscode: Kaos Berkerah/Polo (Dilarang Kemeja) Warna Merah Tua/Maroon, Celana Hitam Bebas, Sneakers.</p>
                                         <p>Alat Tulis (Bolpen, notes, tip-ex)</p>
                                     </Isi>
                                 </HiddenBox>               
@@ -306,7 +306,7 @@ const ProdiDay2 = () => {
                                 </Flex>        
                                 <HiddenBox>
                                     <Isi className={toggleState === 10 ? "maps active-maps" : "maps"}>
-                                        <p>Dresscode : Batik + bawahan kain hitam</p>
+                                        <p>Dresscode: Batik + Bawahan Kain Hitam</p>
                                         <p>Buku Tulis + Alat Tulis</p>
                                     </Isi>
                                 </HiddenBox>               
@@ -318,7 +318,7 @@ const ProdiDay2 = () => {
                                 </Flex>        
                                 <HiddenBox>
                                     <Isi className={toggleState === 12 ? "maps active-maps" : "maps"}>
-                                        <p>Dresscode: kaos warna-warni sesuai kelompok, celana kain/training dan sepatu warna bebas</p>
+                                        <p>Dresscode: Kaos Warna-warni Sesuai Kelompok, Celana Kain/Training dan Sepatu Warna Bebas</p>
                                         <p>Botol Minum</p>
                                         <p>Slayer</p>
                                     </Isi>
@@ -331,7 +331,7 @@ const ProdiDay2 = () => {
                                 </Flex>        
                                 <HiddenBox>
                                     <Isi className={toggleState === 14 ? "maps active-maps" : "maps"}>
-                                        <p>Dresscode: Kemeja putih berlengan, Celana panjang kain warna hitam, jilbab hitam (bagi yang berjilbab), sepatu tertutup berwarna gelap.</p>
+                                        <p>Dresscode: Kemeja Putih Berlengan, Celana Panjang Kain Warna Hitam, Jilbab Hitam (Bagi yang Berjilbab), Sepatu Tertutup Berwarna Gelap.</p>
                                         <p>Buku/notes</p>
                                         <p>Alat Tulis</p>
                                         <p>Botol Minum berisi air mineral (tidak diperkenankan dengan gelas)</p>

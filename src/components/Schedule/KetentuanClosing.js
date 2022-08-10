@@ -124,19 +124,19 @@ const KetentuanClosing = () => {
                     <Faq>
                         <Flex>
                             <Dot src={dot} />
-                            <span>Untuk laki: Kemeja Putih, Celana panjang hitam, sepatu hitam formal.</span>
+                            <span>Untuk Laki-Laki: Kemeja Putih, Celana panjang hitam, sepatu hitam formal.</span>
                         </Flex>
                         <Flex>
                             <Dot src={dot} />
-                            <span>Untuk perempuan: Kemeja putih, baju tidak boleh menerawang,  rok dibawah lutut, flat shoes, dilarang menggunakan high heels.</span>
+                            <span>Untuk Perempuan: Kemeja putih, baju tidak boleh menerawang, rok dibawah lutut, flat shoes, dilarang menggunakan high heels.</span>
                         </Flex>
                         <Flex>
                             <Dot src={dot} />
-                            <span>Trainee wajib melakukan absen pada jam 14:00- 15:00 (KLOTER 1)  dan 15:00- 16:00 (KLOTER 2) dengan ketentuan mobilisasi sesuai yang dijelaskan .Absen akan ditutup sesuai pembagian kloter absen masing-masing dan trainee yang belum melakukan absensi akan dianggap telat.</span>
+                            <span>Trainee wajib melakukan absen pada jam 14:00-15:00 (KLOTER 1) dan 15:00- 16:00 (KLOTER 2) dengan ketentuan mobilisasi sesuai yang dijelaskan .Absen akan ditutup sesuai pembagian kloter absen masing-masing dan trainee yang belum melakukan absensi akan dianggap telat.</span>
                         </Flex>
                         <Flex>
                             <Dot src={dot} />
-                            <span>Trainee wajib mematuhi protokol kesehatan dan menjaga kebersihan area selama acara Closing Oweek 2022 berlangsung.</span>
+                            <span>Trainee wajib mematuhi protokol kesehatan dan menjaga kebersihan area selama acara Closing O-Week 2022 berlangsung.</span>
                         </Flex>
                         <Flex>
                             <Dot src={dot} />
@@ -152,15 +152,15 @@ const KetentuanClosing = () => {
                         </Flex>
                         <Flex>
                             <Dot src={dot} />
-                            <span>Barcode akan mengarahkan ke google form, dimana trainee harus mengupload data diri dan foto selfie dengan layar led panggung yang menunjukkan jam.</span>
-                        </Flex>
-                        <Flex>
-                            <Dot src={dot} />
                             <span>Trainee wajib mengikuti seluruh rangkaian acara closing dan Absen ulang akan dilakukan pada akhir acara closing.</span>
                         </Flex>
                         <Flex>
                             <Dot src={dot} />
-                            <span>Trainee dapat menggunakan photobooth sesuai dengan jadwal yang diberikan.</span>
+                            <span>Trainee dapat menggunakan photobooth sesuai dengan jadwal yang diberikan yaitu pada saat waktu registrasi ulang (14:00-16:00) dan saat ISHOMA (17:30 - 18:30).</span>
+                        </Flex>
+                        <Flex>
+                            <Dot src={dot} />
+                            <span>Setiap Kelompok AMD hanya diperbolehkan melakukan photobooth sekali (disarankan menggunakan photobooth ketika anggota kelompok lengkap).</span>
                         </Flex>
                     </Faq>
                 </Content>
