@@ -1,4 +1,4 @@
-import logohorizon from '../img/logo/horizonwhite.svg';
+import logohorizon from '../img/logo/horizonwhite.png';
 import oweek from '../img/logo/oweekwhite.svg';
 import uc from '../img/logo/ucwhite.png';
 import bg from '../img/bg/Rulesbgmobile.svg';
@@ -6,8 +6,8 @@ import bgmobile from '../img/bg/Rulesbgmobile.svg';
 import topeng from '../img/topeng/topeng1.svg';
 import dot from '../img/dot1.svg';
 import dot2 from '../img/dot3.svg';
-import title from '../img/title/Rules.svg';
-import title2 from '../img/title/PoinPCD.svg';
+import title from '../img/title/Rules.png';
+import title2 from '../img/title/PoinPCD.png';
 
 import styledComponents from "styled-components";
 import {motion} from 'framer-motion';

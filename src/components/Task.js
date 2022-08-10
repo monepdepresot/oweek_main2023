@@ -1,9 +1,9 @@
-import logohorizon from '../img/logo/horizonblack.svg';
+import logohorizon from '../img/logo/horizonblack.png';
 import oweek from '../img/logo/oweekblack.svg';
 import uc from '../img/logo/ucblack.png';
 import bg from '../img/bg/Taskbg.svg';
 import topeng from '../img/topeng/topeng3.svg';
-import title from '../img/title/Task.svg';
+import title from '../img/title/Task.png';
 
 import styledComponents from "styled-components";
 import {motion} from 'framer-motion';

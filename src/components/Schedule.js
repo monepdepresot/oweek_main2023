@@ -1,4 +1,4 @@
-import logohorizon from '../img/logo/horizonwhite.svg';
+import logohorizon from '../img/logo/horizonwhite.png';
 import oweek from '../img/logo/oweekwhite.svg';
 import uc from '../img/logo/ucwhite.png';
 import bg from '../img/bg/Schedulebg.svg';
@@ -8,7 +8,7 @@ import dot from '../img/dot2.svg';
 import location from '../img/location.svg';
 import dresscode from '../img/dresscode.svg';
 import calendar from '../img/calendar.svg';
-import title from '../img/title/Schedule.svg';
+import title from '../img/title/Schedule.png';
 
 import styledComponents from "styled-components";
 import {motion} from 'framer-motion';

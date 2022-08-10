@@ -1,4 +1,4 @@
-import logohorizon from '../../img/logo/horizonwhite.svg';
+import logohorizon from '../../img/logo/horizonwhite.png';
 import oweek from '../../img/logo/oweekwhite.svg';
 import uc from '../../img/logo/ucwhite.png';
 import bg from '../../img/bg/Schedulebg.svg';
