@@ -138,7 +138,7 @@ const ProdiDay2 = () => {
                 <PowerButton3 />
                 
                 <Leftlogo>
-                    <Link to="/schedule">
+                    <Link to="/">
                         <img src={logohorizon} alt="" className='horizonlogo' /> 
                     </Link>                                    
                 </Leftlogo>

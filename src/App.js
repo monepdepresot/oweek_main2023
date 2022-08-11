@@ -36,10 +36,12 @@ function App() {
             <Route path='/prodiday1' element={<ProdiDay1 />} /> 
             <Route path='/prodiday2' element={<ProdiDay2 />} /> 
             <Route path='/ketentuanclosing' element={<KetentuanClosing />} /> 
+
+            <Route path='/m2022' element={<Home />} />  
           </Routes>  
         </AnimatePresence>                     
       </div>
-    </div>   
+    </div>       
   );
 }
 

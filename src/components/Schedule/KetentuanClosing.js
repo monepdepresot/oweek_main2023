@@ -79,13 +79,13 @@ text-align: left;
 
 const Flex = styledComponents.div`
 display: flex;
-align-items: center;
 gap: 10px;
 margin-bottom: 7px;
 `
 
 const Dot = styledComponents.img`
 height: 15px;
+margin-top: 1px;
 `
 
 const KetentuanClosing = () => {
@@ -108,7 +108,7 @@ const KetentuanClosing = () => {
                 <PowerButton3 />
                 
                 <Leftlogo>
-                    <Link to="/schedule">
+                    <Link to="/">
                         <img src={logohorizon} alt="" className='horizonlogo' /> 
                     </Link>                                    
                 </Leftlogo>

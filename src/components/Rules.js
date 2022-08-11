@@ -2,7 +2,6 @@ import logohorizon from '../img/logo/horizonwhite.png';
 import oweek from '../img/logo/oweekwhite.svg';
 import uc from '../img/logo/ucwhite.png';
 import bg from '../img/bg/Rulesbgmobile.svg';
-import bgmobile from '../img/bg/Rulesbgmobile.svg';
 import topeng from '../img/topeng/topeng1.svg';
 import dot from '../img/dot1.svg';
 import dot2 from '../img/dot3.svg';
@@ -137,6 +136,10 @@ const Italic = styledComponents.span`
 font-style: italic;
 `
 
+const Peringatan = styledComponents.h3`
+padding: 0px 10px;
+`
+
 const Rules = () => {
 
     const [showMapsModal, setShowMapsModal] = useState(false);
@@ -182,7 +185,7 @@ const Rules = () => {
                             <RulesList>
                                 <Flex2>
                                     <Dot src={dot2} />
-                                    <span>Dilarang merokok dan membawa rokok (termasuk rokok elektrik) serta minuman keras yang beralkohol selama O-Week berlangsung atau saat masih menggunakan atribut O-Week.</span>
+                                    <span>Dilarang merokok dan membawa rokok (termasuk rokok elektrik), minuman keras yang beralkohol, dan benda tajam selama O-Week berlangsung atau saat masih menggunakan atribut O-Week.</span>
                                 </Flex2>
                                 <Flex2>
                                     <Dot src={dot2} />
@@ -303,8 +306,9 @@ const Rules = () => {
                                 <Flex2>
                                     <Dot src={dot2} />
                                     <span>Dilarang mengajak atau memaksa sesama peserta O-Week  dalam kerjasama organisasi pribadi (organisasi bisnis, rumah ibadah, dan sebagainya).</span>
-                                </Flex2>
-                            </RulesList>                           
+                                </Flex2>                               
+                            </RulesList>  
+                            <Peringatan>SEMUA PERATURAN YANG DILANGGAR BERPOTENSI TRAINEE TIDAK LULUS O-Week!</Peringatan>                         
                         </Isi>
                     </Aturan>
                     <PoinPCD>

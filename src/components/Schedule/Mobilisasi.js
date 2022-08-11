@@ -89,13 +89,13 @@ text-align: left;
 
 const Flex = styledComponents.div`
 display: flex;
-align-items: center;
 gap: 10px;
 margin-bottom: 10px;
 `
 
 const Dot = styledComponents.img`
 height: 15px;
+margin-top: 1px;
 `
 
 const Mobilisasi = () => {
@@ -118,7 +118,7 @@ const Mobilisasi = () => {
                 <PowerButton3 />
                 
                 <Leftlogo>
-                    <Link to="/schedule">
+                    <Link to="/">
                         <img src={logohorizon} alt="" className='horizonlogo' /> 
                     </Link>                                    
                 </Leftlogo>

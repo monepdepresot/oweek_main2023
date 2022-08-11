@@ -227,6 +227,8 @@ font-size: 1em;
 margin-bottom: 1.5rem;
 border: 2px solid white;
 border-radius: 5px;
+text-align: center;
+text-align-last: center;
 `
 
 const Schedule = () => {
