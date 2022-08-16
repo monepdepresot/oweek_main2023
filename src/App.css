@@ -53,6 +53,7 @@ table, ul, li {
 
 td {
   padding: 5px;
+
 }
 
 select {
@@ -113,9 +114,10 @@ option {
 }
 
 .PowerButton {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   margin-top: 2px;
+  margin-left: 1.2px;
 }
 
 .horizonlogo {
@@ -164,6 +166,10 @@ option {
   tr:first-child {
     max-width:100%;
     white-space:nowrap;
+  }
+
+  tr:last-child {
+    word-wrap: break-word;
   }
 }
 

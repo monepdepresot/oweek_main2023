@@ -8,6 +8,7 @@ import dot from '../img/dot2.svg';
 import location from '../img/location.svg';
 import dresscode from '../img/dresscode.svg';
 import calendar from '../img/calendar.svg';
+import clock from '../img/clock.svg';
 import title from '../img/title/Schedule.png';
 
 import styledComponents from "styled-components";
@@ -184,7 +185,7 @@ display: flex;
 justify-content: center;
 align-items: flex-start;
 min-width: 25px;
-margin-top: -2px;
+margin-top: -1px;
 `
 
 const BoldSpan = styledComponents.span`
@@ -204,6 +205,20 @@ const ClosingDetail = styledComponents.h3`
     color: #00B984;
     text-decoration: underline;
     text-decoration-color: #00B984;
+}
+`
+
+const Button = styledComponents.a`
+background: #00B984;
+padding: 6px 18px;
+border: 2px solid #FDFBF7;
+border-radius: 8px;
+text-decoration: none;
+color: #FDFBF7;
+font-weight: 500;
+
+&:hover{
+  background: #FFC600;
 }
 `
 
@@ -229,6 +244,14 @@ border: 2px solid white;
 border-radius: 5px;
 text-align: center;
 text-align-last: center;
+`
+
+const Br = styledComponents.br`
+display: none;
+
+@media (max-width: 500px) {
+    display: initial;
+}
 `
 
 const Schedule = () => {
@@ -306,13 +329,36 @@ const Schedule = () => {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 1.5 }}
                             >
-                                <h2>Pra UC Day</h2>  
-                                <Pad>
-                                    <h3>Platform: Live streaming Youtube</h3>
+                                <h2>TM Selling Day</h2>  
+                                <Pad>                                    
                                     <Flex>
                                         <IconCenter><img src={calendar} /></IconCenter>                                       
-                                        <BoldSpan>Kamis, 25 Agustus 2022</BoldSpan>
+                                        <BoldSpan>Rabu, 17 Agustus 2022</BoldSpan>
                                     </Flex> 
+                                    <Flex>
+                                        <IconCenter><img src={clock} /></IconCenter>                                       
+                                        <BoldSpan>09.30 - 11.30 WIB</BoldSpan>
+                                    </Flex> 
+                                    <Flex>
+                                        <IconCenter><img src={location} /></IconCenter>                                       
+                                        <BoldSpan>Teater Lt. 9 Universitas Ciputra</BoldSpan>
+                                    </Flex> 
+                                    <Flex>
+                                        <IconCenter><img src={dresscode} /></IconCenter>                                       
+                                        <BoldSpan>Bebas Rapi, Celana Panjang, Bersepatu</BoldSpan>
+                                    </Flex> 
+                                    <h3>Yang Perlu Diperhatikan</h3>
+                                    <Flex>
+                                        <Dot src={dot} />
+                                        <span>Setiap kelompok mengirimkan 2 perwakilan.</span>
+                                    </Flex>
+                                    <Flex>
+                                        <Dot src={dot} />
+                                        <span>Guidebook Selling dapat diakses pada tombol di bawah:<br /> (NB: akses akan dibuka pada tanggal 17 Agustus 2022).
+                                        <br /><br />
+                                        <Button href='https://drive.google.com/drive/folders/1MPUfCjqOz-6H83g62KbnLr2wdZ76Zrtk?usp=sharing' target='_blank'>Guidebook</Button>
+                                        </span>
+                                    </Flex>
                                 </Pad>                                                      
                             </Day>
                             <Rundown
@@ -320,54 +366,27 @@ const Schedule = () => {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 1.5 }}
                             >
-                                <h2>Rundown</h2>
-                                <Table>
-                                    <tbody>
-                                    <tr>
-                                        <td>08.00 - 08.15</td>
-                                        <td>Opening</td>
-                                    </tr>
-                                    <tr>
-                                        <td>08.15 - 08.45</td>
-                                        <td>Visi misi uc</td>
-                                    </tr>
-                                    <tr>
-                                        <td>08.45 - 09.15</td>
-                                        <td>Kurikulum mahasiswa dan akademik</td>
-                                    </tr>
-                                    <tr>
-                                        <td>09.15 - 09.45</td>
-                                        <td>Pengenalan departemen</td>
-                                    </tr>
-                                    <tr>
-                                        <td>09.45 - 10.15</td>
-                                        <td>Break</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10.15 - 10.45</td>
-                                        <td>Virtual Campus Tour</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10.45 - 12.15</td>
-                                        <td>Pengenalan Organisasi & UKM</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12.15 - 12.30</td>
-                                        <td>Video persiapan hari h</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12.30 - 12.40</td>
-                                        <td>Closing</td>
-                                    </tr>
-                                    </tbody>
-                                </Table> 
+                                <h2>Pra UC Day</h2>
+                                <Pad>                                    
+                                    <Flex>
+                                        <IconCenter><img src={calendar} /></IconCenter>                                       
+                                        <BoldSpan>Kamis, 25 Agustus 2022</BoldSpan>
+                                    </Flex> 
+                                    <Flex>
+                                        <IconCenter><img src={clock} /></IconCenter>                                       
+                                        <BoldSpan>08.00 - 12.30 WIB</BoldSpan>
+                                    </Flex> 
+                                    <h3>Platform: Live streaming Youtube</h3>
+                                </Pad>
+                                
                             </Rundown>
                         </Isi>
                     </div>
                     <div className={toggleState === 2 ? "maps active-maps" : "maps"}>
                         <Isi>
                         <Day>
-                            <h2>Opening & UC Day</h2>   
+                            <h2>Opening & UC Day</h2>  
+                            <h3>“The Exordium”</h3> 
                             <Pad>
                                 <h3>Tujuan Day</h3>
                                 <Flex>
@@ -552,6 +571,7 @@ const Schedule = () => {
                         <Isi>
                         <Day>
                             <h2>Prodi Day 1</h2>   
+                            <h3>“The Enhancement”</h3>
                             <Pad>
                                 <h3>Tujuan Day</h3>
                                 <Flex>
@@ -686,6 +706,7 @@ const Schedule = () => {
                         <Isi>
                         <Day>
                             <h2>Prodi Day 2</h2>
+                            <h3>“The Enhancement”</h3>
                             <Pad>
                                 <h3>Tujuan Day</h3>
                                 <Flex>
@@ -819,7 +840,8 @@ const Schedule = () => {
                     <div className={toggleState === 5 ? "maps active-maps" : "maps"}>
                         <Isi>
                         <Day>
-                            <h2>Talkshow</h2>   
+                            <h2>Talkshow Day</h2>  
+                            <h3>“Exploring the Horizon”</h3> 
                             <Pad>
                                 <h3>Tujuan Day</h3>
                                 <Flex>
@@ -949,6 +971,7 @@ const Schedule = () => {
                         <Isi>
                         <Day>
                             <h2>Selling Day</h2>
+                            <h3>“Another Step to Luminosity”</h3>
                             <Pad>
                                 <h3>Tujuan Day</h3>
                                 <Flex>
@@ -967,7 +990,19 @@ const Schedule = () => {
                                     <Dot src={dot} />
                                     <span>Mengajak mahasiswa baru Universitas Ciputra Surabaya agar menjadi individu yang memiliki kemauan untuk terus mengembangkan diri guna meraih prestasi setinggi-tingginya.</span>
                                 </Flex>
-                            </Pad>       
+                            </Pad>    
+                            <Pad>
+                                <h3>Tujuan MnG Trainee</h3>  
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Menambah relasi para mahasiswa baru dengan mahasiswa lainnya.</span>
+                                </Flex>
+                                <Flex>
+                                    <Dot src={dot} />
+                                    <span>Mahasiswa baru dapat lebih mengenal mahasiswa lainnya.</span>
+                                </Flex>
+
+                            </Pad>   
                             <Pad>
                                 <h3>7 Competencies</h3>
                                 <Flex>
@@ -1037,6 +1072,7 @@ const Schedule = () => {
                         </Day>
                         <Rundown>
                             <h2>Rundown</h2>
+                            <Subtitle>Selling</Subtitle>
                             <Table>
                                 <tbody>
                                 <tr>
@@ -1044,7 +1080,7 @@ const Schedule = () => {
                                     <td>Registrasi Trainee</td>
                                 </tr>
                                 <tr>
-                                    <td>08.00 - 08.30 </td>
+                                    <td>08.00- 08.30 </td>
                                     <td>Briefing pagi</td>
                                 </tr>
                                 <tr>
@@ -1065,6 +1101,47 @@ const Schedule = () => {
                                 </tr>
                                 </tbody>
                             </Table> 
+                            <Subtitle>MnG Trainee</Subtitle>
+                            <Table>
+                                <tbody>
+                                    <tr>
+                                        <td>13.00 - 13.25</td>
+                                        <td>Trainee sesi 1 jalan ke <Br/>lokasi MnG sesi 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13.25 - 15.07</td>
+                                        <td>MnG Trainee sesi 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15.07 - 15.32</td>
+                                        <td>Trainee sesi 1 balik ke lokasi selling, trainee sesi 2 jalan ke lokasi MnG sesi 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15.32 - 17.15</td>
+                                        <td>MnG Trainee sesi 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17.15 - 17.30</td>
+                                        <td>Trainee sesi 2 balik ke lokasi selling</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17.30 - 18.30</td>
+                                        <td>ISHOMA</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18.30- 18.50</td>
+                                        <td>Trainee sesi 3 jalan ke lokasi MnG sesi 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18.50- 20.32</td>
+                                        <td>MnG Trainee sesi 3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20.32- 20.47</td>
+                                        <td>Trainee sesi 3 balik ke lokasi selling</td>
+                                    </tr>
+                                </tbody>
+                            </Table>
                             <Padd>
                                 <Flexx>
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
@@ -1086,19 +1163,20 @@ const Schedule = () => {
                         <Isi>
                         <Day>
                             <h2>Closing</h2>
+                            <h3>“Unaccomplished Journey”</h3>
                             <Pad>
                                 <h3>Tujuan Sidang Senat</h3>
                                 <Flex>
                                     <Dot src={dot} />
-                                    <span>Untuk menjadikan sebuah acara formal peresmian mahasiswa baru untuk menjadi mahasiswa dan bagian dari keluarga Universitas Ciputra secara simbolik.</span>
+                                    <span>Untuk melaksanakan proses peresmian seluruh calon mahasiswa baru Universitas Ciputra tahun ajaran 2022/2022 menjadi mahasiswa dan bagian dari keluarga besar Universitas Ciputra secara simbolik.</span>
                                 </Flex>
                                 <Flex>
                                     <Dot src={dot} />
-                                    <span>Pengukuhan menjadi mahasiswa UC</span>
+                                    <span>Sebagai pengukuhan menjadi mahasiswa Universitas Ciputra tahun ajaran 2022/2023.</span>
                                 </Flex>
                                 <Flex>
                                     <Dot src={dot} />
-                                    <span>Memiliki rasa bangga menjadi mahasiswa UC</span>
+                                    <span>Memiliki rasa bangga menjadi mahasiswa Universitas Ciputra.</span>
                                 </Flex>
                             </Pad>    
                             <Pad>
@@ -1208,11 +1286,11 @@ const Schedule = () => {
                                     <td>Awarding Night, Perform All Star & Mrs Mr O-week 2022</td>
                                 </tr>
                                 <tr>
-                                    <td>19.42 - 20.57</td>
+                                    <td>19.42 - 21.00</td>
                                     <td>Performance & Closing Party</td>
                                 </tr>
                                 <tr>
-                                    <td>20.57 - 21.57</td>
+                                    <td>21.00 - 22.00</td>
                                     <td>Special Performance</td>
                                 </tr>
                                 </tbody>

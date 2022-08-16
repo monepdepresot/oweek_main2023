@@ -263,6 +263,9 @@ const ProdiDay2 = () => {
                                         <p>Dresscode: Kaos Warna Cream, Kuning, Mustard, yang Senada, Celana Panjang Bebas Sopan Kecuali Warna Hitam (Tidak Boleh Sobek-sobek), Sepatu Warna Bebas. </p>
                                         <p>Kertas gambar A3 (2 lembar / Trainee)</p>
                                         <p>Alat gambar (penggaris, pulpen, pensil, penghapus, alat warna) min 1 / trainee</p>
+                                        <p>Alat warna (cat air, pensil warna, marker, spidol, dll.). ( Sesuai kebutuhan kelompok)</p>
+                                        <p>Tools (gunting, cutter lem, double tip minimal lebar 1cm, penggaris). ( Sesuai kebutuhan kelompok)</p>
+                                        <p>Impraboard (Min. 1/kelompok)</p>
                                         <p>Laptop</p>
                                         <p>Tumblr</p>
                                         <p>Kaos berkerah</p>
@@ -280,10 +283,11 @@ const ProdiDay2 = () => {
                                 <HiddenBox>
                                     <Isi className={toggleState === 6 ? "maps active-maps" : "maps"}>
                                         <p>Dresscode: Kemeja Putih, Celana panjang Hitam Kain/Jeans</p>
-                                        <p>Kertas 1 - 2 lembar</p>
+                                        <p>Buku tulis</p>
                                         <p>Bolpen</p>
                                         <p>PIN</p>
-                                        <p>Baju IBM / Baju Serupa</p>
+                                        <p>HP</p>
+                                        <p>Catatan: HP dikumpulkan ke mentor masing-masing</p>
                                     </Isi>
                                 </HiddenBox>               
                             </Jurusan>
@@ -321,6 +325,7 @@ const ProdiDay2 = () => {
                                         <p>Dresscode: Kaos Warna-warni Sesuai Kelompok, Celana Kain/Training dan Sepatu Warna Bebas</p>
                                         <p>Botol Minum</p>
                                         <p>Slayer</p>
+                                        <p>Peralatan membuat mading (membawa alat gambar seperti pensil warna, spidol, origami, dll)</p>
                                     </Isi>
                                 </HiddenBox>               
                             </Jurusan>

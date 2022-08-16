@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-import { PowerBtn } from '../AllSvg'
+import home from '../img/home.svg'
 
 const Power = styled.button`
 position: absolute;
@@ -30,18 +30,13 @@ cursor: pointer;
     text-decoration: none;
     color: inherit;
 }
-
-@media only screen and (max-width: 768px) {
-    width: 2rem;
-    height: 2rem;
-}
 `
 
 const PowerButton3 = () => {
     return (
         <Power>
         <NavLink to="/schedule">
-        <PowerBtn className='PowerButton' />
+        <img src={home} className='PowerButton' />
         </NavLink>
         </Power>
     )

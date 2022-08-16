@@ -262,14 +262,12 @@ const ProdiDay1 = () => {
                                 <HiddenBox>
                                     <Isi className={toggleState === 4 ? "maps active-maps" : "maps"}>
                                         <p>Dresscode: Kemeja Berkerah Warna Terang, Celana Panjang Warna Hitam Sopan (Tidak Boleh Sobek-sobek), Sepatu Warna Bebas.</p>
-                                        <p>Kertas gambar A3 (2 lembar / Trainee)</p>
-                                        <p>Alat gambar (penggaris, pulpen, pensil, penghapus, alat warna) min 1 / trainee</p>
-                                        <p>Laptop</p>
-                                        <p>Tumblr</p>
+                                        <p>Laptop (1-2 / team)</p>
+                                        <p>Tumbler</p>
                                         <p>Kaos berkerah</p>
                                         <p>Notes</p>
                                         <p>Obat - obatan pribadi</p>
-                                        <p>Health protocol ( masker cadangan, hand sanitizer, dll )</p>
+                                        <p>Health protocol (masker cadangan, hand sanitizer, dll)</p>
                                     </Isi>
                                 </HiddenBox>               
                             </Jurusan>
@@ -280,9 +278,11 @@ const ProdiDay1 = () => {
                                 </Flex>        
                                 <HiddenBox>
                                     <Isi className={toggleState === 6 ? "maps active-maps" : "maps"}>
-                                        <p>Dresscode: Baju Kerah atau Kemeja Hitam, Celana Panjang Hitam Kain/Jeans</p>
-                                        <p>Kertas 1 - 2 lembar</p>
+                                        <p>Dresscode: Polo Hitam atau Kemeja Hitam, Celana Panjang Hitam Kain/Jeans</p>
+                                        <p>Buku tulis</p>
                                         <p>Bolpen</p>
+                                        <p>Laptop (2/kelompok)</p>
+                                        <p>Catatan: HP dikumpulkan ke mentor masing-masing</p>
                                     </Isi>
                                 </HiddenBox>               
                             </Jurusan>

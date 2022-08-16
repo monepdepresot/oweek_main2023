@@ -20,7 +20,6 @@ background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
 min-height: 100vh;
-width: 100vw;
 overflow:hidden;
 position: relative;
 text-align: left;
@@ -67,6 +66,7 @@ left: calc(2rem);
 z-index: 1;
 
 @media only screen and (max-width: 768px) {
+    gap: 5px;
     left: 1rem;
     top: 1rem;
 }
