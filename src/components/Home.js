@@ -5,12 +5,11 @@ import uc from '../img/logo/ucwhite.png';
 import bg from '../img/bg/Homebg.svg';
 
 import styledComponents from "styled-components";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import {motion} from 'framer-motion';
 import SocialIcons from "../subcomponents/SocialIcons";
 import Intro from "../subcomponents/Intro";
-import TaskModal from './TaskModal';
 import MapsModal from './MapsModal';
 import SpotifyModal from './SpotifyModal';
 
@@ -29,7 +28,7 @@ const Container = styledComponents.div`
 padding: 2rem;
 `
 
-const Task = styledComponents.a`
+const Task = styledComponents(NavLink)`
 color: #FDFBF7;
 position: absolute;
 top: 50%;
@@ -43,17 +42,6 @@ cursor: pointer;
     font-size: 12px;
 }
 `
-
-// const Task = styledComponents(NavLink)`
-// color: #FDFBF7;
-// position: absolute;
-// top: 50%;
-// right: calc(1rem + 2vw);
-// transform: rotate(90deg) translate(-50%, -50%);
-// text-decoration: none;
-// z-index: 1;
-// cursor: pointer;
-// `
 
 const Rules = styledComponents(NavLink)`
 color: #FDFBF7;
@@ -183,7 +171,6 @@ const Home = () => {
 
     const [showMapsModal, setShowMapsModal] = useState(false);
     const [showSpotifyModal, setShowSpotifyModal] = useState(false);
-    const [showTaskModal, setShowTaskModal] = useState(false);
 
     return ( 
         <MainContainer
@@ -197,7 +184,6 @@ const Home = () => {
             <SocialIcons setShowMapsModal={setShowMapsModal} setShowSpotifyModal={setShowSpotifyModal} />
 
             <Container>    
-                <TaskModal showTaskModal={showTaskModal} setShowTaskModal={setShowTaskModal} />
 
                 <RedDiv click={click} /> 
                 <YellowDiv click={click} /> 
@@ -216,7 +202,7 @@ const Home = () => {
                     <img src={uc} alt="" className='rightlogo' />                    
                 </Rightlogo>
 
-                <Task onClick={() => setShowTaskModal(true)}>
+                <Task to="/task">
                     <motion.h2
                     initial={{
                         y:-200,
@@ -230,21 +216,6 @@ const Home = () => {
                     whileTap={{ scale: 0.9 }}
                     >Task</motion.h2>
                 </Task>
-
-                {/* <Task to="/task">
-                    <motion.h2
-                    initial={{
-                        y:-200,
-                        transition: { type:'spring', duration: 1, delay:1}
-                    }}
-                    animate={{
-                        y:0,
-                        transition: { type:'spring', duration: 1, delay:1}
-                    }}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    >Task</motion.h2>
-                </Task> */}
                 <Rules to="/rules">
                     <motion.h2
                     initial={{

@@ -264,7 +264,6 @@ const ProdiDay1 = () => {
                                         <p>Dresscode: Kemeja Berkerah Warna Terang, Celana Panjang Warna Hitam Sopan (Tidak Boleh Sobek-sobek), Sepatu Warna Bebas.</p>
                                         <p>Laptop (1-2 / team)</p>
                                         <p>Tumbler</p>
-                                        <p>Kaos berkerah</p>
                                         <p>Notes</p>
                                         <p>Obat - obatan pribadi</p>
                                         <p>Health protocol (masker cadangan, hand sanitizer, dll)</p>

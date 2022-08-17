@@ -268,7 +268,6 @@ const ProdiDay2 = () => {
                                         <p>Impraboard (Min. 1/kelompok)</p>
                                         <p>Laptop</p>
                                         <p>Tumblr</p>
-                                        <p>Kaos berkerah</p>
                                         <p>Notes</p>
                                         <p>Obat - obatan pribadi</p>
                                         <p>Health protocol ( masker cadangan, hand sanitizer, dll )</p>
