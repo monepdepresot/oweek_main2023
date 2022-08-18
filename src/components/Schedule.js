@@ -1309,14 +1309,6 @@ const Schedule = () => {
                                     <BoldSpan>Kemeja Putih Berlengan Panjang/Pendek, Almamater UC, Rok Hitam, Flat Shoes Warna Dibebaskan (cewek), Celana Panjang Hitam Kain, Sepatu Pantofel Warna Dibebaskan (cowok)</BoldSpan>
                                 </Flexx>                     
                             </Padd>
-                            <Pad>                                
-                                <Link to="/mobilisasi">
-                                    <ClosingDetail>Mobilisasi Trainee</ClosingDetail>
-                                </Link>
-                                <Link to="/ketentuanclosing">
-                                    <ClosingDetail>Ketentuan Closing</ClosingDetail>
-                                </Link>                                
-                            </Pad>
                         </Rundown>
                     </Isi>
                     </div>                                        

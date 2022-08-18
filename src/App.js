@@ -9,10 +9,8 @@ import Task from './components/Task';
 import About from './components/About';
 import NotFound from './components/NotFound';
 import { AnimatePresence } from 'framer-motion';
-import Mobilisasi from './components/Schedule/Mobilisasi';
 import ProdiDay1 from './components/Schedule/ProdiDay1';
 import ProdiDay2 from './components/Schedule/ProdiDay2';
-import KetentuanClosing from './components/Schedule/KetentuanClosing';
 
 function App() {
   const location = useLocation();
@@ -30,10 +28,8 @@ function App() {
 
             <Route path='*' element={<NotFound />} /> 
 
-            <Route path='/mobilisasi' element={<Mobilisasi />} /> 
             <Route path='/prodiday1' element={<ProdiDay1 />} /> 
             <Route path='/prodiday2' element={<ProdiDay2 />} /> 
-            <Route path='/ketentuanclosing' element={<KetentuanClosing />} /> 
 
             <Route path='/m2022' element={<Home />} />  
           </Routes>  

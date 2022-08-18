@@ -351,8 +351,6 @@ const Task = () => {
                                     <li>Khusus kelompok ganjil</li>
                                     <li>Dikumpulkan secara hardcopy</li>
                                     <li>Dikumpulkan saat giliran presentasi business proposal</li>
-                                </ul>
-                                <ul>
                                     <li>Poster bisnis berukuran A3.</li>
                                     <li>Hal yang wajib dimasukan: Nama Bisnis, Foto Produk, Logo O-Week, Logo Horizon, dan Logo Bisnis.</li>
                                     <li>Tambahan lainnya dapat berupa harga, menu atau tipe produk, dan info penting lainnya.</li>
@@ -370,7 +368,26 @@ const Task = () => {
                                     <li>Setiap individu WAJIB membawa print file berwarna dibawah dengan ketentuan kertas HVS putih ukuran A4 <br/>
                                     File yang harus di print:<br/>
                                         <ul>
-                                            <li></li>
+                                            <li>Kelompok 1-6: <a href='https://bit.ly/TemplateMnG1-6' target='_blank'>https://bit.ly/TemplateMnG1-6</a>  </li>
+                                            <li>Kelompok 7-12: <a href='https://bit.ly/TemplateMnG7-12' target='_blank'>https://bit.ly/TemplateMnG7-12</a>  </li>
+                                            <li>Kelompok 13-18: <a href='https://bit.ly/TemplateMnG13-18' target='_blank'>https://bit.ly/TemplateMnG13-18</a>  </li>
+                                            <li>Kelompok 19-24: <a href='https://bit.ly/TemplateMnG19-24' target='_blank'>https://bit.ly/TemplateMnG19-24</a>  </li>
+                                            <li>Kelompok 25-30: <a href='https://bit.ly/TemplateMnG25-30' target='_blank'>https://bit.ly/TemplateMnG25-30</a>  </li>
+                                            <li>Kelompok 31-36: <a href='https://bit.ly/TemplateMnG31-36' target='_blank'>https://bit.ly/TemplateMnG31-36</a>  </li>
+                                            <li>Kelompok 37-42: <a href='https://bit.ly/TemplateMnG37-42' target='_blank'>https://bit.ly/TemplateMnG37-42</a>  </li>
+                                            <li>Kelompok 43-48: <a href='https://bit.ly/TemplateMnG43-48' target='_blank'>https://bit.ly/TemplateMnG43-48</a>  </li>
+                                            <li>Kelompok 49-54: <a href='https://bit.ly/TemplateMnG49-54' target='_blank'>https://bit.ly/TemplateMnG49-54</a>  </li>
+                                            <li>Kelompok 55-60: <a href='https://bit.ly/TemplateMnG55-60' target='_blank'>https://bit.ly/TemplateMnG55-60</a>  </li>
+                                            <li>Kelompok 61-66: <a href='https://bit.ly/TemplateMnG61-66' target='_blank'>https://bit.ly/TemplateMnG61-66</a>  </li>
+                                            <li>Kelompok 67-72: <a href='https://bit.ly/TemplateMnG67-72' target='_blank'>https://bit.ly/TemplateMnG67-72</a>  </li>
+                                            <li>Kelompok 73-78: <a href='https://bit.ly/TemplateMnG73-78' target='_blank'>https://bit.ly/TemplateMnG73-78</a>  </li>
+                                            <li>Kelompok 79-85: <a href='https://bit.ly/TemplateMnG79-85' target='_blank'>https://bit.ly/TemplateMnG79-85</a>  </li>
+                                            <li>Kelompok 86-92: <a href='https://bit.ly/TemplateMnG86-92' target='_blank'>https://bit.ly/TemplateMnG86-92</a>  </li>
+                                            <li>Kelompok 93-99: <a href='https://bit.ly/TemplateMnG93-99' target='_blank'>https://bit.ly/TemplateMnG93-99</a>  </li>
+                                            <li>Kelompok 100-106: <a href='https://bit.ly/TemplateMnG100-106' target='_blank'>https://bit.ly/TemplateMnG100-106</a> </li>
+                                            <li>Kelompok 107-113: <a href='https://bit.ly/TemplateMnG107-113' target='_blank'>https://bit.ly/TemplateMnG107-113</a>  </li>
+                                            <li>Kelompok 114-120: <a href='https://bit.ly/TemplateMnG114-120' target='_blank'>https://bit.ly/TemplateMnG114-120</a>  </li>
+                                            <li>Kelompok 121-127: <a href='https://bit.ly/TemplateMnG121-127' target='_blank'>https://bit.ly/TemplateMnG121-127</a>  </li>
                                         </ul>
                                     </li>
                                     <li>
@@ -381,7 +398,11 @@ const Task = () => {
                                         </ul>
                                         Sticker yang harus di print:
                                         <ul>
-                                            <li></li>
+                                            <li>Kelompok 1-25: <a href='https://bit.ly/StickerMnG1-25' target='_blank'>https://bit.ly/StickerMnG1-25</a> </li>
+                                            <li>Kelompok 26-50: <a href='https://bit.ly/StickerMnG26-50' target='_blank'>https://bit.ly/StickerMnG26-50</a> </li>
+                                            <li>Kelompok 51-75: <a href='https://bit.ly/StickerMnG51-75' target='_blank'>https://bit.ly/StickerMnG51-75</a> </li>
+                                            <li>Kelompok 76-101: <a href='https://bit.ly/StickerMnG76-101' target='_blank'>https://bit.ly/StickerMnG76-101</a> </li>
+                                            <li>Kelompok 102-127: <a href='https://bit.ly/StickerMnG102-127' target='_blank'>https://bit.ly/StickerMnG102-127</a> </li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -391,36 +412,36 @@ const Task = () => {
                                     <li>
                                     Berikut pembagian list koordinat (NB: akses drive akan dibuka pada tanggal 29 Agustus 2022):
                                         <ul>
-                                            <li>Kelompok 1-5:  https://bit.ly/MnGPanitiaOnline1-5 </li>
-                                            <li>Kelompok 6-10: https://bit.ly/MnGPanitiaOnline6-10</li>
-                                            <li>Kelompok 11-15: https://bit.ly/MnGPanitiaOnline11-15 </li>
-                                            <li>Kelompok 16-19: https://bit.ly/MnGPanitiaOnline16-19 </li>
-                                            <li>Kelompok 20-23: https://bit.ly/MnGPanitiaOnline20-23 </li>
-                                            <li>Kelompok 24-27: https://bit.ly/MnGPanitiaOnline24-27 </li>
-                                            <li>Kelompok 28-31: https://bit.ly/MnGPanitiaOnline28-31 </li>
-                                            <li>Kelompok 32-35: https://bit.ly/MnGPanitiaOnline32-35 </li>
-                                            <li>Kelompok 36-39: https://bit.ly/MnGPanitiaOnline36-39 </li>
-                                            <li>Kelompok 40-43: https://bit.ly/MnGPanitiaOnline40-43 </li>
-                                            <li>Kelompok 44-47: https://bit.ly/MnGPanitiaOnline44-47 </li>
-                                            <li>Kelompok 48-51: https://bit.ly/MnGPanitiaOnline48-51 </li>
-                                            <li>Kelompok 52-55: https://bit.ly/MnGPanitiaOnline52-55 </li>
-                                            <li>Kelompok 56-59: https://bit.ly/MnGPanitiaOnline56-59 </li>
-                                            <li>Kelompok 60-63: https://bit.ly/MnGPanitiaOnline60-63 </li>
-                                            <li>Kelompok 64-67: https://bit.ly/MnGPanitiaOnline64-67 </li>
-                                            <li>Kelompok 68-72: https://bit.ly/MnGPanitiaOnline68-72 </li>
-                                            <li>Kelompok 73-77: https://bit.ly/MnGPanitiaOnline73-77</li>
-                                            <li>Kelompok 78-81: https://bit.ly/MnGPanitiaOnline78-81 </li>
-                                            <li>Kelompok 82-85: https://bit.ly/MnGPanitiaOnline82-85 </li>
-                                            <li>Kelompok 86-89: https://bit.ly/MnGPanitiaOnline86-89 </li>
-                                            <li>Kelompok 90-93: https://bit.ly/MnGPanitiaOnline90-93 </li>
-                                            <li>Kelompok 94-97: https://bit.ly/MnGPanitiaOnline94-97 </li>
-                                            <li>Kelompok 98-101: https://bit.ly/MnGPanitiaOnline98-101 </li>
-                                            <li>Kelompok 102-106: https://bit.ly/MnGPanitiaOnline102-106 </li>
-                                            <li>Kelompok 107-111: https://bit.ly/MnGPanitiaOnline107-111 </li>
-                                            <li>Kelompok 112-115: https://bit.ly/MnGPanitiaOnline112-115 </li>
-                                            <li>Kelompok 116-119: https://bit.ly/MnGPanitiaOnline116-119 </li>
-                                            <li>Kelompok 120-123: https://bit.ly/MnGPanitiaOnline120-123 </li>
-                                            <li>Kelompok 124-127: https://bit.ly/MnGPanitiaOnline124-127 </li>
+                                            <li>Kelompok 1-5: <a href='https://bit.ly/MnGPanitiaOnline1-5' target='_blank'>https://bit.ly/MnGPanitiaOnline1-5</a>  </li>
+                                            <li>Kelompok 6-10: <a href='https://bit.ly/MnGPanitiaOnline6-10' target='_blank'>https://bit.ly/MnGPanitiaOnline6-10</a> </li>
+                                            <li>Kelompok 11-15: <a href='https://bit.ly/MnGPanitiaOnline11-15' target='_blank'>https://bit.ly/MnGPanitiaOnline11-15</a>  </li>
+                                            <li>Kelompok 16-19: <a href='https://bit.ly/MnGPanitiaOnline16-19' target='_blank'>https://bit.ly/MnGPanitiaOnline16-19</a>  </li>
+                                            <li>Kelompok 20-23: <a href='https://bit.ly/MnGPanitiaOnline20-23' target='_blank'>https://bit.ly/MnGPanitiaOnline20-23</a>  </li>
+                                            <li>Kelompok 24-27: <a href='https://bit.ly/MnGPanitiaOnline24-27' target='_blank'>https://bit.ly/MnGPanitiaOnline24-27</a>  </li>
+                                            <li>Kelompok 28-31: <a href='https://bit.ly/MnGPanitiaOnline28-31' target='_blank'>https://bit.ly/MnGPanitiaOnline28-31</a>  </li>
+                                            <li>Kelompok 32-35: <a href='https://bit.ly/MnGPanitiaOnline32-35' target='_blank'>https://bit.ly/MnGPanitiaOnline32-35</a>  </li>
+                                            <li>Kelompok 36-39: <a href='https://bit.ly/MnGPanitiaOnline36-39' target='_blank'>https://bit.ly/MnGPanitiaOnline36-39</a>  </li>
+                                            <li>Kelompok 40-43: <a href='https://bit.ly/MnGPanitiaOnline40-43' target='_blank'>https://bit.ly/MnGPanitiaOnline40-43</a>  </li>
+                                            <li>Kelompok 44-47: <a href='https://bit.ly/MnGPanitiaOnline44-47' target='_blank'>https://bit.ly/MnGPanitiaOnline44-47</a>  </li>
+                                            <li>Kelompok 48-51: <a href='https://bit.ly/MnGPanitiaOnline48-51' target='_blank'>https://bit.ly/MnGPanitiaOnline48-51</a>  </li>
+                                            <li>Kelompok 52-55: <a href='https://bit.ly/MnGPanitiaOnline52-55' target='_blank'>https://bit.ly/MnGPanitiaOnline52-55</a>  </li>
+                                            <li>Kelompok 56-59: <a href='https://bit.ly/MnGPanitiaOnline56-59' target='_blank'>https://bit.ly/MnGPanitiaOnline56-59</a>  </li>
+                                            <li>Kelompok 60-63: <a href='https://bit.ly/MnGPanitiaOnline60-63' target='_blank'>https://bit.ly/MnGPanitiaOnline60-63</a>  </li>
+                                            <li>Kelompok 64-67: <a href='https://bit.ly/MnGPanitiaOnline64-67' target='_blank'>https://bit.ly/MnGPanitiaOnline64-67</a>  </li>
+                                            <li>Kelompok 68-72: <a href='https://bit.ly/MnGPanitiaOnline68-72' target='_blank'>https://bit.ly/MnGPanitiaOnline68-72</a>  </li>
+                                            <li>Kelompok 73-77: <a href='https://bit.ly/MnGPanitiaOnline73-77' target='_blank'>https://bit.ly/MnGPanitiaOnline73-77</a> </li>
+                                            <li>Kelompok 78-81: <a href='https://bit.ly/MnGPanitiaOnline78-81' target='_blank'>https://bit.ly/MnGPanitiaOnline78-81</a>  </li>
+                                            <li>Kelompok 82-85: <a href='https://bit.ly/MnGPanitiaOnline82-85' target='_blank'>https://bit.ly/MnGPanitiaOnline82-85</a>  </li>
+                                            <li>Kelompok 86-89: <a href='https://bit.ly/MnGPanitiaOnline86-89' target='_blank'>https://bit.ly/MnGPanitiaOnline86-89</a>  </li>
+                                            <li>Kelompok 90-93: <a href='https://bit.ly/MnGPanitiaOnline90-93' target='_blank'>https://bit.ly/MnGPanitiaOnline90-93</a>  </li>
+                                            <li>Kelompok 94-97: <a href='https://bit.ly/MnGPanitiaOnline94-97' target='_blank'>https://bit.ly/MnGPanitiaOnline94-97</a>  </li>
+                                            <li>Kelompok 98-101: <a href='https://bit.ly/MnGPanitiaOnline98-101' target='_blank'>https://bit.ly/MnGPanitiaOnline98-101</a>  </li>
+                                            <li>Kelompok 102-106: <a href='https://bit.ly/MnGPanitiaOnline102-106' target='_blank'>https://bit.ly/MnGPanitiaOnline102-106</a>  </li>
+                                            <li>Kelompok 107-111: <a href='https://bit.ly/MnGPanitiaOnline107-111' target='_blank'>https://bit.ly/MnGPanitiaOnline107-111</a>  </li>
+                                            <li>Kelompok 112-115: <a href='https://bit.ly/MnGPanitiaOnline112-115' target='_blank'>https://bit.ly/MnGPanitiaOnline112-115</a>  </li>
+                                            <li>Kelompok 116-119: <a href='https://bit.ly/MnGPanitiaOnline116-119' target='_blank'>https://bit.ly/MnGPanitiaOnline116-119</a>  </li>
+                                            <li>Kelompok 120-123: <a href='https://bit.ly/MnGPanitiaOnline120-123' target='_blank'>https://bit.ly/MnGPanitiaOnline120-123</a>  </li>
+                                            <li>Kelompok 124-127: <a href='https://bit.ly/MnGPanitiaOnline124-127' target='_blank'>https://bit.ly/MnGPanitiaOnline124-127</a>  </li>
                                         </ul>
                                     </li>
                                     <li>Pengerjaan secara individu</li>
@@ -429,7 +450,7 @@ const Task = () => {
                                     <li>Setelah mendapatkan postingannya, trainee akan melihat instagram panitia yang ditag di postingan tersebut</li>
                                     <li>Untuk mendapatkan instagram panitia yang tepat, trainee akan melihat di list, di bagian mana panitia tersebut ditag. Contoh: koordinat yang didapatkan adalah Langit, (koordinat UC) maka Instagram yang di tag pada bagian langit di gambar UC adalah Instagram panitia yang perlu trainee follow)</li>
                                     <li>Setelah menemukan instagram panitia, trainee WAJIB follow instagram tersebut dan tidak boleh diunfollow dan trainee akan melihat caption postingan yang terdapat emoji dan nama panggilan panitia, emoji tersebut melambangkan divisi panitia.</li>
-                                    <li>Akan ada google drive https://bit.ly/FotoPanitiaMnGOnline yang diberikan, dimana trainee akan mencari foto panitia yang temukan sesuai dengan divisi dan nama panggilan. (NB: akses drive akan dibuka pada tanggal 29 Agustus 2022)</li>
+                                    <li>Akan ada google drive <a href='https://bit.ly/FotoPanitiaMnGOnline' target='_blank'>https://bit.ly/FotoPanitiaMnGOnline</a>  yang diberikan, dimana trainee akan mencari foto panitia yang temukan sesuai dengan divisi dan nama panggilan. (NB: akses drive akan dibuka pada tanggal 29 Agustus 2022)</li>
                                     <li>
                                     Trainee WAJIB post foto panitia sesuai dengan list yang didapatkan oleh trainee di story instagram trainee dan diberi caption yaitu kalimat/puisi mengajak berkenalan dari huruf nama panitia tersebut pada story secara berurutan. Dan menambahkan tag @oweekucs, @mngoweek2022, @(instagram panitia yang di post fotonya) <br/>
                                     Contoh kalimat/puisi: KAY,
@@ -443,7 +464,7 @@ const Task = () => {
                                     <li>Format nama: Nomor Kelompok_Nama Kelompok_Nama Lengkap Trainee (Contoh: 1_Biru_Anastasia Jesslyn)</li>
                                     <li>Format file: PDF</li>
                                     <li>Deadline: 20.00 WIB, 1 September 2022</li>
-                                    <li>Link pengumpulan MnG Panitia Online: https://bit.ly/MnGPanitiaOnline</li>
+                                    <li>Link pengumpulan MnG Panitia Online: <a href='https://bit.ly/MnGPanitiaOnline' target='_blank'>https://bit.ly/MnGPanitiaOnline</a> </li>
                                     <li>Pengumpulan akan dibuka dari tanggal 29 Agustus 2022 dan ditutup pada tanggal 1 September 2022 pukul 20.00 WIB. Pengumpulan hanya diperbolehkan satu kali saja.</li>
                                 </ul>
                             </div>
@@ -474,7 +495,7 @@ const Task = () => {
                                     <li>Dikumpulkan secara hardcopy.</li>
                                     <li>Dikumpulkan saat giliran presentasi business proposal.</li>
                                 </ul>
-                                <h2>Pengumpulan poster ide business</h2>
+                                <h2>Pengumpulan Poster Ide Business</h2>
                                 <ul>
                                     <li>Poster bisnis berukuran A3.</li>
                                     <li>Hal yang wajib dimasukan: Nama Bisnis, Foto Produk, Logo O-Week, Logo Horizon, dan Logo Bisnis.</li>
@@ -514,25 +535,25 @@ const Task = () => {
                                 <ul>
                                     <li>Dalam bentuk hard copy</li>
                                     <li>Dikumpulkan ke AMD masing-masing setelah registrasi pagi</li>
-                                    <li>Link template laporan checklist barang loading in: https://bit.ly/laporanchecklistloadingin</li>
+                                    <li>Link template laporan checklist barang loading in: <a href='https://bit.ly/laporanchecklistloadingin' target='_blank'>https://bit.ly/laporanchecklistloadingin</a> </li>
                                 </ul>
                                 <h2>Pengumpulan Laporan Kendaraan Loading In</h2>
                                 <ul>
                                     <li>Dalam bentuk hard copy</li>
                                     <li>Dikumpulkan ke AMD masing-masing setelah registrasi pagi</li>
-                                    <li>Link template laporan kendaraan loading in: https://bit.ly/laporankendaraanloading</li>
+                                    <li>Link template laporan kendaraan loading in: <a href='https://bit.ly/laporankendaraanloading' target='_blank'>https://bit.ly/laporankendaraanloading</a> </li>
                                 </ul>
                                 <h2>Pengumpulan Laporan Kendaraan Hari H Selling </h2>
                                 <ul>
                                     <li>Dalam bentuk hard copy</li>
                                     <li>Dikumpulkan ke AMD masing-masing setelah registrasi pagi</li>
-                                    <li>Link template laporan kendaraan hari H Selling: https://bit.ly/laporankendaraanselling</li>
+                                    <li>Link template laporan kendaraan hari H Selling: <a href='https://bit.ly/laporankendaraanselling' target='_blank'>https://bit.ly/laporankendaraanselling</a> </li>
                                 </ul>
                                 <h2>Pengumpulan Laporan Jasa Eksternal Selling, jika menggunakan jasa eksternal untuk loading in</h2>
                                 <ul>
                                     <li>Dalam bentuk hard copy</li>
                                     <li>Dikumpulkan ke AMD masing-masing setelah registrasi pagi</li>
-                                    <li>Link template laporan jasa eksternal: https://bit.ly/formjasaexternal</li>
+                                    <li>Link template laporan jasa eksternal: <a href='https://bit.ly/formjasaexternal' target='_blank'>https://bit.ly/formjasaexternal</a> </li>
                                 </ul>
                                 <h2>Video Refleksi</h2>
                                 <ul>
@@ -548,10 +569,10 @@ const Task = () => {
                                             <li>
                                                 <span>Link twibbon:</span>
                                                 <ul>
-                                                    <li>Kelompok 1-31: https://bit.ly/TwibbonStory1-31</li>
-                                                    <li>Kelompok 32-63: https://bit.ly/TwibbonStory32-63</li>
-                                                    <li>Kelompok 64-95: https://bit.ly/TwibbonStory64-95</li>
-                                                    <li>Kelompok 96-127: https://bit.ly/TwibbonStory96-127</li>
+                                                    <li>Kelompok 1-31: <a href='https://bit.ly/TwibbonStory1-31' target='_blank'>https://bit.ly/TwibbonStory1-31</a> </li>
+                                                    <li>Kelompok 32-63: <a href='https://bit.ly/TwibbonStory32-63' target='_blank'>https://bit.ly/TwibbonStory32-63</a> </li>
+                                                    <li>Kelompok 64-95: <a href='https://bit.ly/TwibbonStory64-95' target='_blank'>https://bit.ly/TwibbonStory64-95</a> </li>
+                                                    <li>Kelompok 96-127: <a href='https://bit.ly/TwibbonStory96-127' target='_blank'>https://bit.ly/TwibbonStory96-127</a> </li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -592,7 +613,7 @@ const Task = () => {
                                     <li>Format nama: Nomor Kelompok_Nama Kelompok_Nama Lengkap Trainee</li>
                                     <li>Format file: PDF</li>
                                     <li>Deadline: 1 September 2022, 20.00 WIB</li>
-                                    <li>Link pengumpulan MnG Panitia Online: https://bit.ly/MnGPanitiaOnline </li>
+                                    <li>Link pengumpulan MnG Panitia Online: <a href='https://bit.ly/MnGPanitiaOnline' target='_blank'>https://bit.ly/MnGPanitiaOnline</a>  </li>
                                     <li>Pengumpulan akan dibuka dari tanggal 29 Agustus 2022 dan ditutup pada tanggal 1 September 2022 pukul 20.00 WIB. Pengumpulan hanya diperbolehkan satu kali saja.</li>
                                 </ul>
                                 <h2>Tugas Refleksi</h2>
@@ -645,8 +666,8 @@ const Task = () => {
                                     <li>Deadline: 2 September 2022, 22.00 WIB</li>
                                     <li>Format nama: No Kelompok_Nama Kelompok_Laporan Penjualan (ex: 1_Biru_Laporan Penjualan)</li>
                                     <li>Format file: PDF</li>
-                                    <li>Link template Laporan Penjualan: https://bit.ly/TemplateLaporanPenjualan</li>
-                                    <li>Link pengumpulan Laporan Penjualan: https://bit.ly/PengumpulanLaporanPenjualan</li>
+                                    <li>Link template Laporan Penjualan: <a href='https://bit.ly/TemplateLaporanPenjualan' target='_blank'>https://bit.ly/TemplateLaporanPenjualan</a> </li>
+                                    <li>Link pengumpulan Laporan Penjualan: <a href='https://bit.ly/PengumpulanLaporanPenjualan' target='_blank'>https://bit.ly/PengumpulanLaporanPenjualan</a> </li>
                                     <li>Pengumpulan akan dibuka dari tanggal 2 September 2022 pukul 21.00 WIB dan ditutup pada pukul 22.00 WIB. Pengumpulan hanya diperbolehkan satu kali saja.</li>
                                 </ul>
                                 <h2>Mengumpulkan Laporan Pertanggungjawaban Selling 2022.</h2>
@@ -656,8 +677,8 @@ const Task = () => {
                                     <li>Deadline: 2 September 2022, 22.00 WIB</li>
                                     <li>Format nama: No Kelompok_Nama Kelompok_LPJ (ex: 1_Biru_LPJ)</li>
                                     <li>Format file: PDF</li>
-                                    <li>Link template Laporan Pertanggungjawaban: https://bit.ly/templatelpjsellingday</li>
-                                    <li>Link pengumpulan Laporan Pertanggungjawaban: https://bit.ly/lpjsellingday</li>
+                                    <li>Link template Laporan Pertanggungjawaban: <a href='https://bit.ly/templatelpjsellingday' target='_blank'>https://bit.ly/templatelpjsellingday</a> </li>
+                                    <li>Link pengumpulan Laporan Pertanggungjawaban: <a href='https://bit.ly/lpjsellingday' target='_blank'>https://bit.ly/lpjsellingday</a> </li>
                                     <li>Pengumpulan akan dibuka dari tanggal 2 September 2022 pukul 21.00 WIB dan ditutup pada pukul 22.00 WIB. Pengumpulan hanya diperbolehkan satu kali saja.</li>
                                 </ul>
                                 <h2>Ketentuan Tambahan</h2>
@@ -675,11 +696,41 @@ const Task = () => {
                                 </ul>
                                 <h2>Ketentuan Lengkap Closing O-WEEK 2022</h2>
                                 <ul>
-                                    <li></li>
+                                    <li>
+                                        Dresscode:
+                                        <ul>
+                                            <li>Untuk laki - laki : Kemeja Putih, Celana panjang hitam, sepatu formal</li>
+                                            <li>Untuk perempuan: Kemeja putih, baju tidak boleh menerawang,  rok dibawah lutut, flat shoes warna bebas (dilarang menggunakan high heels)</li>
+                                        </ul>
+                                    </li>
+                                    <li>Trainee wajib melakukan absen pada jam 14:00- 15:00 (KLOTER 1)  dan 15:00- 16:00 (KLOTER 2) dengan ketentuan mobilisasi sesuai yang dijelaskan . Absen akan ditutup sesuai pembagian kloter absen masing-masing dan trainee yang belum melakukan absensi akan dianggap telat.</li>
+                                    <li>Trainee wajib mematuhi protokol kesehatan dan menjaga kebersihan area selama acara Closing O-Week 2022 berlangsung</li>
+                                    <li>Trainee wajib menggunakan masker KF 94 berwarna putih dan membawa satu masker dengan tipe dan warna yang sama sebagai cadangan</li>
+                                    <li>Trainee diwajibkan membawa hand sanitizer/tissue basah </li>
+                                    <li>Trainee disarakan membawa tissue kering</li>
+                                    <li>Trainee wajib mengikuti seluruh rangkaian acara closing dan Absen ulang akan dilakukan pada akhir acara closing</li>
+                                    <li>Trainee dapat menggunakan photobooth sesuai dengan jadwal yang diberikan yaitu pada saat waktu registrasi ulang (14:00-16:00) dan saat ISHOMA (17:30 - 18:30)</li>
+                                    <li>Setiap Kelompok AMD hanya diperbolehkan melakukan photobooth sekali (disarankan menggunakan photobooth ketika anggota kelompok lengkap)</li>
                                 </ul>
                                 <h2>Peraturan Alur Registrasi Closing O-WEEK 2022</h2>
                                 <ul>
-                                    <li></li>
+                                    <li>Pukul 14.00-16.00, trainee tiba di Palimanan Cafe & Resto sesuai pembagian kloter. Trainee diperbolehkan membawa mobil dengan memperhatikan peraturan yang diberikan namun direkomendasikan untuk di drop off oleh pengantar/orang tua karena tempat parkir yang ada terbatas.</li>
+                                    <li>
+                                        Ketentuan bagi trainee yang membawa mobil:
+                                        <ul>
+                                            <li>Mobil minimal berisi 4 trainee</li>
+                                            <li>Mobil diparkirkan di Parking Area Palimanan Cafe & Resto</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Ketentuan Drop Off: <br/>
+                                        Drop oleh orang tua atau pengantar trainee di lobby Palimanan dan diarahkan oleh SID/panitia  ke arah selanjutnya yaitu ke driving range. Drop off setiap mobil tidak diperbolehkan lebih dari 1 menit untuk mencegah kemacetan pada entrance Palimanan.
+                                    </li>
+                                    <li>Saat memasuki area Palimanan, Trainee wajib melakukan pemeriksaan suhu badan yang akan diarahkan oleh panitia O-Week</li>
+                                    <li>Setelah diarahkan oleh SID dan tiba di driving range, trainee scan barcode di panggung.</li>
+                                    <li>Barcode akan mengarahkan ke google form, dimana trainee harus mengupload data diri dan foto selfie dengan layar led panggung yang menunjukkan jam.</li>
+                                    <li>Google form akan ditutup jika sudah melebihi batas juam dan trainee yang belum absen akan dianggap telat</li>
+                                    <li>Trainee yang kelompok O-Week-nya sudah lengkap diperbolehkan untuk foto di photobooth selama rentan waktu pukul 14:00 - 16:00.</li>
                                 </ul>
                             </div>
                         </Isi>
