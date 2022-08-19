@@ -12,8 +12,8 @@ background-color: #FCF6F4;
 padding: 0.3rem;
 border-radius: 50%;
 border: 0px solid #000;
-width: 2.5rem;
-height: 2.5rem;
+width: 2rem;
+height: 2rem;
 
 display: flex;
 justify-content: center;
@@ -35,7 +35,7 @@ cursor: pointer;
 const PowerButton3 = () => {
     return (
         <Power>
-        <NavLink to="/schedule">
+        <NavLink to="/task">
         <img src={home} className='PowerButton' />
         </NavLink>
         </Power>

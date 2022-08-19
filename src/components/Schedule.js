@@ -137,6 +137,13 @@ width: 100%;
 border: 1px solid white;
 `
 
+const Praucday = styledComponents(motion.div)`
+width: 100%;
+display: flex;
+flex-direction: column;
+gap: 30px;
+`
+
 const Table = styledComponents.table`
 padding: 5px 15px;
 
@@ -200,13 +207,13 @@ margin: 30px 0px;
 padding-right: 15px
 `
 
-const ClosingDetail = styledComponents.h3`
-&:hover {
-    color: #00B984;
-    text-decoration: underline;
-    text-decoration-color: #00B984;
-}
-`
+// const ClosingDetail = styledComponents.h3`
+// &:hover {
+//     color: #00B984;
+//     text-decoration: underline;
+//     text-decoration-color: #00B984;
+// }
+// `
 
 const Button = styledComponents.a`
 background: #00B984;
@@ -251,6 +258,15 @@ display: none;
 
 @media (max-width: 500px) {
     display: initial;
+}
+`
+
+const Center2 = styledComponents.div`
+margin-bottom: 5px;
+
+@media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
 }
 `
 
@@ -355,31 +371,62 @@ const Schedule = () => {
                                     <Flex>
                                         <Dot src={dot} />
                                         <span>Guidebook Selling dapat diakses pada tombol di bawah:<br /> (NB: akses akan dibuka pada tanggal 17 Agustus 2022).
-                                        <br /><br />
-                                        <Button href='https://drive.google.com/drive/folders/1MPUfCjqOz-6H83g62KbnLr2wdZ76Zrtk?usp=sharing' target='_blank'>Guidebook</Button>
+                                        <br /><br />                                                                            
                                         </span>
                                     </Flex>
-                                </Pad>                                                      
+                                    <Center2>
+                                        <Button href='https://drive.google.com/drive/folders/1MPUfCjqOz-6H83g62KbnLr2wdZ76Zrtk?usp=sharing' target='_blank'>Guidebook</Button>
+                                    </Center2>  
+                                </Pad>    
+                                                                                  
                             </Day>
-                            <Rundown
-                            initial={{ opacity: 0, x: 25 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 1.5 }}
-                            >
-                                <h2>Pra UC Day</h2>
-                                <Pad>                                    
-                                    <Flex>
-                                        <IconCenter><img src={calendar} /></IconCenter>                                       
-                                        <BoldSpan>Kamis, 25 Agustus 2022</BoldSpan>
-                                    </Flex> 
-                                    <Flex>
-                                        <IconCenter><img src={clock} /></IconCenter>                                       
-                                        <BoldSpan>08.00 - 12.30 WIB</BoldSpan>
-                                    </Flex> 
-                                    <h3>Platform: Live streaming Youtube</h3>
-                                </Pad>
-                                
-                            </Rundown>
+                            <Praucday>
+                                <Rundown
+                                initial={{ opacity: 0, x: 25 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 1.5 }}
+                                >
+                                    <h2>Pra UC Day</h2>
+                                    <Pad>                                    
+                                        <Flex>
+                                            <IconCenter><img src={calendar} /></IconCenter>                                       
+                                            <BoldSpan>Kamis, 25 Agustus 2022</BoldSpan>
+                                        </Flex> 
+                                        <Flex>
+                                            <IconCenter><img src={clock} /></IconCenter>                                       
+                                            <BoldSpan>08.00 - 12.30 WIB</BoldSpan>
+                                        </Flex> 
+                                        <h3>Platform: Live streaming Youtube</h3>
+                                    </Pad>                                    
+                                </Rundown>
+                                <Rundown
+                                initial={{ opacity: 0, x: 25 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 1.5 }}
+                                >
+                                    <h2>Parents Gathering</h2>
+                                    <Pad>                                    
+                                        <Flex>
+                                            <IconCenter><img src={calendar} /></IconCenter>                                       
+                                            <BoldSpan>Sabtu, 27 Agustus 2022</BoldSpan>
+                                        </Flex> 
+                                        <Flex>
+                                            <Dot src={dot} />
+                                            <span>Untuk undangan akan dikirimkan melalui email orang tua dan mahasiswa</span>
+                                        </Flex>
+                                        <Flex>
+                                            <Dot src={dot} />
+                                            <span>Untuk informasi lebih lanjut dapat menghubungi +62 813-3635-8191 (WA BMA)</span>
+                                        </Flex>
+                                        <p>Pendaftaran Parents Gathering: </p>
+                                        <Center2>
+                                            <Button href='https://bit.ly/PARENTSGATHERINGUC2022' target='_blank'>Daftar</Button>
+                                        </Center2>
+                                    </Pad>
+                                    
+                                </Rundown>
+                            </Praucday>
+                            
                         </Isi>
                     </div>
                     <div className={toggleState === 2 ? "maps active-maps" : "maps"}>
@@ -632,11 +679,6 @@ const Schedule = () => {
                                     <Dot src={dot} />
                                     <span>Disarankan membawa tissue kering dan tissue basah.</span>
                                 </Flex>
-                            </Pad>
-                            <Pad>                                
-                                <Link to="/prodiday1">
-                                    <ClosingDetail>Perlengkapan Prodi Day 1</ClosingDetail>
-                                </Link>                                
                             </Pad>                     
                         </Day>
                         <Rundown>
@@ -771,12 +813,7 @@ const Schedule = () => {
                                     <Dot src={dot} />
                                     <span>Disarankan membawa tissue kering dan tissue basah.</span>
                                 </Flex>
-                            </Pad>
-                            <Pad>                                
-                                <Link to="/prodiday2">
-                                    <ClosingDetail>Perlengkapan Prodi Day 2</ClosingDetail>
-                                </Link>                                
-                            </Pad>                   
+                            </Pad>                 
                         </Day>
                         <Rundown>
                             <h2>Rundown</h2>

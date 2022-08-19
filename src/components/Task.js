@@ -34,6 +34,7 @@ h1, h2, h3, p, li, a, span {
 
 li {
     margin-bottom: 5px;
+    line-height: 130%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -277,12 +278,35 @@ const Task = () => {
                                 <ul>
                                     <li>Tugas diberikan mulai tanggal 17 Agustus 2022</li>
                                     <li>Deadline: 26 Agustus 2022, 23.59 WIB</li>
+                                    <li>Link Twibbon: <a href='https://drive.google.com/drive/folders/1ic1zI10ort3mfRdeCXh75jJF0yvH0mE8' target='_blank'>https://drive.google.com/drive/folders/1ic1zI10ort3mfRdeCXh75jJF0yvH0mE8</a></li>
                                     <li>
                                         <span>Ketentuan:</span>
                                         <ul>
                                             <li>Slide pertama upload foto sendiri menggunakan Twibbon GIF. Foto yang diupload wajib menggunakan baju berkerah dan menunjukkan setengah badan ke atas. Foto tidak boleh menggunakan masker.</li>
                                             <li>Slide kedua upload foto bersama semua anggota kelompok dan AMD menggunakan baju berkerah berwarna sama.</li>
+                                            <li>Upload di akun Instagram pribadi (akun TIDAK BOLEH diprivate dan TIDAK BOLEH second account).</li>
+                                            <li>Foto dan caption tidak mengandung SARA dan hal negatif lainnya.</li>
+                                            <li>Caption menggunakan bahasa yang sopan.</li>
+                                            <li>Menggunakan baju bebas WAJIB BERKERAH sopan dan rapi (TIDAK BOLEH menggunakan pakaian yang sobek-sobek, tembus pandang, pendek, tanktop, dan lain-lain).</li>
+                                            <li>WAJIB memposting foto individu dengan twibbon GIF yang sudah disediakan.</li>
+                                            <li>WAJIB memposting foto kelompok pada slide kedua dengan twibbon foto yang sudah disediakan.</li>
+                                            <li>Ratio foto WAJIB sesuai dengan ukuran twibbon.</li>
+                                            <li>Wajah harus kelihatan dengan jelas, tidak ditutup ataupun ketutupan twibbon.</li>
+                                            <li>Foto diambil dengan posisi yang proporsional (minimal setengah badan).</li>
+                                            <li>Postingan WAJIB dikeep hingga closing O-Week pada tanggal 3 September 2022.</li>
                                         </ul>
+                                    </li>
+                                    <li>
+                                        Caption: <br/>
+                                        Hi, I’m (Nama Lengkap) from (Asal Nama SMA). I’m joining (Jurusan’Angkatan) and I believe that with hope, we rise, to emblazon! <br/><br/>
+                                        ... (tuliskan minimal 1 kalimat alasan positif memilih UC, 1 kalimat mengenai harapan kalian untuk oweek UC, 1 kalimat harapan yang diinginkan selama berkuliah di UC) <br/><br/>
+                                        #HORIZON #HopeRiseEmblazon #OweekUCS2022 #UCpeople <br/><br/>
+                                        WAJIB tag akun: @universitasciputra @oweekucs<br/><br/>
+                                        Ex.<br/>
+                                        Hi! I’m Felicia Angie Hosea from SMA Ciputra. I’m joining Psychology’22 and I believe that with hope, we rise, to emblazon! <br/><br/>
+                                        ... (tuliskan minimal 1 kalimat alasan positif memilih UC, 1 kalimat mengenai harapan kalian untuk oweek UC, 1 kalimat harapan yang diinginkan selama berkuliah di UC) <br/><br/>
+                                        #HORIZON #HopeRiseEmblazon #OweekUCS2022 #UCpeople <br/><br/>
+                                        WAJIB tag akun: @universitasciputra @oweekucs<br/><br/>
                                     </li>
                                 </ul>
                             </div>
@@ -467,6 +491,8 @@ const Task = () => {
                                     <li>Link pengumpulan MnG Panitia Online: <a href='https://bit.ly/MnGPanitiaOnline' target='_blank'>https://bit.ly/MnGPanitiaOnline</a> </li>
                                     <li>Pengumpulan akan dibuka dari tanggal 29 Agustus 2022 dan ditutup pada tanggal 1 September 2022 pukul 20.00 WIB. Pengumpulan hanya diperbolehkan satu kali saja.</li>
                                 </ul>
+                                <h2>Bukti Upload Twibbon</h2>
+                                <span>Bukti upload twibbon ditunjukkan saat registrasi</span>
                             </div>
                             <div className={toggleState === 4 ? "maps active-maps" : "maps"}>
                                 <h2>Tag Tumblr Trainee</h2>
@@ -529,6 +555,8 @@ const Task = () => {
                                         Wajib Tag : @universitasciputra @oweekucs
                                     </li>
                                 </ul>
+                                <h2>Keperluan Tambahan</h2>
+                                <span>Wajib membawa perlengkapan sesuai dengan ketentuan prodi masing-masing. <br/> <Link to='/prodiday1'><h3>Lihat Keperluan Prodi Day 1</h3></Link></span>
                             </div>
                             <div className={toggleState === 5 ? "maps active-maps" : "maps"}>
                                 <h2>Pengumpulan Laporan Checklist Barang Loading In</h2>
@@ -586,9 +614,9 @@ const Task = () => {
                                 </ul>
                                 <h2>Keperluan Tambahan</h2>
                                 <ul>
-                                    <li>Wajib membawa perlengkapan sesuai dengan ketentuan prodi masing-masing (lihat menu Prodi Day).</li>
                                     <li>WAJIB membawa minimal 80 permen</li>
                                     <li>WAJIB membawa 16 surat kecil (tulis tangan) untuk menyemangati panitia</li>
+                                    <li>Wajib membawa perlengkapan sesuai dengan ketentuan prodi masing-masing. <br/> <Link to='/prodiday2'><h3>Lihat Keperluan Prodi Day 2</h3></Link></li>
                                 </ul>
                             </div>
                             <div className={toggleState === 6 ? "maps active-maps" : "maps"}>
@@ -638,7 +666,7 @@ const Task = () => {
                                                     <li>Insight dari Talkshow sesi 2 - “Creating Youthpreneur in Digital Era”</li>
                                                 </ul>
                                             </li>
-                                            <li>Durasi masing-masing video story insight dari Talkshow minimal 30 detik atau 1 story (1 video insight sesi 1, 1 video insight sesi 2 (secara keseluruhan, beserta alasannya).</li>
+                                            <li>Durasi video story insight dari Talkshow minimal berdurasi 60 detik (memuat perkenalan diri, insight dari sesi 1, dan insight dari sesi 2).</li>
                                             <li>Story WAJIB berisikan wajah trainee dan berbentuk video dimana trainee berbicara di depan kamera (TIDAK BOLEH foto).</li>
                                             <li>Story TIDAK BOLEH mengandung unsur porno, SARA, dan hal negatif lainnya.</li>
                                             <li>Saat membuat video WAJIB menggunakan seragam di hari-H Talkshow Day & celana panjang hitam.</li>

@@ -9,11 +9,11 @@ left: 50%;
 transform: translate(-50%, 0);
 
 background-color: black;
-padding: 0.3rem;
+padding: 0.5rem;
 border-radius: 50%;
 border: 0px solid #000;
-width: 2.5rem;
-height: 2.5rem;
+width: 2rem;
+height: 2rem;
 
 display: flex;
 justify-content: center;
