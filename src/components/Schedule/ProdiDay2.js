@@ -17,6 +17,7 @@ const MainContainer = styledComponents(motion.div)`
 background-image: url(${bg});
 background-size: cover;
 background-repeat: no-repeat;
+background-attachment: fixed;
 background-position: center;
 min-height: 100vh;
 overflow:hidden;
@@ -160,7 +161,7 @@ const ProdiDay2 = () => {
                                 </Flex>        
                                 <HiddenBox>
                                     <Isi className={toggleState === 1 ? "maps active-maps" : "maps"}>
-                                        <p>Dresscode: Kemeja Putih</p>
+                                        <p>Dresscode: Kemeja Putih dan Dasi Bebas</p>
                                         <p>Alat tulis secukupnya</p>
                                     </Isi>
                                 </HiddenBox>               

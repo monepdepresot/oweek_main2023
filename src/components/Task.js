@@ -20,6 +20,7 @@ background-image: url(${bg});
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
+background-attachment: fixed;
 min-height: 100vh;
 overflow:hidden;
 position: relative;
@@ -271,7 +272,7 @@ const Task = () => {
                                     <li>Deadline: 26 Agustus 2022, 23.59 WIB</li>
                                     <li>Format nama: No Kelompok_Nama Kelompok_B-ProRevisi (ex: 1_Biru_B-ProRevisi)</li>
                                     <li>Format file: PDF</li>
-                                    <li>Link pengumpulan: <a href='https://bit.ly/revisiproposalbusiness' target='_blank'>https://bit.ly/revisiproposalbusiness</a></li>
+                                    <li>Link pengumpulan: <a href='https://bit.ly/revisiproposalbusiness' target='_blank'>https://bit.ly/revisiproposalbusiness</a></li>                                   
                                     <li>Pengumpulan akan dibuka dari tanggal 25 Agustus 2022 dan ditutup pada tanggal 26 Agustus 2022 pukul 23.59 WIB. Pengumpulan hanya diperbolehkan satu kali saja.</li>
                                 </ul>
                                 <h2>Upload Twibbon</h2>
@@ -313,6 +314,7 @@ const Task = () => {
                             <div className={toggleState === 3 ? "maps active-maps" : "maps"}>
                                 <h2>Trainee Name Tag</h2>
                                 <ul>
+                                    <li>Link Download File Trainee O-Week Card dan Name Tag Trainee: <a href='https://drive.google.com/drive/u/1/folders/1KKeHGMfLTJEbNvnc5_QxOQmrs3RbW5Nx' target='_blank'>https://drive.google.com/drive/u/1/folders/1KKeHGMfLTJEbNvnc5_QxOQmrs3RbW5Nx</a></li>
                                     <li>Tugas diinformasikan melalui AMD.</li>
                                     <li>Deadline: Senin, 29 Agustus 2022 (dibawa saat registrasi)</li>
                                     <li>
@@ -533,6 +535,7 @@ const Task = () => {
                                     <li>Upload satu foto bersama teman satu jurusan di akun instagram pribadi Trainee.</li>
                                     <li>Foto diupload menggunakan twibbon sesuai dengan jurusan masing masing.</li>
                                     <li>Deadline: 30 Agustus 2022, 23.59 WIB.</li>
+                                    <li>Link twibbon: <a href='https://bit.ly/TwibbonProdiUC' target='_blank'>https://bit.ly/TwibbonProdiUC</a> (NB: akses drive akan dibuka pada tanggal 29 Agustus 2022).</li>
                                     <li>
                                         <span>Ketentuan:</span>
                                         <ul>
@@ -586,7 +589,7 @@ const Task = () => {
                                 <h2>Video Refleksi</h2>
                                 <ul>
                                     <li>Upload video refleksi berupa instagram story berdurasi minimal 15 detik (1 story)</li>
-                                    <li>Video menggunakan filter, berisi perkenalan diri, recap kegiatan yang diikuti saat Prodi Day hari itu serta tanggapan, rate dari 1-10 untuk kegiatan Prodi Day dan harapan untuk masing-masing jurusan</li>
+                                    <li>Video berisi perkenalan diri, recap kegiatan yang diikuti saat Prodi Day hari itu serta tanggapan, rate dari 1-10 untuk kegiatan Prodi Day dan harapan untuk masing-masing jurusan</li>
                                     <li>Deadline 31 Agustus 2022 pukul 23.59 WIB</li>
                                     <li>
                                         <span>Ketentuan:</span>
@@ -623,17 +626,17 @@ const Task = () => {
                                 <h2>Membawa Laporan Checklist Barang Loading In </h2>
                                 <ul>
                                     <li>Dalam bentuk hard copy</li>
-                                    <li>Ditunjukkan ke panitia saat memasuki lobby/pintu masuk hypermart pada saat loading in malam (20.30-01.00 WIB)</li>
+                                    <li>Ditunjukkan ke panitia saat memasuki lobby/pintu masuk hypermart pada saat loading in malam (22.30-01.00 WIB)</li>
                                 </ul>
                                 <h2>Membawa Laporan Kendaraan Loading In</h2>
                                 <ul>
                                     <li>Dalam bentuk hard copy</li>
-                                    <li>Ditunjukkan ke panitia saat memasuki lobby/pintu masuk hypermart pada saat loading in malam (20.30-01.00 WIB)</li>
+                                    <li>Ditunjukkan ke panitia saat memasuki lobby/pintu masuk hypermart pada saat loading in malam (22.30-01.00 WIB)</li>
                                 </ul>
                                 <h2>Membawa Laporan Jasa Eksternal Selling, jika menggunakan jasa eksternal untuk loading in</h2>
                                 <ul>
                                     <li>Dalam bentuk hard copy</li>
-                                    <li>Ditunjukkan ke panitia saat saat memasuki lobby/pintu masuk hypermart pada saat loading in malam (20.30-01.00 WIB)</li>
+                                    <li>Ditunjukkan ke panitia saat saat memasuki lobby/pintu masuk hypermart pada saat loading in malam (22.30-01.00 WIB)</li>
                                 </ul>
                                 <h2>Pengumpulan tugas MnG Panitia Online </h2>
                                 <ul>

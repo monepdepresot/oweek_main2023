@@ -21,6 +21,7 @@ const MainContainer = styledComponents(motion.div)`
 background-image: url(${bg});
 background-size: cover;
 background-repeat: no-repeat;
+background-attachment: fixed;
 background-position: center;
 min-height: 100vh;
 overflow:hidden;

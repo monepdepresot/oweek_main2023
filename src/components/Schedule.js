@@ -23,6 +23,7 @@ import SpotifyModal from './SpotifyModal';
 const MainContainer = styledComponents(motion.div)`
 background-image: url(${bg});
 background-size: cover;
+background-attachment: fixed;
 background-repeat: no-repeat;
 background-position: center;
 min-height: 100vh;
@@ -528,31 +529,27 @@ const Schedule = () => {
                                     <td>Registrasi Trainee</td>
                                 </tr>
                                 <tr>
-                                    <td>07.00 - 07.50</td>
+                                    <td>07.00 - 07.55</td>
                                     <td>Opening</td>
                                 </tr>
                                 <tr>
-                                    <td>07.50 - 07.55</td>
+                                    <td>07.55 - 08.00</td>
                                     <td>Flag Ceremony</td>
                                 </tr>
                                 <tr>
-                                    <td>07.55 - 08.25</td>
+                                    <td>08.00 - 08.30</td>
                                     <td>Sambutan Ketua O-Week, Rektor, dan BMA</td>
                                 </tr>
                                 <tr>
-                                    <td>08:25 - 08:35</td>
+                                    <td>08.30 - 08.40</td>
                                     <td>Prosesi Peresmian O-Week</td>
                                 </tr>
                                 <tr>
-                                    <td>08:35 - 08:45</td>
+                                    <td>08.40 - 08.50</td>
                                     <td>Parade Pengenalan Divisi</td>
                                 </tr>
                                 <tr>
-                                    <td>08:45 - 09:00</td>
-                                    <td>Briefing BAA</td>
-                                </tr>
-                                <tr>
-                                    <td>09:00 - 09:20</td>
+                                    <td>08.50 - 09.20</td>
                                     <td>Istirahat (Snack Time)</td>
                                 </tr>
                                 </tbody>
@@ -588,11 +585,11 @@ const Schedule = () => {
                                     <td>Game Campus Tour</td>
                                 </tr>
                                 <tr>
-                                    <td>15.20 - 16.05</td>
+                                    <td>15.20 - 15.35</td>
                                     <td>Mobilisasi Trainee</td>
                                 </tr>
                                 <tr>
-                                    <td>16.05 - 16.20</td>
+                                    <td>15.35 - 16.00</td>
                                     <td>Briefing Next Day</td>
                                 </tr>
                                 </tbody>
@@ -604,7 +601,7 @@ const Schedule = () => {
                                 </Flexx> 
                                 <Flexx>
                                     <IconCenter><img src={location} /></IconCenter>                                       
-                                    <BoldSpan>Mural Universitas Ciputra</BoldSpan>
+                                    <BoldSpan>Plaza Universitas Ciputra</BoldSpan>
                                 </Flexx>                     
                                 <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
@@ -950,39 +947,31 @@ const Schedule = () => {
                             <Table>
                                 <tbody>
                                 <tr>
-                                    <td>06.00 - 07.00</td>
+                                    <td>06.30 - 07.45</td>
                                     <td>Registrasi Trainee</td>
                                 </tr>
                                 <tr>
-                                    <td>07.00 - 07.45</td>
+                                    <td>07.45 - 08.10</td>
                                     <td>Briefing Pagi</td>
                                 </tr>
                                 <tr>
-                                    <td>07.45 - 08.00</td>
-                                    <td>Sambutan</td>
+                                    <td>08.10- 08.30</td>
+                                    <td>Snack Time</td>
                                 </tr>
                                 <tr>
-                                    <td>08.00 - 09.15</td>
+                                    <td>08.30- 10.00</td>
                                     <td>Seminar Sesi 1 : Becoming a True Indonesian</td>
                                 </tr>
                                 <tr>
-                                    <td>09.15 - 09.35</td>
-                                    <td>BREAK</td>
+                                    <td>10.00 - 10.30</td>
+                                    <td>Istirahat</td>
                                 </tr>
                                 <tr>
-                                    <td>09.35 - 09.50</td>
-                                    <td>Performance</td>
-                                </tr>
-                                <tr>
-                                    <td>09.50 - 10.00</td>
-                                    <td>Ice Breaking</td>
-                                </tr>
-                                <tr>
-                                    <td>10.00 - 11.15</td>
+                                    <td>10.30 - 11.40</td>
                                     <td>Seminar Sesi 2 : Creating Youthpreneur in Digital Era</td>
                                 </tr>
                                 <tr>
-                                    <td>11.15 - 11.30</td>
+                                    <td>11.40 - 12.00</td>
                                     <td>Closing</td>
                                 </tr>
                                 </tbody>
@@ -1142,39 +1131,35 @@ const Schedule = () => {
                             <Table>
                                 <tbody>
                                     <tr>
-                                        <td>13.00 - 13.25</td>
+                                        <td>13.00 - 13.30</td>
                                         <td>Trainee sesi 1 jalan ke <Br/>lokasi MnG sesi 1</td>
                                     </tr>
                                     <tr>
-                                        <td>13.25 - 15.07</td>
+                                        <td>13.30 - 15.12</td>
                                         <td>MnG Trainee sesi 1</td>
                                     </tr>
                                     <tr>
-                                        <td>15.07 - 15.32</td>
+                                        <td>15.12 - 15.42</td>
                                         <td>Trainee sesi 1 balik ke lokasi selling, trainee sesi 2 jalan ke lokasi MnG sesi 2</td>
                                     </tr>
                                     <tr>
-                                        <td>15.32 - 17.15</td>
+                                        <td>15.42 - 17.25</td>
                                         <td>MnG Trainee sesi 2</td>
                                     </tr>
                                     <tr>
-                                        <td>17.15 - 17.30</td>
-                                        <td>Trainee sesi 2 balik ke lokasi selling</td>
-                                    </tr>
-                                    <tr>
-                                        <td>17.30 - 18.30</td>
+                                        <td>17.25 - 18.25</td>
                                         <td>ISHOMA</td>
                                     </tr>
                                     <tr>
-                                        <td>18.30- 18.50</td>
+                                        <td>18.25- 18.45</td>
                                         <td>Trainee sesi 3 jalan ke lokasi MnG sesi 3</td>
                                     </tr>
                                     <tr>
-                                        <td>18.50- 20.32</td>
+                                        <td>18.45- 20.27</td>
                                         <td>MnG Trainee sesi 3</td>
                                     </tr>
                                     <tr>
-                                        <td>20.32- 20.47</td>
+                                        <td>20.27- 20.47</td>
                                         <td>Trainee sesi 3 balik ke lokasi selling</td>
                                     </tr>
                                 </tbody>
