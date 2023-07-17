@@ -33,7 +33,7 @@ color: #FDFBF7;
 position: absolute;
 top: 50%;
 right: calc(1rem + 2vw);
-transform: rotate(90deg) translate(-50%, -50%);
+transform:translate(-50%, -50%);
 text-decoration: none;
 z-index: 1;
 cursor: pointer;
@@ -48,7 +48,7 @@ color: #FDFBF7;
 position: absolute;
 top: 50%;
 left: calc(1rem + 2vw);
-transform: translate(-50%, -50%) rotate(-90deg);
+transform: translate(-50%, -50%);
 text-decoration: none;
 z-index: 1;
 
