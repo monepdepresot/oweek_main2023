@@ -143,7 +143,8 @@ const Intro = () => {
                     initial={{opacity:0}}
                     animate={{opacity: 1}}
                     transition={{ duration:1, delay:1 }}
-                    >WELCOME TRAINEE!</motion.h1>
+                    style={{ fontSize: "60px" }}
+                    >WELCOME TO ERUDITE!</motion.h1>
                     <EmailSpan
                     initial={{opacity:0}}
                     animate={{opacity: 1}}
@@ -152,7 +153,7 @@ const Intro = () => {
                     
                 </Text>
             </SubBox>
-            <SubBoxx>
+            {/* <SubBoxx>
                 <motion.div
                 initial={{opacity:0}}
                 animate={{opacity: 1}}
@@ -160,7 +161,7 @@ const Intro = () => {
                 >
                     <Chara src={Me} />
                 </motion.div>
-            </SubBoxx>
+            </SubBoxx> */}
         </Box>
     )
 }

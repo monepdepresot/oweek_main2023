@@ -1,4 +1,4 @@
-import logohorizon from '../img/logo/horizonwhite.png';
+import logohorizon from '../img/logo/type.png';
 import oweek from '../img/logo/oweekwhite.svg';
 import uc from '../img/logo/ucwhite.png';
 import bg from '../img/bg/Aboutbg.svg';
@@ -52,7 +52,7 @@ position: absolute;
 right: calc(2rem);
 z-index: 1;
 display: flex;
-gap: 10px;
+gap: 15px;
 
 @media only screen and (max-width: 768px) {
     gap: 5px;
@@ -137,8 +137,9 @@ const About = () => {
                 </Leftlogo>
 
                 <Rightlogo>
-                    <img src={oweek} alt="" className='rightlogo' /> 
-                    <img src={uc} alt="" className='rightlogo' />                    
+                    <img src={uc} alt="" className='rightlogo' /> 
+                    
+                    <img src={oweek} alt="" className='rightlogo' />                    
                 </Rightlogo>
 
                 <Content>
@@ -148,7 +149,9 @@ const About = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     >                    
                         <h1>ABOUT O-WEEK</h1>
-                        <IsiAbout>Orientation Week 2022 merupakan serangkaian acara dan kegiatan yang wajib diikuti oleh seluruh calon mahasiswa baru Universitas Ciputra 2022/2023. Orientation Week 2022 memiliki tujuan untuk memperkenalkan Universitas Ciputra kepada mahasiswa baru, sekaligus memberikan gambaran mengenai aktivitas apa saja yang akan dilakukan/dirasakan oleh mahasiswa selama berkuliah di Universitas Ciputra, serta membentuk mental dan ilmu dasar Entrepreneurship berdasarkan 7 Competencies of Entrepreneurship yang diciptakan oleh Bapak Ir. Ciputra.</IsiAbout>
+                        <IsiAbout>
+                        Masa orientasi baru atau yang lebih dikenal dengan O-Week merupakan sebuah proses pembelajaran bagi mahasiswa baru terutama dalam menemukan jati diri mereka. Mahasiswa diajarkan untuk memiliki karakter yang unggul dan mandiri sebagai pemimpin dan calon entrepreneur muda. Setiap mahasiswa juga harus memiliki sebuah visi dalam membangun sebuah bisnis yang memiliki dampak tidak hanya bagi dirinya sendiri namun juga bagi masyarakat dan bangsa ini. Visi merupakan sebuah gambaran masa depan bagi calon entrepreneur muda yang harus dibentuk sejak dini, hal ini selaras dengan tema O-Week yaitu mahasiswa diajak untuk menjadi pribadi yang sukses dalam bisnis dan cita-cita mereka.
+                        </IsiAbout>
                         <Button target="_blank" href="https://uc.ac.id/bma/">Website BMA</Button>
                     </motion.div>
                     <motion.div
@@ -156,8 +159,9 @@ const About = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.5 }}
                     >
-                        <h1>ABOUT HORIZON</h1>
-                        <IsiAbout>Tema HORIZON diambil dari perpaduan kata HOPE, RISE dan EMBLAZON. HOPE diartikan sebagai harapan baru dan cita-cita mahasiswa yang bersama-sama dipupuk dari awal melalui pembelajaran dan kegiatan selama O-Week berlangsung. RISE menggambarkan aksi dan tindakan nyata yang akan diadakan mampu membuat mahasiswa bertumbuh dan lebih mengerti jalur yang mereka tempuh. EMBLAZON merepresentasikan seluruh kegiatan yg berlangsung diharapkan memberi keleluasaan bagi mahasiswa untuk menghiasi masa depan yang akan mereka jalani setelah O-Week selesai. Trainee yang memulai perjalanannya di Universitas Ciputra yang harus melewati berbagai rintangan seperti O-Week, pra ldk, leadership, perkuliahan, kepanitiaan, organisasi hingga kompetisi untuk mencapai horizon yang telah mereka impikan. “Tidak ada jalan yang mudah untuk mencapai horizon namun ketika kita sudah sampai pada sebuah horizon kita semua setara.” Siapapun bisa berharap, bangkit, dan bertumbuh hingga menghiasi dalam bersama-sama mencari horizon.</IsiAbout>
+                        <h1>ABOUT ERUDITE</h1>
+                        <IsiAbout>texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
+                        </IsiAbout>
                     </motion.div>
                 </Content>
             </Container>

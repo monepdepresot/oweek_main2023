@@ -1,4 +1,4 @@
-import logohorizon from '../img/logo/horizonwhite.png';
+import logohorizon from '../img/logo/type.png';
 import oweek from '../img/logo/oweekwhite.svg';
 import uc from '../img/logo/ucwhite.png';
 import bg from '../img/bg/Rulesbgmobile.svg';
@@ -168,8 +168,8 @@ const Rules = () => {
                 </Leftlogo>
 
                 <Rightlogo>
-                    <img src={oweek} alt="" className='rightlogo' /> 
-                    <img src={uc} alt="" className='rightlogo' />                    
+                    <img src={uc} alt="" className='rightlogo' /> 
+                    <img src={oweek} alt="" className='rightlogo' />                    
                 </Rightlogo>
 
                 <Content>

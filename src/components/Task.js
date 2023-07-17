@@ -1,7 +1,7 @@
-import logohorizon from '../img/logo/horizonblack.png';
-import oweek from '../img/logo/oweekblack.svg';
-import uc from '../img/logo/ucblack.png';
-import bg from '../img/bg/Taskbg.svg';
+import logohorizon from '../img/logo/type.png';
+import oweek from '../img/logo/oweekwhite.svg';
+import uc from '../img/logo/ucwhite.png';
+import bg from '../img/bg/Rulesbg.svg';
 import bgmobile from '../img/bg/Taskbgmobile.svg';
 import topeng from '../img/topeng/topeng3.svg';
 import title from '../img/title/Task.png';
@@ -217,8 +217,8 @@ const Task = () => {
                 </Leftlogo>
 
                 <Rightlogo>
-                    <img src={oweek} alt="" className='rightlogo' /> 
-                    <img src={uc} alt="" className='rightlogo' />                    
+                    <img src={uc} alt="" className='rightlogo' /> 
+                    <img src={oweek} alt="" className='rightlogo' />                    
                 </Rightlogo>
 
                 <Content>

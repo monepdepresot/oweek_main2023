@@ -1,4 +1,4 @@
-import logohorizon from '../img/logo/horizonwhite.png';
+import logohorizon from '../img/logo/type.png';
 import oweek from '../img/logo/oweekwhite.svg';
 import uc from '../img/logo/ucwhite.png';
 import bg from '../img/bg/Schedulebg.svg';
@@ -74,6 +74,7 @@ cursor: pointer;
 }
 `
 
+
 const Content = styledComponents.div`
 padding: 3vw 15vw;
 display: flex;
@@ -130,12 +131,12 @@ gap: 30px;
 
 const Day = styledComponents(motion.div)`
 width: 100%;
-border: 1px solid white;
+border: 1px solid #FFD700	;
 `
 
 const Rundown = styledComponents(motion.div)`
 width: 100%;
-border: 1px solid white;
+border: 1px solid #FFD700	;
 `
 
 const Praucday = styledComponents(motion.div)`
@@ -307,8 +308,8 @@ const Schedule = () => {
                 </Leftlogo>
 
                 <Rightlogo>
-                    <img src={oweek} alt="" className='rightlogo' /> 
-                    <img src={uc} alt="" className='rightlogo' />                    
+                    <img src={uc} alt="" className='rightlogo' /> 
+                    <img src={oweek} alt="" className='rightlogo' />                    
                 </Rightlogo>
 
                 <Content>
@@ -346,30 +347,55 @@ const Schedule = () => {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 1.5 }}
                             >
-                                <h2>TM Selling Day</h2>  
+                                <h2>Upacara Bendera</h2>  
                                 <Pad>                                    
                                     <Flex>
                                         <IconCenter><img src={calendar} /></IconCenter>                                       
-                                        <BoldSpan>Rabu, 17 Agustus 2022</BoldSpan>
+                                        <BoldSpan>Kamis, 17 Agustus 2023</BoldSpan>
                                     </Flex> 
                                     <Flex>
                                         <IconCenter><img src={clock} /></IconCenter>                                       
-                                        <BoldSpan>09.30 - 11.30 WIB</BoldSpan>
+                                        <BoldSpan> 06.30 WIB - selesai
+</BoldSpan>
                                     </Flex> 
                                     <Flex>
                                         <IconCenter><img src={location} /></IconCenter>                                       
-                                        <BoldSpan>Teater Lt. 9 Universitas Ciputra</BoldSpan>
+                                        <BoldSpan>Plaza Universitas Ciputra / Zoom</BoldSpan>
                                     </Flex> 
                                     <Flex>
                                         <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                        <BoldSpan>Bebas Rapi, Celana Panjang, Bersepatu</BoldSpan>
+                                        <BoldSpan>- Kemeja putih sopan rapi 
+             <p><b>- Celana panjang hitam (no Ripped, no Leggings)</b></p>
+             <p><b>- Sepatu hitam</b></p>
+</BoldSpan>
                                     </Flex> 
-                                    <h3>Yang Perlu Diperhatikan</h3>
+                                    <h3>Syarat dan Ketentuan</h3>
                                     <Flex>
                                         <Dot src={dot} />
-                                        <span>Setiap kelompok mengirimkan 2 perwakilan.</span>
+                                        <span>
+1. Trainee WAJIB mengikuti seminar secara offline ataupun mandiri.
+<p>2. Trainee yang tinggal di daerah Gerbang Kertosusila WAJIB mengikuti kegiatan secara OFFLINE (Gresik, Bangkalan, Mojokerto, Surabaya, Sidoarjo, dan Lamongan).\
+
+</p>
+<p>3. Trainee WAJIB untuk mengikuti kegiatan seminar yang diadakan setelah upacara 17 Agustus.</p>
+<p>4. Trainee WAJIB membuat video refleksi upacara dan seminar.</p>
+<p><b>Ketentuan mengikuti upacara 17 Agustus secara mandiri: 
+
+</b></p>
+<p>1. Trainee yang TIDAK mengikuti kegiatan secara offline, WAJIB mengikuti upacara di daerah  dekat rumah masing dan WAJIB disertai dengan dokumentasi foto mengikuti upacara minimal setengah badan.
+</p>
+<p>
+2. Trainee WAJIB melampirkan surat pernyataan mengikuti upacara dengan tanda tangan penyelenggara.
+</p>
+<p>
+3. Trainee WAJIB mengikuti seminar secara mandiri via Zoom.
+</p>
+<p>
+4. Trainee WAJIB membuat penugasan yang diberikan. (akan diinformasikan lebih lanjut)
+</p>
+</span>
                                     </Flex>
-                                    <Flex>
+                                    {/* <Flex>
                                         <Dot src={dot} />
                                         <span>Guidebook Selling dapat diakses pada tombol di bawah:<br /> (NB: akses akan dibuka pada tanggal 17 Agustus 2022).
                                         <br /><br />                                                                            
@@ -377,7 +403,7 @@ const Schedule = () => {
                                     </Flex>
                                     <Center2>
                                         <Button href='https://drive.google.com/drive/folders/1MPUfCjqOz-6H83g62KbnLr2wdZ76Zrtk?usp=sharing' target='_blank'>Guidebook</Button>
-                                    </Center2>  
+                                    </Center2>   */}
                                 </Pad>    
                                                                                   
                             </Day>

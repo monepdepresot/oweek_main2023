@@ -1,17 +1,20 @@
-import logohorizon from '../img/logo/horizonwhite.png';
-import H from '../img/logo/H.svg';
-import oweek from '../img/logo/oweekwhite.svg';
-import uc from '../img/logo/ucwhite.png';
-import bg from '../img/bg/Homebg.svg';
-
-import styledComponents from "styled-components";
-import { NavLink } from "react-router-dom";
-import { useState } from "react";
-import {motion} from 'framer-motion';
-import SocialIcons from "../subcomponents/SocialIcons";
-import Intro from "../subcomponents/Intro";
+import React, { useState } from 'react';
+import styledComponents from 'styled-components';
+import { NavLink, useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import Intro from '../subcomponents/Intro';
 import MapsModal from './MapsModal';
 import SpotifyModal from './SpotifyModal';
+import SocialIcons from '../subcomponents/SocialIcons';
+import ScheduleLogo from '../img/logo/icon-02.png';
+import TaskLogo from '../img/logo/icon-01.png';
+import RulesLogo from '../img/logo/icon-04.png';
+import AboutLogo from '../img/logo/icon-03.png';
+import logohorizon from '../img/logo/type.png';
+import H from '../img/logo/erudite.png';
+import oweek from '../img/logo/oweekwhite.svg';
+import uc from '../img/logo/ucwhite.png';
+import bg from '../img/bg/testbg.png';
 
 const MainContainer = styledComponents(motion.div)`
 background-image: url(${bg});
@@ -31,8 +34,8 @@ padding: 2rem;
 const Task = styledComponents(NavLink)`
 color: #FDFBF7;
 position: absolute;
-top: 50%;
-right: calc(1rem + 2vw);
+top: 55%;
+right: calc(1rem + 9vw);
 transform:translate(-50%, -50%);
 text-decoration: none;
 z-index: 1;
@@ -42,12 +45,48 @@ cursor: pointer;
     font-size: 12px;
 }
 `
+const Tasklogo = styledComponents(NavLink)`
+  position: absolute;
+  top: 40%;
+  right: calc(1rem + 9vw);
+  transform: translate(-50%, -50%) scale(0.15);
+  z-index: 1;
+  cursor: pointer;
+  width:7%;
+  height:auto;
+  
+
+  @media only screen and (max-width: 768px) {
+    transform: translate(-50%, -50%) scale(0.1);
+  }
+  
+  
+ 
+`
+const Ruleslogo = styledComponents(NavLink)`
+  position: absolute;
+  top: 40%;
+  left: calc(1rem + 9vw);
+  transform: translate(-50%, -50%) scale(0.15);
+  z-index: 1;
+  cursor: pointer;
+  width:-7%;
+  height:auto;
+  
+
+  @media only screen and (max-width: 768px) {
+
+  }
+  
+ 
+`
+
 
 const Rules = styledComponents(NavLink)`
 color: #FDFBF7;
 position: absolute;
-top: 50%;
-left: calc(1rem + 2vw);
+top: 55%;
+left: calc(1rem + 9vw);
 transform: translate(-50%, -50%);
 text-decoration: none;
 z-index: 1;
@@ -58,14 +97,36 @@ z-index: 1;
 `
 
 const About = styledComponents(NavLink)`
-color: #FDFBF7;
-text-decoration: none;
-z-index: 1;
+  color: #FDFBF7;
+  text-decoration: none;
+  z-index: 1;
+  
 
-
-@media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     font-size: 12px;
-}
+  }
+`
+const Aboutlogo = styledComponents(NavLink)`
+  position:absolute;
+  top: 10%; /* Adjust the top value based on your desired position */
+  left: 1.5%; /* Adjust the left value based on your desired position */
+  transform: scale(0.15);
+  z-index: 1;
+
+  @media only screen and (max-width: 768px) {
+  
+  }
+`
+const Schedulelogo = styledComponents(NavLink)`
+  position:absolute;
+  top: 10%; /* Adjust the top value based on your desired position */
+  right: 2%; /* Adjust the left value based on your desired position */
+  transform: scale(0.15);
+  z-index: 1;
+
+  @media only screen and (max-width: 768px) {
+  
+  }
 `
 
 const Schedule = styledComponents(NavLink)`
@@ -80,7 +141,7 @@ z-index: 1;
 
 const BottomBar = styledComponents.div`
 position: absolute;
-bottom: 1rem;
+bottom: 2rem;
 left: 0;
 right: 0;
 width: 100%;
@@ -91,9 +152,9 @@ justify-content: space-evenly;
 
 const Center = styledComponents.button`
 position: absolute;
-top: ${props => props.click ? '85%' :'50%'  };
+top: ${props => props.click ? '105%' :'60%'  };
 left: ${props => props.click ? '92%' :'50%'  };
-transform: translate(-50%,-50%);
+transform: translate(-50%,-100%);
 border: none;
 outline: none;
 background-color: transparent;
@@ -111,6 +172,15 @@ transition: all 1s ease;
     display: ${props => props.click ? 'none' :'inline-block'  };
     padding-top: 1rem;
 }
+& span {
+    transform: translateY(${props => props.click ? '10%' : '-200%'});
+  }
+
+& > img {
+    width: 300px; /* Adjust the width value to your desired size */
+    height: 332px; /* Adjust the height value to your desired size */
+    /* Add any other desired CSS properties here */
+  }
 `
 
 const Rightlogo = styledComponents.div`
@@ -143,7 +213,7 @@ cursor: pointer;
 const RedDiv = styledComponents.div`
 position: absolute;
 top: 0;
-background-color: #E22B2B;
+background-color: blue;
 bottom: 0;
 right: 50%;
 width: ${props => props.click ? '50%' : '0%'};
@@ -155,7 +225,7 @@ transition: height 0.5s ease, width 1s ease 0.5s;
 const YellowDiv = styledComponents.div`
 position: absolute;
 top: 0;
-background-color: #FFC600;
+background-color: red;
 bottom: 0;
 left: 50%;
 width: ${props => props.click ? '50%' : '0%'};
@@ -163,14 +233,16 @@ height: ${props => props.click ? '100%' : '0%'};
 z-index:1;
 transition: height 0.5s ease, width 1s ease 0.5s;
 `
-
 const Home = () => {
-
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click);
-
+  
     const [showMapsModal, setShowMapsModal] = useState(false);
     const [showSpotifyModal, setShowSpotifyModal] = useState(false);
+    const location = useLocation();
+
+  const isHomePage = location.pathname === '/'; // Check if current page is the home page
+
 
     return ( 
         <MainContainer
@@ -178,10 +250,12 @@ const Home = () => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.3 }}
-        >
-            <MapsModal showMapsModal={showMapsModal} setShowMapsModal={setShowMapsModal} />
-            <SpotifyModal showSpotifyModal={showSpotifyModal} setShowSpotifyModal={setShowSpotifyModal} />
-            <SocialIcons setShowMapsModal={setShowMapsModal} setShowSpotifyModal={setShowSpotifyModal} />
+      >
+        <MapsModal showMapsModal={showMapsModal} setShowMapsModal={setShowMapsModal} />
+        <SpotifyModal showSpotifyModal={showSpotifyModal} setShowSpotifyModal={setShowSpotifyModal} />
+  
+        {isHomePage && <SocialIcons setShowMapsModal={setShowMapsModal} setShowSpotifyModal={setShowSpotifyModal} />}
+        
 
             <Container>    
 
@@ -189,8 +263,8 @@ const Home = () => {
                 <YellowDiv click={click} /> 
 
                 <Center click={click}>
-                    <img src={H} alt="" onClick={()=> handleClick()} className={click ? 'HwidthClick' : 'Hwidth'} height={click ? 'HwidthClick' : 'Hwidth'} />
-                    <span>click here</span>
+                    <img src={H} alt=""  />
+                  
                 </Center>
 
                 <Leftlogo onClick={()=> handleClick()}>
@@ -198,9 +272,26 @@ const Home = () => {
                 </Leftlogo>
 
                 <Rightlogo>
-                    <img src={oweek} alt="" className='rightlogo' /> 
-                    <img src={uc} alt="" className='rightlogo' />                    
+                    <img src={uc} alt="" className='rightlogo' /> 
+                    <img src={oweek} alt="" className='rightlogo' />                    
                 </Rightlogo>
+                
+                <Tasklogo to="/">
+  <motion.h2
+    initial={{
+      y: -1200,
+      transition: { type: 'spring', duration: 1, delay: 1 }
+    }}
+    animate={{
+      y: 0,
+      transition: { type: 'spring', duration: 1, delay: 1 }
+    }}
+  
+  >
+    <img src={TaskLogo} alt="Task"  />
+  </motion.h2>
+</Tasklogo>
+
 
                 <Task to="/task">
                     <motion.h2
@@ -216,6 +307,24 @@ const Home = () => {
                     whileTap={{ scale: 0.9 }}
                     >Task</motion.h2>
                 </Task>
+                <Ruleslogo to="/">
+                <motion.h2
+    initial={{
+      y: -1200,
+      transition: { type: 'spring', duration: 1, delay: 1 }
+    }}
+    animate={{
+      y: 0,
+      transition: { type: 'spring', duration: 1, delay: 1 }
+    }}
+  
+  >
+  <img src={RulesLogo} alt="Task"  />
+  </motion.h2>
+  
+   
+ 
+</Ruleslogo>
                 <Rules to="/rules">
                     <motion.h2
                     initial={{
@@ -230,25 +339,61 @@ const Home = () => {
                     whileTap={{ scale: 0.9 }}
                     >Rules</motion.h2>
                 </Rules>
+                <Aboutlogo to="/"> {/* Use the Aboutlogo component as a NavLink */}
+                <motion.h2
+    initial={{
+      y: -1200,
+      transition: { type: 'spring', duration: 1, delay: 1 }
+    }}
+    animate={{
+      y: 0,
+      transition: { type: 'spring', duration: 1, delay: 1 }
+    }}
+  
+  >
+      <img src={AboutLogo} alt="About" />
+  </motion.h2>
+          {/* Place the image inside the Aboutlogo NavLink */}
+          </Aboutlogo>
+          <Schedulelogo to="/"> {/* Use the Aboutlogo component as a NavLink */}
+          <motion.h2
+    initial={{
+      y: -1200,
+      transition: { type: 'spring', duration: 1, delay: 1 }
+    }}
+    animate={{
+      y: 0,
+      transition: { type: 'spring', duration: 1, delay: 1 }
+    }}
+  
+  >
+    <img src={ScheduleLogo} alt="About" />
+  </motion.h2>
+            {/* Place the image inside the Aboutlogo NavLink */}
+          </Schedulelogo>
                 <BottomBar>
-                    <About to="/about">
-                        <motion.h2
-                        initial={{
-                            y:200,
-                            transition: { type:'spring', duration: 1, delay:1}
-                        }}
-                        animate={{
-                            y:0,
-                            transition: { type:'spring', duration: 1, delay:1}
-                        }}
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        >About</motion.h2>
-                    </About>
+              
+                <About to="/about">
+         
+          <motion.h2
+            initial={{
+              y: -200,
+              transition: { type: 'spring', duration: 1, delay: 1 }
+            }}
+            animate={{
+              y: 0,
+              transition: { type: 'spring', duration: 1, delay: 1 }
+            }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            About
+          </motion.h2>
+        </About>
                     <Schedule to="/schedule">
                         <motion.h2
                         initial={{
-                            y:200,
+                            y:-200,
                             transition: { type:'spring', duration: 1, delay:1}
                         }}
                         animate={{
