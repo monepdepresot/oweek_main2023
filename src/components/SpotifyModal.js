@@ -69,7 +69,7 @@ const SpotifyModal = ({ showSpotifyModal, setShowSpotifyModal }) => {
            variants={modal}
            >
             <Exit>X</Exit>
-              <iframe src="https://open.spotify.com/embed/playlist/6u4dxGNWAAS4NgsBm2KLrZ?utm_source=generator" width="100%" height="100%" frameBorder="0"></iframe>
+            <iframe src="https://open.spotify.com/embed/playlist/59y2aX155qRgVmCC5iEOYb?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
            </Modal>
           </Backdrop>
         )}

@@ -330,7 +330,7 @@ const Schedule = () => {
                         <Select
                             onChange={handleChange}
                         >
-                            <option value="1">Pra UC Day</option>
+                            <option value="1">Upacara Bendera</option>
                             <option value="2">Day 1</option>
                             <option value="3">Day 2</option>
                             <option value="4">Day 3</option>
@@ -374,7 +374,7 @@ const Schedule = () => {
                                         <Dot src={dot} />
                                         <span>
 1. Trainee WAJIB mengikuti seminar secara offline ataupun mandiri.
-<p>2. Trainee yang tinggal di daerah Gerbang Kertosusila WAJIB mengikuti kegiatan secara OFFLINE (Gresik, Bangkalan, Mojokerto, Surabaya, Sidoarjo, dan Lamongan).\
+<p>2. Trainee yang tinggal di daerah Gerbang Kertosusila WAJIB mengikuti kegiatan secara OFFLINE (Gresik, Bangkalan, Mojokerto, Surabaya, Sidoarjo, dan Lamongan).
 
 </p>
 <p>3. Trainee WAJIB untuk mengikuti kegiatan seminar yang diadakan setelah upacara 17 Agustus.</p>
@@ -407,7 +407,7 @@ const Schedule = () => {
                                 </Pad>    
                                                                                   
                             </Day>
-                            <Praucday>
+                            {/* <Praucday>
                                 <Rundown
                                 initial={{ opacity: 0, x: 25 }}
                                 animate={{ opacity: 1, x: 0 }}
@@ -452,13 +452,13 @@ const Schedule = () => {
                                     </Pad>
                                     
                                 </Rundown>
-                            </Praucday>
+                            </Praucday> */}
                             
                         </Isi>
                     </div>
                     <div className={toggleState === 2 ? "maps active-maps" : "maps"}>
                         <Isi>
-                        <Day>
+                        {/* <Day>
                             <h2>Opening & UC Day</h2>  
                             <h3>“The Exordium”</h3> 
                             <Pad>
@@ -542,13 +542,13 @@ const Schedule = () => {
                                     <span>Disarankan membawa tissue kering dan tissue basah.</span>
                                 </Flex>
                             </Pad>                    
-                        </Day>
+                        </Day> */}
                         <Rundown>
-                            <h2>Rundown</h2>
+                            <h2>Day 1</h2>
 
                             <Subtitle>Opening</Subtitle>
                             <Table>
-                                <tbody>
+                                {/* <tbody>
                                 
                                 <tr>
                                     <td>06.00 - 07.00</td>
@@ -578,13 +578,13 @@ const Schedule = () => {
                                     <td>08.50 - 09.20</td>
                                     <td>Istirahat (Snack Time)</td>
                                 </tr>
-                                </tbody>
+                                </tbody> */}
                             </Table>
 
-                            <Subtitle>UC Day</Subtitle>
+                            <Subtitle>UC Day "Inception"</Subtitle>
 
                             <Table>
-                                <tbody>
+                                {/* <tbody>
                             
                                 <tr>
                                     <td>09.20 - 10.05</td>
@@ -618,20 +618,20 @@ const Schedule = () => {
                                     <td>15.35 - 16.00</td>
                                     <td>Briefing Next Day</td>
                                 </tr>
-                                </tbody>
+                                </tbody> */}
                             </Table>
                             <Padd>
                                 <Flexx>
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
-                                    <BoldSpan>Senin, 29 Agustus 2022</BoldSpan>
+                                    <BoldSpan>Senin, 28 Agustus 2023</BoldSpan>
                                 </Flexx> 
                                 <Flexx>
                                     <IconCenter><img src={location} /></IconCenter>                                       
-                                    <BoldSpan>Plaza Universitas Ciputra</BoldSpan>
+                                    <BoldSpan>tbd</BoldSpan>
                                 </Flexx>                     
                                 <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                    <BoldSpan>Kemeja Putih, Celana Jeans Berwarna Gelap (Tidak Sobek), Sepatu Sneakers</BoldSpan>
+                                    <BoldSpan>tbd</BoldSpan>
                                 </Flexx>                     
                             </Padd> 
                         </Rundown>

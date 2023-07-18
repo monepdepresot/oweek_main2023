@@ -6,6 +6,7 @@ import Intro from '../subcomponents/Intro';
 import MapsModal from './MapsModal';
 import SpotifyModal from './SpotifyModal';
 import SocialIcons from '../subcomponents/SocialIcons';
+import SocialIcons3 from '../subcomponents/SocialIcons3';
 import ScheduleLogo from '../img/logo/icon-02.png';
 import TaskLogo from '../img/logo/icon-01.png';
 import RulesLogo from '../img/logo/icon-04.png';
@@ -31,106 +32,218 @@ const Container = styledComponents.div`
 padding: 2rem;
 `
 
-const Task = styledComponents(NavLink)`
-color: #FDFBF7;
-position: absolute;
-top: 55%;
-right: calc(1rem + 9vw);
-transform:translate(-50%, -50%);
-text-decoration: none;
-z-index: 1;
-cursor: pointer;
 
-@media only screen and (max-width: 768px) {
-    font-size: 12px;
-}
-`
 const Tasklogo = styledComponents(NavLink)`
-  position: absolute;
-  top: 40%;
-  right: calc(1rem + 9vw);
-  transform: translate(-50%, -50%) scale(0.15);
-  z-index: 1;
-  cursor: pointer;
-  width:7%;
-  height:auto;
+  // ... (other styles)
+
+  @media only screen and (max-width: 600px) {
+   
+  }
+
   
 
-  @media only screen and (max-width: 768px) {
-    transform: translate(-50%, -50%) scale(0.1);
+  @media only screen and (max-width: 993px) {
+    position: absolute;
+    top: -35%;
+    left: 10%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
   }
-  
-  
- 
-`
+  @media only screen and (max-width: 1700px) {
+    position: absolute;
+    top: -35%;
+    left: -20%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 1450px) {
+    position: absolute;
+    top: -35%;
+    left: -30%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 1200px) {
+    position: absolute;
+    top: -35%;
+    left: -40%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+  }
+  @media only screen and (min-width: 1700px) {
+    position: absolute;
+    top: -35%;
+    left: -20%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+  }
+`;
+
 const Ruleslogo = styledComponents(NavLink)`
-  position: absolute;
-  top: 40%;
-  left: calc(1rem + 9vw);
-  transform: translate(-50%, -50%) scale(0.15);
-  z-index: 1;
-  cursor: pointer;
-  width:-7%;
-  height:auto;
-  
+  // ... (other styles)
 
-  @media only screen and (max-width: 768px) {
-
+  @media only screen and (min-width: 600px) {
+   
   }
-  
+
  
-`
 
-
-const Rules = styledComponents(NavLink)`
-color: #FDFBF7;
-position: absolute;
-top: 55%;
-left: calc(1rem + 9vw);
-transform: translate(-50%, -50%);
-text-decoration: none;
-z-index: 1;
-
-@media only screen and (max-width: 768px) {
-    font-size: 12px;
-}
-`
-
-const About = styledComponents(NavLink)`
-  color: #FDFBF7;
-  text-decoration: none;
-  z-index: 1;
-  
-
-  @media only screen and (max-width: 768px) {
-    font-size: 12px;
+  @media only screen and (max-width: 993px) {
+    position: absolute;
+    top: -35%;
+    right: 10px;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
   }
-`
+  @media only screen and (max-width: 1700px) {
+    position: absolute;
+    top: -35%;
+    right: -20%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 1450px) {
+    position: absolute;
+    top: -35%;
+    right: -30%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 1200px) {
+    position: absolute;
+    top: -35%;
+    right: -40%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+  }
+  @media only screen and (min-width: 1700px) {
+    position: absolute;
+    top: -35%;
+    right: -20%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+  }
+`;
+
 const Aboutlogo = styledComponents(NavLink)`
-  position:absolute;
-  top: 10%; /* Adjust the top value based on your desired position */
-  left: 1.5%; /* Adjust the left value based on your desired position */
-  transform: scale(0.15);
-  z-index: 1;
+  // ... (other styles)
 
-  @media only screen and (max-width: 768px) {
-  
+  @media only screen and (max-width: 600px) {
+   
   }
-`
+
+ 
+
+  @media only screen and (max-width: 993px) {
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 1700px) {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 1450px) {
+    position: absolute;
+    top: -5%;
+    left: -15%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 1200px) {
+    position: absolute;
+    top: -5%;
+    left: -25%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+  }
+  @media only screen and (min-width: 1700px) {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+  }
+`;
+
 const Schedulelogo = styledComponents(NavLink)`
-  position:absolute;
-  top: 10%; /* Adjust the top value based on your desired position */
-  right: 2%; /* Adjust the left value based on your desired position */
-  transform: scale(0.15);
-  z-index: 1;
+  // ... (other styles)
 
-  @media only screen and (max-width: 768px) {
-  
+  @media only screen and (max-width: 600px) {
+   
   }
-`
 
+  @media only screen and (min-width: 601px) {
+   
+  }
+
+  @media only screen and (max-width: 993px) {
+    position: absolute;
+    top: -10%;
+    right: 20%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 1700px) {
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 1450px) {
+    position: absolute;
+    top: -5%;
+    right: -15%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 1200px) {
+    position: absolute;
+    top: -5%;
+    right: -25%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+  }
+  @media only screen and (min-width: 1700px) {
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+  }
+`;
 const Schedule = styledComponents(NavLink)`
 color: #FDFBF7;
+position: absolute;
+top: 85%;
+right:27%;
+
 text-decoration: none;
 z-index: 1;
 
@@ -148,6 +261,9 @@ width: 100%;
 
 display: flex;
 justify-content: space-evenly;
+@media only screen and (max-width: 768px) {
+  bottom: 3rem;
+}
 `
 
 const Center = styledComponents.button`
@@ -254,7 +370,8 @@ const Home = () => {
         <MapsModal showMapsModal={showMapsModal} setShowMapsModal={setShowMapsModal} />
         <SpotifyModal showSpotifyModal={showSpotifyModal} setShowSpotifyModal={setShowSpotifyModal} />
   
-        {isHomePage && <SocialIcons setShowMapsModal={setShowMapsModal} setShowSpotifyModal={setShowSpotifyModal} />}
+        <SocialIcons></SocialIcons>
+        <SocialIcons3></SocialIcons3>
         
 
             <Container>    
@@ -276,7 +393,7 @@ const Home = () => {
                     <img src={oweek} alt="" className='rightlogo' />                    
                 </Rightlogo>
                 
-                <Tasklogo to="/">
+                <Tasklogo to="/task">
   <motion.h2
     initial={{
       y: -1200,
@@ -286,6 +403,8 @@ const Home = () => {
       y: 0,
       transition: { type: 'spring', duration: 1, delay: 1 }
     }}
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}
   
   >
     <img src={TaskLogo} alt="Task"  />
@@ -293,21 +412,8 @@ const Home = () => {
 </Tasklogo>
 
 
-                <Task to="/task">
-                    <motion.h2
-                    initial={{
-                        y:-200,
-                        transition: { type:'spring', duration: 1, delay:1}
-                    }}
-                    animate={{
-                        y:0,
-                        transition: { type:'spring', duration: 1, delay:1}
-                    }}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    >Task</motion.h2>
-                </Task>
-                <Ruleslogo to="/">
+                
+                <Ruleslogo to="/rules">
                 <motion.h2
     initial={{
       y: -1200,
@@ -317,29 +423,18 @@ const Home = () => {
       y: 0,
       transition: { type: 'spring', duration: 1, delay: 1 }
     }}
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}
   
   >
-  <img src={RulesLogo} alt="Task"  />
+  <img src={RulesLogo} alt="rules"  />
   </motion.h2>
   
    
  
 </Ruleslogo>
-                <Rules to="/rules">
-                    <motion.h2
-                    initial={{
-                        y:-200,
-                        transition: { type:'spring', duration: 1, delay:1}
-                    }}
-                    animate={{
-                        y:0,
-                        transition: { type:'spring', duration: 1, delay:1}
-                    }}
-                    whileHover={{ scale: 1.1 }}
-                    whileTap={{ scale: 0.9 }}
-                    >Rules</motion.h2>
-                </Rules>
-                <Aboutlogo to="/"> {/* Use the Aboutlogo component as a NavLink */}
+               
+                <Aboutlogo to="/about"> {/* Use the Aboutlogo component as a NavLink */}
                 <motion.h2
     initial={{
       y: -1200,
@@ -349,13 +444,15 @@ const Home = () => {
       y: 0,
       transition: { type: 'spring', duration: 1, delay: 1 }
     }}
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}
   
   >
       <img src={AboutLogo} alt="About" />
   </motion.h2>
           {/* Place the image inside the Aboutlogo NavLink */}
           </Aboutlogo>
-          <Schedulelogo to="/"> {/* Use the Aboutlogo component as a NavLink */}
+          <Schedulelogo to="/schedule"> {/* Use the Aboutlogo component as a NavLink */}
           <motion.h2
     initial={{
       y: -1200,
@@ -365,46 +462,17 @@ const Home = () => {
       y: 0,
       transition: { type: 'spring', duration: 1, delay: 1 }
     }}
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}
   
   >
     <img src={ScheduleLogo} alt="About" />
   </motion.h2>
             {/* Place the image inside the Aboutlogo NavLink */}
           </Schedulelogo>
-                <BottomBar>
+               
               
-                <About to="/about">
-         
-          <motion.h2
-            initial={{
-              y: -200,
-              transition: { type: 'spring', duration: 1, delay: 1 }
-            }}
-            animate={{
-              y: 0,
-              transition: { type: 'spring', duration: 1, delay: 1 }
-            }}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            About
-          </motion.h2>
-        </About>
-                    <Schedule to="/schedule">
-                        <motion.h2
-                        initial={{
-                            y:-200,
-                            transition: { type:'spring', duration: 1, delay:1}
-                        }}
-                        animate={{
-                            y:0,
-                            transition: { type:'spring', duration: 1, delay:1}
-                        }}
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
-                        >Schedule</motion.h2>
-                    </Schedule>
-                </BottomBar>
+                
             </Container>
 
             {click ? <Intro click={click}/> : null}

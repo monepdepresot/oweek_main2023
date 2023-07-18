@@ -10,7 +10,7 @@ import styledComponents from "styled-components";
 import {motion} from 'framer-motion';
 import PowerButton4 from '../subcomponents/PowerButton4';
 import { Link } from 'react-router-dom';
-import SocialIcons2 from '../subcomponents/SocialIcons2';
+import SocialIcons from '../subcomponents/SocialIcons';
 import MapsModal from './MapsModal';
 import SpotifyModal from './SpotifyModal';
 import { useState } from 'react';
@@ -205,7 +205,7 @@ const Task = () => {
 
             <MapsModal showMapsModal={showMapsModal} setShowMapsModal={setShowMapsModal} />
             <SpotifyModal showSpotifyModal={showSpotifyModal} setShowSpotifyModal={setShowSpotifyModal} />
-            <SocialIcons2 setShowMapsModal={setShowMapsModal} setShowSpotifyModal={setShowSpotifyModal} />
+            <SocialIcons setShowMapsModal={setShowMapsModal} setShowSpotifyModal={setShowSpotifyModal} />
 
             <Container>         
                 <PowerButton4 />
@@ -225,7 +225,9 @@ const Task = () => {
                     <Title>
                         <img src={title} alt="" width="165" />
                     </Title>
-
+                    <br></br>
+                    <h1>WORK IN PROGRESS</h1>
+{/* 
                     <Seperator>
                         <Deadline>
                             <Subtitle>Deadline</Subtitle>
@@ -765,7 +767,7 @@ const Task = () => {
                                 </ul>
                             </div>
                         </Isi>
-                    </Seperator>
+                    </Seperator> */}
                 </Content>
             </Container>
             <Topeng src={topeng} 

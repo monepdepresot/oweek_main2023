@@ -33,25 +33,25 @@ h1 {
 }
 
 h2 {
-  font-family: 'LaroSoftR', sans-serif;
+  font-family: 'DevinneSwash', sans-serif;
   font-weight: 700;
   color: #FDFBF7;
 }
 
 h3, select, option {
-  font-family: 'LaroSoftR', sans-serif;
+  font-family: 'DevinneSwash', sans-serif;
   font-weight: 600;
   color: #FDFBF7;
 }
 
 h4 {
-  font-family: 'LaroSoftR', sans-serif;
+  font-family: 'DevinneSwash', sans-serif;
   font-weight: 800;
   color: black;
 }
 
 p, span, a, td, ul, li {
-  font-family: 'LaroSoftR', sans-serif;
+  font-family: 'DevinneSwash', sans-serif;
   font-weight: 400;
   color: #FDFBF7;
   line-height: 125%;

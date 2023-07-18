@@ -150,7 +150,10 @@ const About = () => {
                     >                    
                         <h1>ABOUT O-WEEK</h1>
                         <IsiAbout>
-                        Masa orientasi baru atau yang lebih dikenal dengan O-Week merupakan sebuah proses pembelajaran bagi mahasiswa baru terutama dalam menemukan jati diri mereka. Mahasiswa diajarkan untuk memiliki karakter yang unggul dan mandiri sebagai pemimpin dan calon entrepreneur muda. Setiap mahasiswa juga harus memiliki sebuah visi dalam membangun sebuah bisnis yang memiliki dampak tidak hanya bagi dirinya sendiri namun juga bagi masyarakat dan bangsa ini. Visi merupakan sebuah gambaran masa depan bagi calon entrepreneur muda yang harus dibentuk sejak dini, hal ini selaras dengan tema O-Week yaitu mahasiswa diajak untuk menjadi pribadi yang sukses dalam bisnis dan cita-cita mereka.
+                        Orientation Week 2023 mengangkat tema “Erudite” yang diperkuat dengan slogan “Learn Together, Radiate Brighter.” “Erudite” memiliki arti memiliki, menunjukkan pengetahuan atau pembelajaran yang luar biasa. Dari tema tersebut, terdapat dua kata kunci yang ingin diangkat yakni “bond” atau “kinship” yang bermakna menumbuhkan rasa kekeluargaan dan kebersamaan serta rasa saling membutuhkan, baik antar trainee, terhadap mentor, panitia, atau civitas academica Universitas Ciputra, dan juga “Radiate” yang berarti membantu dan mengajak trainee untuk memancarkan cahaya diri mereka masing-masing dan menerangkan jalan trainee lain melalui pancaran mereka.
+
+Selain itu pada Orientation Week 2023, “Erudite” juga tidak meninggalkan nilai-nilai IPE di Universitas Ciputra Surabaya yang terdiri dari Integrity, Professionalism, dan Entrepreneurship. Diharapkan mahasiswa yang mengikuti Orientation Week 2023 dapat menjadi seorang Entrepreneur yang dapat menginspirasi dan memberikan dampak positif bagi masyarakat.
+
                         </IsiAbout>
                         <Button target="_blank" href="https://uc.ac.id/bma/">Website BMA</Button>
                     </motion.div>
@@ -159,9 +162,7 @@ const About = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.5 }}
                     >
-                        <h1>ABOUT ERUDITE</h1>
-                        <IsiAbout>texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
-                        </IsiAbout>
+                       
                     </motion.div>
                 </Content>
             </Container>
