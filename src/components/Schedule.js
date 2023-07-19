@@ -314,11 +314,11 @@ const Schedule = () => {
 
                 <Content>
                     <Title>
-                        <img src={title} alt="" width="220" />
+                       <h1> SCHEDULE</h1>
                     </Title>
 
                     <Menu>
-                        <Tabs className={toggleState === 1 ? "active-tabs" : ""} onClick={() => toggleTab(1)}>Pra UC Day</Tabs>
+                        <Tabs className={toggleState === 1 ? "active-tabs" : ""} onClick={() => toggleTab(1)}>Upacara</Tabs>
                         <Tabs className={toggleState === 2 ? "active-tabs" : ""} onClick={() => toggleTab(2)}>Day 1</Tabs>
                         <Tabs className={toggleState === 3 ? "active-tabs" : ""} onClick={() => toggleTab(3)}>Day 2</Tabs>
                         <Tabs className={toggleState === 4 ? "active-tabs" : ""} onClick={() => toggleTab(4)}>Day 3</Tabs>

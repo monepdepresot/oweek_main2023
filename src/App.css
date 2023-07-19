@@ -137,6 +137,10 @@ option {
 .rightlogo {
   width: 55px;
 }
+*{
+  color:white !important;
+}
+
 
 @media only screen and (max-width: 768px) {
   h1 {

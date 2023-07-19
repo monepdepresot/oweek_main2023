@@ -23,10 +23,12 @@ z-index:2;
 
 @media only screen and (max-width: 768px) {
     left: 1rem;
+    opacity:0;
 }
 @media only screen and (max-width: 630px) {
     position: absolute;
     top: 80%;
+    opacity:0;
    
   }
 `

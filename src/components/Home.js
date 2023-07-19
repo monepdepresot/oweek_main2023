@@ -17,6 +17,7 @@ import oweek from '../img/logo/oweekwhite.svg';
 import uc from '../img/logo/ucwhite.png';
 import bg from '../img/bg/bgrules.png';
 
+
 const MainContainer = styledComponents(motion.div)`
 background-image: url(${bg});
 background-size: cover;
@@ -26,6 +27,7 @@ height: 100vh;
 width: 100vw;
 overflow:hidden;
 position: relative;
+
 `
 
 const Container = styledComponents.div`
@@ -36,8 +38,8 @@ padding: 2rem;
 const Tasklogo = styledComponents(NavLink)`
   // ... (other styles)
 
-  @media only screen and (max-width: 600px) {
-   
+  @media only screen (min-height:0px) and (max-height: 800px) {
+ 
   }
 
   
@@ -50,6 +52,7 @@ const Tasklogo = styledComponents(NavLink)`
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 1450px) {
     position: absolute;
@@ -58,6 +61,7 @@ const Tasklogo = styledComponents(NavLink)`
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 1200px) {
     position: absolute;
@@ -66,6 +70,7 @@ const Tasklogo = styledComponents(NavLink)`
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (min-width: 1700px) {
     position: absolute;
@@ -74,6 +79,7 @@ const Tasklogo = styledComponents(NavLink)`
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+    height:100%;
   }
   @media only screen and (max-width: 993px) {
     position: absolute;
@@ -82,6 +88,7 @@ const Tasklogo = styledComponents(NavLink)`
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 830px) {
     position: absolute;
@@ -90,46 +97,52 @@ const Tasklogo = styledComponents(NavLink)`
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 720px) {
     position: absolute;
-    top: -20%;
+    top: -10%;
     left: -60%;
-    transform: scale(0.15);
+    transform: scale(0.12);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 630px) {
     position: absolute;
-    top: -20%;
+    top: -10%;
     left: -80%;
-    transform: scale(0.15);
+    transform: scale(0.12);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 520px) {
     position: absolute;
-    top: -20%;
+    top: -10%;
     left: -90%;
     transform: scale(0.1);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 500px) {
     position: absolute;
-    top: -20%;
+    top: -10%;
     left: -105%;
     transform: scale(0.1);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 430px) {
     position: absolute;
-    top: -220px;
+    top: -50px;
     left: -520px;
     transform: scale(0.1);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
 `;
 
@@ -149,6 +162,7 @@ const Ruleslogo = styledComponents(NavLink)`
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 1450px) {
     position: absolute;
@@ -157,6 +171,7 @@ const Ruleslogo = styledComponents(NavLink)`
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 1200px) {
     position: absolute;
@@ -165,6 +180,7 @@ const Ruleslogo = styledComponents(NavLink)`
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (min-width: 1700px) {
     position: absolute;
@@ -173,6 +189,7 @@ const Ruleslogo = styledComponents(NavLink)`
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   
   @media only screen and (max-width: 993px) {
@@ -182,6 +199,7 @@ const Ruleslogo = styledComponents(NavLink)`
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 830px) {
     position: absolute;
@@ -190,38 +208,52 @@ const Ruleslogo = styledComponents(NavLink)`
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
+  }
+  @media only screen and (max-width: 720px) {
+    position: absolute;
+    top: -10%;
+    right: -60%;
+    transform: scale(0.12);
+    z-index: 1;
+    cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 630px) {
     position: absolute;
-    top: -20%;
+    top: -10%;
     right: -80%;
-    transform: scale(0.15);
+    transform: scale(0.12);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 520px) {
     position: absolute;
-    top: -20%;
+    top: -10%;
     right: -90%;
     transform: scale(0.1);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 500px) {
     position: absolute;
-    top: -20%;
+    top: -10%;
     right: -105%;
     transform: scale(0.1);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 430px) {
     position: absolute;
-    top: -220px;
+    top: -50px;
     right: -520px;
     transform: scale(0.1);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
 `;
 
@@ -237,35 +269,39 @@ const Aboutlogo = styledComponents(NavLink)`
   
   @media only screen and (max-width: 1700px) {
     position: absolute;
-    top: -5%;
+    top: 15%;
     left: -10%;
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 1450px) {
     position: absolute;
-    top: -5%;
+    top: 15%;
     left: -15%;
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 1200px) {
     position: absolute;
-    top: -5%;
+    top: 15%;
     left: -25%;
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (min-width: 1700px) {
     position: absolute;
-    top: -5%;
+    top: 15%;
     left: -10%;
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 993px) {
     position: absolute;
@@ -274,6 +310,7 @@ const Aboutlogo = styledComponents(NavLink)`
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 835px) {
     position: absolute;
@@ -282,46 +319,52 @@ const Aboutlogo = styledComponents(NavLink)`
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
    @media only screen and (max-width: 720px) {
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: -60%;
-    transform: scale(0.15);
+    transform: scale(0.12);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 630px) {
     position: absolute;
-    top: 10%;
+    top: 20%;
     left: -80%;
-    transform: scale(0.15);
+    transform: scale(0.12);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 520px) {
     position: absolute;
-    top: 10%;
+    top: 25%;
     left: -90%;
     transform: scale(0.1);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 500px) {
     position: absolute;
-    top: 5%;
+    top: 20%;
     left: -105%;
     transform: scale(0.1);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 430px) {
     position: absolute;
-    top: -20px;
+    top: 100px;
     left: -520px;
     transform: scale(0.1);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
 `;
 
@@ -339,35 +382,39 @@ const Schedulelogo = styledComponents(NavLink)`
 
   @media only screen and (max-width: 1700px) {
     position: absolute;
-    top: -5%;
+    top: 15%;
     right: -10%;
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 1450px) {
     position: absolute;
-    top: -5%;
+    top: 15%;
     right: -15%;
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 1200px) {
     position: absolute;
-    top: -5%;
+    top: 15%;
     right: -25%;
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (min-width: 1700px) {
     position: absolute;
-    top: -5%;
+    top: 15%;
     right: -10%;
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 993px) {
     position: absolute;
@@ -376,6 +423,7 @@ const Schedulelogo = styledComponents(NavLink)`
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 835px) {
     position: absolute;
@@ -384,46 +432,52 @@ const Schedulelogo = styledComponents(NavLink)`
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 720px) {
     position: absolute;
-    top: 10%;
+    top: 20%;
     right: -60%;
-    transform: scale(0.15);
+    transform: scale(0.12);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 630px) {
     position: absolute;
-    top: 10%;
+    top: 20%;
     right: -80%;
-    transform: scale(0.15);
+    transform: scale(0.12);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 520px) {
     position: absolute;
-    top: 10%;
+    top: 25%;
     right: -90%;
     transform: scale(0.1);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 500px) {
     position: absolute;
-    top: 5%;
+    top: 20%;
     right: -105%;
     transform: scale(0.1);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
   @media only screen and (max-width: 430px) {
     position: absolute;
-    top: -20px;
+    top: 100px;
     right: -520px;
     transform: scale(0.1);
     z-index: 1;
     cursor: pointer;
+     height:100%;
   }
 
 `;
@@ -457,7 +511,7 @@ justify-content: space-evenly;
 
 const Center = styledComponents.button`
 position: absolute;
-top: ${props => props.click ? '105%' :'60%'  };
+top: ${props => props.click ? '105%' :'80%'  };
 left: ${props => props.click ? '92%' :'50%'  };
 transform: translate(-50%,-100%);
 border: none;
@@ -472,6 +526,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 transition: all 1s ease;
+height:100%;
 
 &>:last-child{
     display: ${props => props.click ? 'none' :'inline-block'  };
@@ -488,15 +543,39 @@ transition: all 1s ease;
   }
   @media only screen and (max-width: 720px) {
     position: absolute;
-    top: 40%;
+    top: 70%;
+   
    
   }
+  @media only screen and (max-width: 630px) {
+    position: absolute;
+    top: 70%;
+  
+  }
+  @media only screen and (max-width: 520px) {
+    position: absolute;
+    top: 70%;
+
+   
+    
+  }
+  @media only screen and (max-width: 500px) {
+    position: absolute;
+    top: 70%;
+   
+  }
+  @media only screen and (max-width: 430px) {
+    position: absolute;
+    top: 70%;
+    
+  }
+  
 
 `
 
 const Rightlogo = styledComponents.div`
 position: absolute;
-right: calc(2rem);
+right: calc(7rem);
 z-index: 1;
 display: flex;
 gap: 10px;
@@ -504,20 +583,20 @@ gap: 10px;
 @media only screen and (max-width: 768px) {
     gap: 5px;
     right: 1rem;
-    top: 1rem;
+    top: 2rem;
 }
 `
 
 const Leftlogo = styledComponents.div`
 position: absolute;
-left: calc(2rem);
+left: calc(7rem);
 z-index: 1;
 cursor: pointer;
 
 @media only screen and (max-width: 768px) {
     gap: 5px;
     left: 1rem;
-    top: 1rem;
+    top: 2rem;
 }
 `
 
@@ -674,5 +753,6 @@ const Home = () => {
         </MainContainer>
      );
 }
+
  
 export default Home;
