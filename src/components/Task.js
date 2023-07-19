@@ -1,14 +1,14 @@
 import logohorizon from '../img/logo/type.png';
 import oweek from '../img/logo/oweekwhite.svg';
 import uc from '../img/logo/ucwhite.png';
-import bg from '../img/bg/Rulesbg.svg';
-import bgmobile from '../img/bg/Taskbgmobile.svg';
+import bg from '../img/bg/bgtask.png';
+import bgmobile from '../img/bg/bgtask.png';
 import topeng from '../img/topeng/topeng3.svg';
 import title from '../img/title/Task.png';
 
 import styledComponents from "styled-components";
 import {motion} from 'framer-motion';
-import PowerButton4 from '../subcomponents/PowerButton4';
+import PowerButton from '../subcomponents/PowerButton';
 import { Link } from 'react-router-dom';
 import SocialIcons from '../subcomponents/SocialIcons';
 import MapsModal from './MapsModal';
@@ -208,7 +208,7 @@ const Task = () => {
             <SocialIcons setShowMapsModal={setShowMapsModal} setShowSpotifyModal={setShowSpotifyModal} />
 
             <Container>         
-                <PowerButton4 />
+                <PowerButton />
 
                 <Leftlogo>
                     <Link to="/">
@@ -222,11 +222,11 @@ const Task = () => {
                 </Rightlogo>
 
                 <Content>
-                    <Title>
+                    {/* <Title>
                         <img src={title} alt="" width="165" />
-                    </Title>
+                    </Title> */}
                     <br></br>
-                    <h1>WORK IN PROGRESS</h1>
+                    <h1>UNDER CONSTRUCTION</h1>
 {/* 
                     <Seperator>
                         <Deadline>
@@ -770,11 +770,11 @@ const Task = () => {
                     </Seperator> */}
                 </Content>
             </Container>
-            <Topeng src={topeng} 
+            {/* <Topeng src={topeng} 
             initial={{ y: 200 }}
             animate={{ y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            />
+            /> */}
         </MainContainer>
      );
 }

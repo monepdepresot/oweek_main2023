@@ -1,8 +1,8 @@
 import logohorizon from '../img/logo/type.png';
 import oweek from '../img/logo/oweekwhite.svg';
 import uc from '../img/logo/ucwhite.png';
-import bg from '../img/bg/Aboutbg.svg';
-import bgmobile from '../img/bg/Aboutbgmobile.svg';
+import bg from '../img/bg/bgabout.png';
+import bgmobile from '../img/bg/bgabout.png';
 import topeng from '../img/topeng/topeng2.svg';
 
 import styledComponents from "styled-components";
@@ -166,11 +166,11 @@ Selain itu pada Orientation Week 2023, “Erudite” juga tidak meninggalkan nil
                     </motion.div>
                 </Content>
             </Container>
-            <Topeng src={topeng} 
+            {/* <Topeng src={topeng} 
             initial={{ x: 200 }}
             animate={{ x: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
-            />
+            /> */}
         </MainContainer>
      );
 }

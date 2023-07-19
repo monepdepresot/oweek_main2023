@@ -1,7 +1,7 @@
 import logohorizon from '../img/logo/type.png';
 import oweek from '../img/logo/oweekwhite.svg';
 import uc from '../img/logo/ucwhite.png';
-import bg from '../img/bg/Schedulebg.svg';
+import bg from '../img/bg/bgschedule.png';
 import bgmobile from '../img/bg/Schedulebgmobile.svg';
 import topeng from '../img/topeng/topeng4.svg';
 import dot from '../img/dot2.svg';
@@ -627,11 +627,11 @@ const Schedule = () => {
                                 </Flexx> 
                                 <Flexx>
                                     <IconCenter><img src={location} /></IconCenter>                                       
-                                    <BoldSpan>tbd</BoldSpan>
+                                    <BoldSpan>Tbd.</BoldSpan>
                                 </Flexx>                     
                                 <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                    <BoldSpan>tbd</BoldSpan>
+                                    <BoldSpan>Tbd.</BoldSpan>
                                 </Flexx>                     
                             </Padd> 
                         </Rundown>
@@ -640,9 +640,13 @@ const Schedule = () => {
                     <div className={toggleState === 3 ? "maps active-maps" : "maps"}>
                         <Isi>
                         <Day>
-                            <h2>Prodi Day 1</h2>   
-                            <h3>“The Enhancement”</h3>
-                            <Pad>
+                       
+
+                       
+                            <h2>Day 2</h2>   
+                            <Subtitle>Pra LDK + MnG Trainee</Subtitle>
+                            {/* <h2>Pra LDK + MnG Trainee</h2> */}
+                            {/* <Pad>
                                 <h3>Tujuan Day</h3>
                                 <Flex>
                                     <Dot src={dot} />
@@ -656,8 +660,8 @@ const Schedule = () => {
                                     <Dot src={dot} />
                                     <span>Mahasiswa mengetahui dan memahami kegiatan kemahasiswaan dibawah prodi (Student Union dan lain-lain).</span>
                                 </Flex>
-                            </Pad>    
-                            <Pad>
+                            </Pad>     */}
+                            {/* <Pad>
                                 <h3>7 Competencies</h3>
                                 <Flex>
                                     <Dot src={dot} />
@@ -667,8 +671,8 @@ const Schedule = () => {
                                     <Dot src={dot} />
                                     <span>Networking</span>
                                 </Flex>
-                            </Pad> 
-                            <Pad>
+                            </Pad>  */}
+                            {/* <Pad>
                                 <h3>Keperluan</h3>
                                 <Flex>
                                     <Dot src={dot} />
@@ -702,9 +706,23 @@ const Schedule = () => {
                                     <Dot src={dot} />
                                     <span>Disarankan membawa tissue kering dan tissue basah.</span>
                                 </Flex>
-                            </Pad>                     
+                            </Pad>                      */}
+                            <Padd>
+                                <Flexx>
+                                    <IconCenter><img src={calendar} /></IconCenter>                                       
+                                    <BoldSpan>Selasa, 29 Agustus 2023</BoldSpan>
+                                </Flexx> 
+                                <Flexx>
+                                    <IconCenter><img src={location} /></IconCenter>                                       
+                                    <BoldSpan>Tbd.</BoldSpan>
+                                </Flexx>           
+                                <Flexx>
+                                    <IconCenter><img src={dresscode} /></IconCenter>                                       
+                                    <BoldSpan>Tbd.</BoldSpan>
+                                </Flexx>           
+                            </Padd>       
                         </Day>
-                        <Rundown>
+                        {/* <Rundown>
                             <h2>Rundown</h2>
                             <Table>
                                 <tbody>
@@ -750,26 +768,13 @@ const Schedule = () => {
                                 </tr>
                                 </tbody>
                             </Table>
-                            <Padd>
-                                <Flexx>
-                                    <IconCenter><img src={calendar} /></IconCenter>                                       
-                                    <BoldSpan>Selasa, 30 Agustus 2022</BoldSpan>
-                                </Flexx> 
-                                <Flexx>
-                                    <IconCenter><img src={location} /></IconCenter>                                       
-                                    <BoldSpan>Universitas Ciputra</BoldSpan>
-                                </Flexx>           
-                                <Flexx>
-                                    <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                    <BoldSpan>Sesuai Ketentuan Prodi</BoldSpan>
-                                </Flexx>           
-                            </Padd>                            
-                        </Rundown>
+                                                 
+                        </Rundown> */}
                     </Isi>
                     </div> 
                     <div className={toggleState === 4 ? "maps active-maps" : "maps"}>
                         <Isi>
-                        <Day>
+                        {/* <Day>
                             <h2>Prodi Day 2</h2>
                             <h3>“The Enhancement”</h3>
                             <Pad>
@@ -837,10 +842,12 @@ const Schedule = () => {
                                     <span>Disarankan membawa tissue kering dan tissue basah.</span>
                                 </Flex>
                             </Pad>                 
-                        </Day>
+                        </Day> */}
                         <Rundown>
-                            <h2>Rundown</h2>
-                            <Table>
+                            <h2>Day 3</h2>
+                            <Subtitle>Prodi Day “Perceive Propinquity”
+</Subtitle>
+                            {/* <Table>
                                 <tbody>
                                 <tr>
                                     <td>06.00 - 07.00</td>
@@ -879,19 +886,19 @@ const Schedule = () => {
                                     <td>Snack Time, Briefing next day dan Closing</td>
                                 </tr>
                                 </tbody>
-                            </Table>
+                            </Table> */}
                             <Padd>
                                 <Flexx>
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
-                                    <BoldSpan>Rabu, 31 Agustus 2022</BoldSpan>
+                                    <BoldSpan>Rabu, 30 Agustus 2023</BoldSpan>
                                 </Flexx> 
                                 <Flexx>
                                     <IconCenter><img src={location} /></IconCenter>                                       
-                                    <BoldSpan>Universitas Ciputra</BoldSpan>
+                                    <BoldSpan>Tbd.</BoldSpan>
                                 </Flexx>     
                                 <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                    <BoldSpan>Sesuai Ketentuan Prodi</BoldSpan>
+                                    <BoldSpan>Tbd.</BoldSpan>
                                 </Flexx>                  
                             </Padd> 
                         </Rundown>
@@ -899,7 +906,7 @@ const Schedule = () => {
                     </div> 
                     <div className={toggleState === 5 ? "maps active-maps" : "maps"}>
                         <Isi>
-                        <Day>
+                        {/* <Day>
                             <h2>Talkshow Day</h2>  
                             <h3>“Exploring the Horizon”</h3> 
                             <Pad>
@@ -967,10 +974,12 @@ const Schedule = () => {
                                     <span>Disarankan membawa tissue kering dan tissue basah.</span>
                                 </Flex>
                             </Pad>                   
-                        </Day>
+                        </Day> */}
                         <Rundown>
-                            <h2>Rundown</h2>
-                            <Table>
+                            <h2>Day 4</h2>
+                            <Subtitle>Talkshow Day + MnG Panitia
+</Subtitle>
+                            {/* <Table>
                                 <tbody>
                                 <tr>
                                     <td>06.30 - 07.45</td>
@@ -1001,19 +1010,19 @@ const Schedule = () => {
                                     <td>Closing</td>
                                 </tr>
                                 </tbody>
-                            </Table>
+                            </Table> */}
                             <Padd>
                                 <Flexx>
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
-                                    <BoldSpan>Kamis, 1 September 2022</BoldSpan>
+                                    <BoldSpan>Kamis, 31 September 2023</BoldSpan>
                                 </Flexx> 
                                 <Flexx>
                                     <IconCenter><img src={location} /></IconCenter>                                       
-                                    <BoldSpan>Multi Purpose Hall Ciputra World Surabaya</BoldSpan>
+                                    <BoldSpan>Tbd.</BoldSpan>
                                 </Flexx>      
                                 <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                    <BoldSpan>Baju Batik Bebas Berlengan, Celana Panjang Kain Hitam, Sepatu Sneakers (Warna Dibebaskan)</BoldSpan>
+                                    <BoldSpan>Tbd.</BoldSpan>
                                 </Flexx>                 
                             </Padd> 
                         </Rundown>
@@ -1021,7 +1030,7 @@ const Schedule = () => {
                     </div> 
                     <div className={toggleState === 6 ? "maps active-maps" : "maps"}>
                         <Isi>
-                        <Day>
+                        {/* <Day>
                             <h2>Selling Day</h2>
                             <h3>“Another Step to Luminosity”</h3>
                             <Pad>
@@ -1121,11 +1130,11 @@ const Schedule = () => {
                                     <span>Disarankan membawa tissue kering dan tissue basah.</span>
                                 </Flex>
                             </Pad>                    
-                        </Day>
+                        </Day> */}
                         <Rundown>
-                            <h2>Rundown</h2>
-                            <Subtitle>Selling</Subtitle>
-                            <Table>
+                            <h2>Day 5</h2>
+                            <Subtitle>Selling Day “Nusantara Heritage”</Subtitle>
+                            {/* <Table>
                                 <tbody>
                                 <tr>
                                     <td>07.00 - 08.00 </td>
@@ -1153,8 +1162,8 @@ const Schedule = () => {
                                 </tr>
                                 </tbody>
                             </Table> 
-                            <Subtitle>MnG Trainee</Subtitle>
-                            <Table>
+                            <Subtitle>MnG Trainee</Subtitle> */}
+                            {/* <Table>
                                 <tbody>
                                     <tr>
                                         <td>13.00 - 13.30</td>
@@ -1189,19 +1198,19 @@ const Schedule = () => {
                                         <td>Trainee sesi 3 balik ke lokasi selling</td>
                                     </tr>
                                 </tbody>
-                            </Table>
+                            </Table> */}
                             <Padd>
                                 <Flexx>
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
-                                    <BoldSpan>Jumat, 2 September 2022</BoldSpan>
+                                    <BoldSpan>Jumat, 1 September 2023</BoldSpan>
                                 </Flexx> 
                                 <Flexx>
                                     <IconCenter><img src={location} /></IconCenter>                                       
-                                    <BoldSpan>Atrium Ciputra World Mall Surabaya</BoldSpan>
+                                    <BoldSpan>Tbd.</BoldSpan>
                                 </Flexx>  
                                 <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                    <BoldSpan>Baju O-Week, Celana Panjang (Gelap Tidak Sobek), dan Sneakers (Berwarna Bebas)</BoldSpan>
+                                    <BoldSpan>Tbd.</BoldSpan>
                                 </Flexx>                 
                             </Padd>
                         </Rundown>
@@ -1209,7 +1218,7 @@ const Schedule = () => {
                     </div> 
                     <div className={toggleState === 7 ? "maps active-maps" : "maps"}>
                         <Isi>
-                        <Day>
+                        {/* <Day>
                             <h2>Closing</h2>
                             <h3>“Unaccomplished Journey”</h3>
                             <Pad>
@@ -1308,10 +1317,12 @@ const Schedule = () => {
                                     <span>Disarankan membawa tissue kering dan tissue basah.</span>
                                 </Flex>
                             </Pad>                  
-                        </Day>
+                        </Day> */}
                         <Rundown>
-                            <h2>Rundown</h2>
-                            <Table>
+                            <h2>Day 6</h2>
+                            <Subtitle>Closing “A New Way to Start”
+</Subtitle>
+                            {/* <Table>
                                 <tbody>
                                 <tr>
                                     <td>14.00 - 16.00 </td>
@@ -1342,19 +1353,19 @@ const Schedule = () => {
                                     <td>Special Performance</td>
                                 </tr>
                                 </tbody>
-                            </Table>
+                            </Table> */}
                             <Padd>
                                 <Flexx>
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
-                                    <BoldSpan>Sabtu, 3 September 2022</BoldSpan>
+                                    <BoldSpan>Sabtu, 2 September 2023</BoldSpan>
                                 </Flexx> 
                                 <Flexx>
                                     <IconCenter><img src={location} /></IconCenter>                                       
-                                    <BoldSpan>Palimanan - Ciputra Golf, Club, Resto</BoldSpan>
+                                    <BoldSpan>Tbd.</BoldSpan>
                                 </Flexx>                     
                                 <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                    <BoldSpan>Kemeja Putih Berlengan Panjang/Pendek, Almamater UC, Rok Hitam, Flat Shoes Warna Dibebaskan (cewek), Celana Panjang Hitam Kain, Sepatu Pantofel Warna Dibebaskan (cowok)</BoldSpan>
+                                    <BoldSpan>Tbd.</BoldSpan>
                                 </Flexx>                     
                             </Padd>
                         </Rundown>
@@ -1362,11 +1373,11 @@ const Schedule = () => {
                     </div>                                        
                 </Content>
             </Container>
-            <Topeng src={topeng} 
+            {/* <Topeng src={topeng} 
             initial={{ x: 200 }}
             animate={{ x: 0 }}
             transition={{ duration: 0.5, delay: 1.5 }}
-            />
+            /> */}
         </MainContainer>
      );
 }

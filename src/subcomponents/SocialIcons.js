@@ -24,12 +24,18 @@ z-index:2;
 @media only screen and (max-width: 768px) {
     left: 1rem;
 }
+@media only screen and (max-width: 630px) {
+    position: absolute;
+    top: 80%;
+   
+  }
 `
 
 const Line = styled(motion.span)`
 width: 2px;
 height: 12vh;
 background-color: white;
+
 `
 
 const Button = styled.button`
@@ -37,6 +43,7 @@ padding: 0;
 border: none;
 background: none;
 cursor: pointer;
+
 `
 
 const SocialIcons = ({setShowMapsModal, setShowSpotifyModal} ) => {

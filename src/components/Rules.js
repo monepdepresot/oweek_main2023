@@ -1,7 +1,7 @@
 import logohorizon from '../img/logo/type.png';
 import oweek from '../img/logo/oweekwhite.svg';
 import uc from '../img/logo/ucwhite.png';
-import bg from '../img/bg/Rulesbgmobile.svg';
+import bg from '../img/bg/bgrules.png';
 import topeng from '../img/topeng/topeng1.svg';
 import dot from '../img/dot1.svg';
 import dot2 from '../img/dot3.svg';
@@ -171,8 +171,18 @@ const Rules = () => {
                     <img src={uc} alt="" className='rightlogo' /> 
                     <img src={oweek} alt="" className='rightlogo' />                    
                 </Rightlogo>
+                <br>
+                </br>
+                <br>
+                </br>
+                <br>
+                </br>
+                <br>
+                </br>
+                v
+                <h1>UNDER CONSTRUCTION</h1>
 
-                <Content>
+                {/* <Content>
                     <Aturan>
                     <Title>
                         <img src={title} alt="" height="100" />
@@ -390,13 +400,13 @@ const Rules = () => {
                             </Point>
                         </Isi>
                     </PoinPCD>
-                </Content>
+                </Content> */}
             </Container>
-            <Topeng src={topeng} 
+            {/* <Topeng src={topeng} 
             initial={{ x: 200 }}
             animate={{ x: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
-            />
+            /> */}
         </MainContainer>
      );
 }
