@@ -1,5 +1,5 @@
 import logohorizon from '../img/logo/type.png';
-import oweek from '../img/logo/oweekwhite.svg';
+import oweek from '../img/logo/oweekwhite.png';
 import uc from '../img/logo/ucwhite.png';
 import bg from '../img/bg/bgtask.png';
 import bgmobile from '../img/bg/bgtask.png';
@@ -222,11 +222,14 @@ const Task = () => {
                 </Rightlogo>
 
                 <Content>
-                    {/* <Title>
-                        <img src={title} alt="" width="165" />
-                    </Title> */}
-                    <br></br>
-                    <h1>UNDER CONSTRUCTION</h1>
+                    <Title>
+                        <h1>TASK</h1>
+                    </Title>
+                  
+                    <h2>To be Announced!</h2>
+                    <p>
+Stay tuned on <a href="https://www.instagram.com/oweekucs/">@oweekucs</a> Instagram for updates!
+</p>
 {/* 
                     <Seperator>
                         <Deadline>

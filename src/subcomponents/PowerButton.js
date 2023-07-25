@@ -8,7 +8,7 @@ top: 3rem;
 left: 50%;
 transform: translate(-50%, 0);
 
-background-color: #FCF6F4;
+background-color: #6d2611;
 padding: 0.3rem;
 border-radius: 50%;
 border: 0px solid #000;
@@ -23,7 +23,7 @@ z-index:1;
 cursor: pointer;
 
 &:hover{
-    background-color: #00B984;
+    background-color: #e3c059;
 }
 
 &>*:first-child{

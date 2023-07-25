@@ -1,5 +1,5 @@
 import logohorizon from '../img/logo/type.png';
-import oweek from '../img/logo/oweekwhite.svg';
+import oweek from '../img/logo/oweekwhite.png';
 import uc from '../img/logo/ucwhite.png';
 import bg from '../img/bg/bgrules.png';
 import topeng from '../img/topeng/topeng1.svg';
@@ -171,29 +171,27 @@ const Rules = () => {
                     <img src={uc} alt="" className='rightlogo' /> 
                     <img src={oweek} alt="" className='rightlogo' />                    
                 </Rightlogo>
-                <br>
-                </br>
-                <br>
-                </br>
-                <br>
-                </br>
-                <br>
-                </br>
-                v
-                <h1>UNDER CONSTRUCTION</h1>
+               
+               
 
-                {/* <Content>
+                <Content>
+               
+               
                     <Aturan>
                     <Title>
-                        <img src={title} alt="" height="100" />
+                        <h1>RULES</h1>
                     </Title>
-
-                        <Isi
+                  
+                    <h2>To be Announced!</h2>
+                    <p>
+Stay tuned on <a href="https://www.instagram.com/oweekucs/">@oweekucs</a> Instagram for updates!
+</p>
+                        {/* <Isi
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
-                        >
-                            <RulesList>
+                        > */}
+                            {/* <RulesList>
                                 <Flex2>
                                     <Dot src={dot2} />
                                     <span>Dilarang merokok dan membawa rokok (termasuk rokok elektrik), minuman keras yang beralkohol, dan benda tajam selama O-Week berlangsung atau saat masih menggunakan atribut O-Week.</span>
@@ -318,11 +316,11 @@ const Rules = () => {
                                     <Dot src={dot2} />
                                     <span>Dilarang mengajak atau memaksa sesama peserta O-Week  dalam kerjasama organisasi pribadi (organisasi bisnis, rumah ibadah, dan sebagainya).</span>
                                 </Flex2>                               
-                            </RulesList>  
-                            <Peringatan>SEMUA PERATURAN YANG DILANGGAR BERPOTENSI TRAINEE TIDAK LULUS O-Week!</Peringatan>                         
-                        </Isi>
+                            </RulesList>   */}
+                            {/* <Peringatan>SEMUA PERATURAN YANG DILANGGAR BERPOTENSI TRAINEE TIDAK LULUS O-Week!</Peringatan>                          */}
+                        {/* </Isi> */}
                     </Aturan>
-                    <PoinPCD>
+                    {/* <PoinPCD>
                     <Title>
                         <img src={title2} alt="" height="100" />
                     </Title>
@@ -399,8 +397,8 @@ const Rules = () => {
                                 <h2>Total Poin: 36 Poin</h2>
                             </Point>
                         </Isi>
-                    </PoinPCD>
-                </Content> */}
+                    </PoinPCD> */}
+                </Content>
             </Container>
             {/* <Topeng src={topeng} 
             initial={{ x: 200 }}

@@ -13,9 +13,9 @@ import RulesLogo from '../img/logo/icon-04.png';
 import AboutLogo from '../img/logo/icon-03.png';
 import logohorizon from '../img/logo/type.png';
 import H from '../img/logo/erudite.png';
-import oweek from '../img/logo/oweekwhite.svg';
+import oweek from '../img/logo/oweekwhite.png';
 import uc from '../img/logo/ucwhite.png';
-import bg from '../img/bg/bgrules.png';
+import bg from '../img/bg/main.png';
 
 
 const MainContainer = styledComponents(motion.div)`
@@ -47,25 +47,25 @@ const Tasklogo = styledComponents(NavLink)`
   
   @media only screen and (max-width: 1700px) {
     position: absolute;
-    top: -25%;
+    top: -15%;
     left: -20%;
-    transform: scale(0.15);
+    transform: scale(0.18);
     z-index: 1;
     cursor: pointer;
      height:100%;
   }
   @media only screen and (max-width: 1450px) {
     position: absolute;
-    top: -25%;
+    top: -15%;
     left: -30%;
-    transform: scale(0.15);
+    transform: scale(0.2);
     z-index: 1;
     cursor: pointer;
      height:100%;
   }
   @media only screen and (max-width: 1200px) {
     position: absolute;
-    top: -25%;
+    top: -15%;
     left: -40%;
     transform: scale(0.15);
     z-index: 1;
@@ -74,17 +74,26 @@ const Tasklogo = styledComponents(NavLink)`
   }
   @media only screen and (min-width: 1700px) {
     position: absolute;
-    top: -35%;
+    top: -15%;
     left: -20%;
-    transform: scale(0.15);
+    transform: scale(0.2);
     z-index: 1;
     cursor: pointer;
     height:100%;
   }
   @media only screen and (max-width: 993px) {
     position: absolute;
-    top: -20%;
+    top: -10%;
     left: -50%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+     height:100%;
+  }
+  @media only screen and (max-width: 920px) {
+    position: absolute;
+    top: -10%;
+    left: -55%;
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
@@ -92,7 +101,7 @@ const Tasklogo = styledComponents(NavLink)`
   }
   @media only screen and (max-width: 830px) {
     position: absolute;
-    top: -20%;
+    top: -10%;
     left: -60%;
     transform: scale(0.15);
     z-index: 1;
@@ -157,25 +166,25 @@ const Ruleslogo = styledComponents(NavLink)`
 
   @media only screen and (max-width: 1700px) {
     position: absolute;
-    top: -25%;
+    top: -15%;
     right: -20%;
-    transform: scale(0.15);
+    transform: scale(0.18);
     z-index: 1;
     cursor: pointer;
      height:100%;
   }
   @media only screen and (max-width: 1450px) {
     position: absolute;
-    top: -25%;
+    top: -15%;
     right: -30%;
-    transform: scale(0.15);
+    transform: scale(0.2);
     z-index: 1;
     cursor: pointer;
      height:100%;
   }
   @media only screen and (max-width: 1200px) {
     position: absolute;
-    top: -25%;
+    top: -15%;
     right: -40%;
     transform: scale(0.15);
     z-index: 1;
@@ -184,9 +193,9 @@ const Ruleslogo = styledComponents(NavLink)`
   }
   @media only screen and (min-width: 1700px) {
     position: absolute;
-    top: -35%;
+    top: -15%;
     right: -20%;
-    transform: scale(0.15);
+    transform: scale(0.2);
     z-index: 1;
     cursor: pointer;
      height:100%;
@@ -194,8 +203,17 @@ const Ruleslogo = styledComponents(NavLink)`
   
   @media only screen and (max-width: 993px) {
     position: absolute;
-    top: -20%;
+    top: -10%;
     right: -50%;
+    transform: scale(0.15);
+    z-index: 1;
+    cursor: pointer;
+     height:100%;
+  }
+  @media only screen and (max-width: 920px) {
+    position: absolute;
+    top: -10%;
+    right: -55%;
     transform: scale(0.15);
     z-index: 1;
     cursor: pointer;
@@ -203,7 +221,7 @@ const Ruleslogo = styledComponents(NavLink)`
   }
   @media only screen and (max-width: 830px) {
     position: absolute;
-    top: -20%;
+    top: -10%;
     right: -60%;
     transform: scale(0.15);
     z-index: 1;
@@ -271,7 +289,7 @@ const Aboutlogo = styledComponents(NavLink)`
     position: absolute;
     top: 15%;
     left: -10%;
-    transform: scale(0.15);
+    transform: scale(0.18);
     z-index: 1;
     cursor: pointer;
      height:100%;
@@ -280,7 +298,7 @@ const Aboutlogo = styledComponents(NavLink)`
     position: absolute;
     top: 15%;
     left: -15%;
-    transform: scale(0.15);
+    transform: scale(0.2);
     z-index: 1;
     cursor: pointer;
      height:100%;
@@ -298,7 +316,7 @@ const Aboutlogo = styledComponents(NavLink)`
     position: absolute;
     top: 15%;
     left: -10%;
-    transform: scale(0.15);
+    transform: scale(0.2);
     z-index: 1;
     cursor: pointer;
      height:100%;
@@ -384,7 +402,7 @@ const Schedulelogo = styledComponents(NavLink)`
     position: absolute;
     top: 15%;
     right: -10%;
-    transform: scale(0.15);
+    transform: scale(0.18);
     z-index: 1;
     cursor: pointer;
      height:100%;
@@ -393,7 +411,7 @@ const Schedulelogo = styledComponents(NavLink)`
     position: absolute;
     top: 15%;
     right: -15%;
-    transform: scale(0.15);
+    transform: scale(0.2);
     z-index: 1;
     cursor: pointer;
      height:100%;
@@ -411,7 +429,7 @@ const Schedulelogo = styledComponents(NavLink)`
     position: absolute;
     top: 15%;
     right: -10%;
-    transform: scale(0.15);
+    transform: scale(0.2);
     z-index: 1;
     cursor: pointer;
      height:100%;
@@ -513,7 +531,7 @@ const Center = styledComponents.button`
 position: absolute;
 top: ${props => props.click ? '105%' :'80%'  };
 left: ${props => props.click ? '92%' :'50%'  };
-transform: translate(-50%,-100%);
+transform: translate(-50%,-100%) scale(1.5);
 border: none;
 outline: none;
 background-color: transparent;
@@ -541,13 +559,41 @@ height:100%;
     height: 332px; /* Adjust the height value to your desired size */
     /* Add any other desired CSS properties here */
   }
+  @media only screen and (max-width: 900px) {
+    position: absolute;
+
+    top: 70%;
+    left: ${props => props.click ? '92%' :'50%'  };
+    transform: translate(-50%,-100%) scale(1.5);
+   
+  }
+  @media only screen and (min-width: 1700px) {
+    position: absolute;
+  
+
+    left: ${props => props.click ? '92%' :'50%'  };
+    transform: translate(-50%,-100%) scale(2);
+   
+  }
+  @media only screen and (max-width: 1700px) {
+    position: absolute;
+  
+
+    left: ${props => props.click ? '92%' :'50%'  };
+    transform: translate(-50%,-100%) scale(1.7);
+   
+  }
   @media only screen and (max-width: 720px) {
     position: absolute;
     top: 70%;
-   
+
+    left: ${props => props.click ? '92%' :'50%'  };
+    transform: translate(-50%,-100%) scale(1.2);
    
   }
   @media only screen and (max-width: 630px) {
+    left: ${props => props.click ? '92%' :'50%'  };
+    transform: translate(-50%,-100%) scale(1.2);
     position: absolute;
     top: 70%;
   
@@ -555,6 +601,8 @@ height:100%;
   @media only screen and (max-width: 520px) {
     position: absolute;
     top: 70%;
+    left: ${props => props.click ? '92%' :'50%'  };
+    transform: translate(-50%,-100%) scale(1.2);
 
    
     
@@ -562,11 +610,15 @@ height:100%;
   @media only screen and (max-width: 500px) {
     position: absolute;
     top: 70%;
+    left: ${props => props.click ? '92%' :'50%'  };
+    transform: translate(-50%,-100%) scale(1.2);
    
   }
   @media only screen and (max-width: 430px) {
     position: absolute;
     top: 70%;
+    left: ${props => props.click ? '92%' :'50%'  };
+    transform: translate(-50%,-100%) scale(1);
     
   }
   
@@ -589,9 +641,11 @@ gap: 10px;
 
 const Leftlogo = styledComponents.div`
 position: absolute;
+
 left: calc(7rem);
 z-index: 1;
 cursor: pointer;
+transform:scale(0.85);
 
 @media only screen and (max-width: 768px) {
     gap: 5px;
@@ -650,15 +704,13 @@ const Home = () => {
 
             <Container>    
 
-                <RedDiv click={click} /> 
-                <YellowDiv click={click} /> 
-
-                <Center click={click}>
+                
+                <Center >
                     <img src={H} alt=""  />
                   
                 </Center>
 
-                <Leftlogo onClick={()=> handleClick()}>
+                <Leftlogo >
                     <img src={logohorizon} alt="" className='horizonlogo' />                                    
                 </Leftlogo>
 

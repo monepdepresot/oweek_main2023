@@ -1,8 +1,8 @@
 import logohorizon from '../img/logo/type.png';
-import oweek from '../img/logo/oweekwhite.svg';
+import oweek from '../img/logo/oweekwhite.png';
 import uc from '../img/logo/ucwhite.png';
 import bg from '../img/bg/bgschedule.png';
-import bgmobile from '../img/bg/Schedulebgmobile.svg';
+import bgmobile from '../img/bg/bgschedule.png';
 import topeng from '../img/topeng/topeng4.svg';
 import dot from '../img/dot2.svg';
 import location from '../img/location.svg';
@@ -185,7 +185,7 @@ margin-top: 1px;
 `
 
 const Tabs = styledComponents.h2`
-padding: 2px 3px;
+padding: 20px 10px;
 cursor: pointer;
 `
 
@@ -308,8 +308,8 @@ const Schedule = () => {
                 </Leftlogo>
 
                 <Rightlogo>
-                    <img src={uc} alt="" className='rightlogo' /> 
-                    <img src={oweek} alt="" className='rightlogo' />                    
+                <img src={uc} alt="" className='rightlogo' />              
+                <img src={oweek} alt="" className='rightlogo' />                   
                 </Rightlogo>
 
                 <Content>
@@ -582,8 +582,16 @@ const Schedule = () => {
                             </Table>
 
                             <Subtitle>UC Day "Inception"</Subtitle>
+                            
+                       
 
                             <Table>
+                            <span>
+                        <p >
+                            Trainee akan diperkenalkan pada acara O-Week 2023 dan Universitas Ciputra Surabaya, baik tentang nilai-nilai, visi misi, fasilitas, kurikulum, dan kegiatan kemahasiswaan melalui materi dan permainan.
+
+                            </p>
+                            </span>
                                 {/* <tbody>
                             
                                 <tr>
@@ -625,13 +633,23 @@ const Schedule = () => {
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
                                     <BoldSpan>Senin, 28 Agustus 2023</BoldSpan>
                                 </Flexx> 
+                                <Flex>
+                                        <IconCenter><img src={clock} /></IconCenter>                                       
+                                        <BoldSpan> 06.00 WIB - selesai
+</BoldSpan>
+                                    </Flex> 
                                 <Flexx>
                                     <IconCenter><img src={location} /></IconCenter>                                       
-                                    <BoldSpan>Tbd.</BoldSpan>
+                                    <BoldSpan> Plaza Universitas Ciputra Surabaya
+
+</BoldSpan>
                                 </Flexx>                     
                                 <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                    <BoldSpan>Tbd.</BoldSpan>
+                                    <BoldSpan>- Kemeja Putih
+<p>- Celana Panjang Jeans Berwarna Gelap (tidak sobek)</p>
+<p>- Sepatu Sneakers (warna bebas)</p>
+</BoldSpan>
                                 </Flexx>                     
                             </Padd> 
                         </Rundown>
@@ -644,7 +662,16 @@ const Schedule = () => {
 
                        
                             <h2>Day 2</h2>   
-                            <Subtitle>Pra LDK + MnG Trainee</Subtitle>
+                            <Subtitle>“Potential Unfold”
+
+</Subtitle>
+<Subtitle>Pra-LDK
+
+</Subtitle>
+<Table>
+    <p>Trainee akan mengikuti kegiatan latihan dasar kepemimpinan untuk membangun kemampuan memimpin dan mengembangkan kemampuan manajerial.
+</p>
+</Table>
                             {/* <h2>Pra LDK + MnG Trainee</h2> */}
                             {/* <Pad>
                                 <h3>Tujuan Day</h3>
@@ -712,14 +739,24 @@ const Schedule = () => {
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
                                     <BoldSpan>Selasa, 29 Agustus 2023</BoldSpan>
                                 </Flexx> 
+                                <Flex>
+                                        <IconCenter><img src={clock} /></IconCenter>                                       
+                                        <BoldSpan> 06.00 WIB - selesai
+</BoldSpan>
+                                    </Flex> 
                                 <Flexx>
                                     <IconCenter><img src={location} /></IconCenter>                                       
-                                    <BoldSpan>Tbd.</BoldSpan>
-                                </Flexx>           
+                                    <BoldSpan> Plaza Universitas Ciputra Surabaya
+
+</BoldSpan>
+                                </Flexx>                     
                                 <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                    <BoldSpan>Tbd.</BoldSpan>
-                                </Flexx>           
+                                    <BoldSpan>- Kemeja Putih
+<p>- Celana Panjang Jeans Berwarna Gelap (tidak sobek)</p>
+<p>- Sepatu Sneakers (warna bebas)</p>
+</BoldSpan>
+                                </Flexx>             
                             </Padd>       
                         </Day>
                         {/* <Rundown>
@@ -845,7 +882,9 @@ const Schedule = () => {
                         </Day> */}
                         <Rundown>
                             <h2>Day 3</h2>
-                            <Subtitle>Prodi Day “Perceive Propinquity”
+                            <Subtitle> “Perceive Propinquity”
+</Subtitle>
+<Subtitle> Prodi Day
 </Subtitle>
                             {/* <Table>
                                 <tbody>
@@ -892,14 +931,111 @@ const Schedule = () => {
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
                                     <BoldSpan>Rabu, 30 Agustus 2023</BoldSpan>
                                 </Flexx> 
+                                <Flex>
+                                        <IconCenter><img src={clock} /></IconCenter>                                       
+                                        <BoldSpan> 06.00 WIB - selesai
+</BoldSpan>
+                                    </Flex> 
                                 <Flexx>
                                     <IconCenter><img src={location} /></IconCenter>                                       
-                                    <BoldSpan>Tbd.</BoldSpan>
-                                </Flexx>     
+                                    <BoldSpan> Plaza Universitas Ciputra Surabaya
+
+</BoldSpan>
+                                </Flexx>                     
                                 <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                    <BoldSpan>Tbd.</BoldSpan>
-                                </Flexx>                  
+                                    <BoldSpan>-Sesuai ketentuan program studi masing-masing. 
+
+</BoldSpan>
+                                </Flexx>    
+                                <h3>Tugas 1 Prodi Day</h3>
+                              
+                                        <Dot src={dot} />
+                                        <span>
+                                        Trainee memposting di IG pribadi Twibbon dari setiap Prodi.
+
+</span>
+<p><Dot src={dot} />
+                                        <span>
+                                        IG Trainee <b>TIDAK BOLEH</b> di private.
+
+</span></p>
+<p><Dot src={dot} />
+                                        <span>
+                                        Trainee <b>TIDAK DIPERKENANKAN</b> untuk menghapus postingan twibbon sampai acara O-Week berakhir.
+
+</span></p>
+<p><Dot src={dot} />
+                                        <span>
+                                        Deadline pengumpulan twibbon adalah <b>Hari-1 Prodi Day</b>. 
+
+
+</span></p>
+<h3>Tugas 2 Prodi Day WAJIB</h3>
+                              
+                              <Dot src={dot} />
+                              <span>
+                              Trainee membuat video kreatif tiktok <b>secara individu</b> tentang insight yang didapat.
+
+
+</span>
+<p><Dot src={dot} />
+                              <span>
+                              Isi konten video kreatif :
+                              <p>1.Perkenalan diri berupa pantun </p>
+                              <p>2.Video refleksi dari insight yang didapat
+ </p>
+                              <p>3.Closing dengan jargon O-week </p>
+
+</span></p>
+<p><Dot src={dot} />
+                              <span>
+                              Poin Perkenalan diri :
+                              <p>1.Nama Lengkap </p>
+                              <p>2.Nomor kelompok
+ </p>
+                              <p>3.Nama kelompok </p>
+                              <p>4.Jurusan </p>
+
+</span></p>
+<p><Dot src={dot} />
+                              <span>
+                              Video TikTok minimal berdurasi selama 1 menit, dan maksimal 3 menit.
+
+</span></p>
+<p><Dot src={dot} />
+                              <span>
+                              Trainee <b>TIDAK BOLEH</b> menggunakan masker pada video refleksi.
+
+
+
+</span></p>
+<p><Dot src={dot} />
+                              <span>
+                              Trainee <b>WAJIB</b> memperlihatkan <b>MINIMAL</b> setengah badan.
+
+
+
+</span></p>
+<p><Dot src={dot} />
+                              <span>
+                              TikTok Trainee <b>TIDAK BOLEH</b> di private.
+
+
+</span></p>
+<p><Dot src={dot} />
+                              <span>
+                              Template caption & hashtag yang WAJIB dicantumkan, antara lain:
+Perkenalkan nama saya (nama) dari (nomor kelompok-nama kelompok) jurusan (jurusan). 
+#OWeekUCS #OWEEK2023 #ERUDITE
+Wajib Tag :
+@universitasciputra @oweekucs 
+
+
+
+</span></p>
+
+           
                             </Padd> 
                         </Rundown>
                     </Isi>
@@ -977,8 +1113,13 @@ const Schedule = () => {
                         </Day> */}
                         <Rundown>
                             <h2>Day 4</h2>
-                            <Subtitle>Talkshow Day + MnG Panitia
+                            <Subtitle>“Emerging True Self”
 </Subtitle>
+<Subtitle>Talkshow Day
+</Subtitle>
+<Table>
+    <p>Trainee akan mendengarkan talkshow bertema Kebangsaan dan Entrepreneur yang dibawakan oleh ahli-ahli dalam bidang tersebut.</p>
+</Table>
                             {/* <Table>
                                 <tbody>
                                 <tr>
@@ -1016,14 +1157,25 @@ const Schedule = () => {
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
                                     <BoldSpan>Kamis, 31 September 2023</BoldSpan>
                                 </Flexx> 
+                                <Flex>
+                                        <IconCenter><img src={clock} /></IconCenter>                                       
+                                        <BoldSpan> 06.00 WIB - selesai
+</BoldSpan>
+                                    </Flex> 
                                 <Flexx>
                                     <IconCenter><img src={location} /></IconCenter>                                       
-                                    <BoldSpan>Tbd.</BoldSpan>
-                                </Flexx>      
+                                    <BoldSpan> Multi Purpose Hall 4th Floor, Ciputra World Mall Surabaya 
+
+
+</BoldSpan>
+                                </Flexx>                     
                                 <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                    <BoldSpan>Tbd.</BoldSpan>
-                                </Flexx>                 
+                                    <BoldSpan>- Batik Berkerah
+<p>- Celana Kain Hitam</p>
+<p>- Sepatu (bebas, menutupi jari & tumit)</p>
+</BoldSpan>
+                                </Flexx>           
                             </Padd> 
                         </Rundown>
                     </Isi>
@@ -1133,7 +1285,11 @@ const Schedule = () => {
                         </Day> */}
                         <Rundown>
                             <h2>Day 5</h2>
-                            <Subtitle>Selling Day “Nusantara Heritage”</Subtitle>
+                            <Subtitle>“Nusantara Heritage”</Subtitle>
+                            <Subtitle>Selling Day</Subtitle>
+                            <Table>
+                                <p>Trainee menjalankan bisnis yang telah mereka rancang berdasarkan BMC secara nyata untuk membangun jiwa entrepreneur masing-masing.</p>
+                            </Table>
                             {/* <Table>
                                 <tbody>
                                 <tr>
@@ -1204,14 +1360,25 @@ const Schedule = () => {
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
                                     <BoldSpan>Jumat, 1 September 2023</BoldSpan>
                                 </Flexx> 
+                                <Flex>
+                                        <IconCenter><img src={clock} /></IconCenter>                                       
+                                        <BoldSpan> 06.00 WIB - selesai
+</BoldSpan>
+                                    </Flex> 
                                 <Flexx>
                                     <IconCenter><img src={location} /></IconCenter>                                       
-                                    <BoldSpan>Tbd.</BoldSpan>
-                                </Flexx>  
+                                    <BoldSpan> Atrium Ground Floor, Ciputra World Mall Surabaya 
+
+</BoldSpan>
+                                </Flexx>                     
                                 <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                    <BoldSpan>Tbd.</BoldSpan>
-                                </Flexx>                 
+                                    <BoldSpan>- Kaos Universitas Ciputra Surabaya
+<p>- Celana Panjang Berwarna Gelap (tidak sobek)</p>
+<p>- Sepatu Sneakers (warna bebas)</p>
+<p>- Atribut/aksesoris Daerah (detail ketentuan menyusul)</p>
+</BoldSpan>
+                                </Flexx>           
                             </Padd>
                         </Rundown>
                     </Isi>
@@ -1320,8 +1487,13 @@ const Schedule = () => {
                         </Day> */}
                         <Rundown>
                             <h2>Day 6</h2>
-                            <Subtitle>Closing “A New Way to Start”
+                            <Subtitle>“Be Bond to Radiate”
 </Subtitle>
+<Subtitle>Closing
+</Subtitle>
+<Table>
+    <p>Trainee akan mengikuti kegiatan peresmian Trainee menjadi mahasiswa Universitas Ciputra Surabaya melalui prosesi sidang senat.</p>
+</Table>
                             {/* <Table>
                                 <tbody>
                                 <tr>
@@ -1359,14 +1531,30 @@ const Schedule = () => {
                                     <IconCenter><img src={calendar} /></IconCenter>                                       
                                     <BoldSpan>Sabtu, 2 September 2023</BoldSpan>
                                 </Flexx> 
+                                <Flex>
+                                        <IconCenter><img src={clock} /></IconCenter>                                       
+                                        <BoldSpan> 06.00 WIB - selesai
+</BoldSpan>
+                                    </Flex> 
                                 <Flexx>
                                     <IconCenter><img src={location} /></IconCenter>                                       
-                                    <BoldSpan>Tbd.</BoldSpan>
+                                    <BoldSpan>  Plaza Universitas Ciputra & Zoom  
+
+</BoldSpan>
                                 </Flexx>                     
                                 <Flexx>
                                     <IconCenter><img src={dresscode} /></IconCenter>                                       
-                                    <BoldSpan>Tbd.</BoldSpan>
-                                </Flexx>                     
+                                    <BoldSpan>- Kemeja Putih
+<p>- Almamater UC</p>
+<p><b>Perempuan</b></p>
+<p>- Rok Hitam (panjang di bawah lutut)</p>
+<p>- Flat Shoes (warna gelap)</p>
+<p><b>Laki-Laki</b></p>
+<p>- Celana Panjang Kain Hitam</p>
+<p>- Sepatu Pantofel (warna gelap)
+</p>
+</BoldSpan>
+                                </Flexx>               
                             </Padd>
                         </Rundown>
                     </Isi>
